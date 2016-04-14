@@ -1,0 +1,35 @@
+= Who Translate This Plugin? =
+
+= How can i get involved? =
+
+GlotPress translations was not supported from this plugin because:
+
+1 - Translation link exposes the plugins to pushing malicious url?
+2 - Translation description exposes the plugin to change its original meaning?
+3 - Editors may approve or disapprove according personal rules or motivations?
+4 - Not all GlotPress Editors respect plugin Authors directions?
+5 - The approval process is too long?
+6 - Changing the content of the plugin, makes useless all the previous approval
+    process, returning a translation, which no longer conforms to the original
+    content, with the resulting of forcing the author to limiting what is really
+    important to add in his descriptions and link, on future and actual changes.
+
+= How to translate it? =
+
+Is possible to make translations, with traditional method,
+using the file .pot not included on this plugin package, and
+available on assets, to reduce the size of the plugin ZIP file
+being served, speedup download, and no waste user space/bandwidth.
+
+After, send it to sLaNGjIs for approval, and publishing.
+Translator Credits was applied, indicated, with the name
+of your editor, on readme.txt of this plugin, and also
+on related page on slangji.wordpress.com/translations
+
+= Free plugin version support translations? =
+
+No, free plugin support basic translations: only Pro version support full translations.
+
+= WPML is supported? =
+
+Sorry, is not supported, in any version, for now.

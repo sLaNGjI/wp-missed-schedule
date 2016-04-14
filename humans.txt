@@ -1,0 +1,39 @@
+humans.txt - we are the humans behind code programming | sLa NGjI's Team
+
+/* TEAM */
+
+    Name:         sLa NGjI's Team
+    Title:        Plugin Owner Author
+    Site:         slangji.wordpress.com
+    Blog:         slangji.wordpress.com/blog
+    Contact:      slangji.wordpress.com/contact
+    Donation:     slangji.wordpress.com/donate
+    Support:      slangji.wordpress.com/support
+    Translations: slangji.wordpress.com/translations
+    Plugins:      slangji.wordpress.com/plugins
+    Themes:       slangji.wordpress.com/themes
+
+    Profile:      profiles.wordpress.org/slangjis
+    Linkedin:     www.linkedin.com/in/slangjis
+    Twitter:      @slangjis #slangjis
+    Github:       github.com/sLaNGjI
+    Softpedia:    webscripts.softpedia.com/publisher/sLa-1869786722.html
+    FeedBurner:   feeds.feedburner.com/slangjis
+    Gravatar:     gravatar.com/slangjis
+    WordPress:    wordpress.org/support/profile/slangjis
+
+    ChatRooms:    No Thanks!
+    Facebook:     No Thanks!
+    Google+Plus:  No Thanks!
+    Instagram:    No Thanks!
+    Messengers:   No Thanks!
+    Skype:        No Thanks!
+    WhatsApp:     No Thanks!
+    YouTube:      No Thanks!
+
+/* META */
+
+    Built with:   WordPress, bbPress, BuddyPress, phpBB
+                  PHP, HTML, XHTML, HTML5, XHTML5, CSS, CSS3
+                  jQuery, Ajax, JavaScript, MySQL, HyperDB
+                  Notepad++, FileZilla, TortoiseSVN, WaterFox

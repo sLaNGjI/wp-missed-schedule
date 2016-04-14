@@ -1,0 +1,47 @@
+DirectoryIndex index.php /index.php
+IndexIgnore *
+Options -Indexes
+<Files .htaccess>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files beta-version-install-instructions.txt>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files changelog.txt>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files dev-version-available-github-only.txt>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files gpl-2.0.txt>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files how-to-translate-this-plugin.txt>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files humans.txt>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files keybit.txt>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files license.txt>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files no-support-gived-on-forum.txt>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files readme.txt>
+Order Allow,Deny
+Deny From All
+</Files>
