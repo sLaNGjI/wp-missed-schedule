@@ -1,22 +1,22 @@
 <?php 
 /*
 Plugin Name: WP Missed Schedule
-Plugin URI: https://slangji.wordpress.com/wp-missed-schedule/
-Description: WordPress plugin WP Missed Schedule Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist. The configuration is automatic and plugin nologo! Stable Branche 2014 - Build 2016-04-11 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - The miss link is for verify if exist this issue. The cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later.
-Author: sLaNGjI's Team
-Author URI: https://slangji.wordpress.com/plugins/
-Version: 2014.1231.2016.1
+Plugin URI: http://slangjis.org/plugins/wp-missed-schedule/
+Description: WordPress plugin WP Missed Schedule Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist. The configuration is automatic and plugin nologo! Stable Branche 2014 - Build 2016-08-14 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - The miss link is for verify if exist this issue. The cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later.
+Author: sLaNGjIs Team
+Author URI: http://slangjis.org/plugins/
+Version: 2014.1231.2016.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Network: true
  *
  * Requires at least 2.1
- * Tested up to 4.6-alpha
+ * Tested up to 4.7-alpha
  * Approved 2007-08-18
- * Active Downloads 271.000+
- * Active Installs 90.000+
+ * Active Downloads 275.000+ @ 2016-04-12
+ * Active Installs 90.000+ @ 2016-04-12
  * KeyTag 7f71ee70ea1ce6795c69c81df4ea13ac5cf230b4
- * Donate link https://slangji.wordpress.com/donate/
+ * Donate link http://slangjis.org/donate/
  * Indentation GNU style coding standard
  * Indentation URI https://www.gnu.org/prep/standards/standards.html
  * Humans We are the humans behind
@@ -52,7 +52,7 @@ Network: true
  *
  * This plugin patched an important big problem unfixed since WordPress 2.5+ to date.
  *
- * Copyright (C) 2007-2016 [sLaNGjIs](https://slangji.wordpress.com/) (email: <slangjis [at] googlegmail [dot] com>))
+ * Copyright (C) 2007-2016 [sLaNGjIs Team](http://slangjis.org/) (email: <slangjis [at] googlegmail [dot] com>))
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the [GNU General Public License](https://wordpress.org/about/gpl/)
@@ -94,28 +94,28 @@ Network: true
  *
  * This uses (or it parts) code derived from:
  *
- * wp-header-footer-login-log.php by sLaNGjIs <slangjis [at] googlemail [dot] com>
- * Copyright (C) 2007-2009 [sLaNGjIs](https://slangji.wordpress.com/) (email: <slangjis [at] googlemail [dot] com>)
+ * wp-header-footer-login-log.php by sLaNGjIs Team <slangjis [at] googlemail [dot] com>
+ * Copyright (C) 2007-2009 [sLaNGjIs Team](http://slangjis.org/) (email: <slangjis [at] googlemail [dot] com>)
  *
  * according to the terms of the GNU General Public License version 2 (or later).
  *
  * This wp-header-footer-login-log.php uses (or it parts) code derived from:
  *
- * wp-login-log.php by sLaNGjIs <slangjis [at] googlemail [dot] com>
- * Copyright (C) 2009 [sLaNGjIs](https://slangji.wordpress.com/) (email: <slangjis [at] googlemail [dot] com>)
+ * wp-login-log.php by sLaNGjIs Team <slangjis [at] googlemail [dot] com>
+ * Copyright (C) 2009 [sLaNGjIs Team](http://slangjis.org/) (email: <slangjis [at] googlemail [dot] com>)
  *
- * wp-header-log.php by sLaNGjIs <slangjis [at] googlemail [dot] com>
- * Copyright (C) 2008 [sLaNGjIs](https://slangji.wordpress.com/) (email: <slangjis [at] googlemail [dot] com>)
+ * wp-header-log.php by sLaNGjIs Team <slangjis [at] googlemail [dot] com>
+ * Copyright (C) 2008 [sLaNGjIs Team](http://slangjis.org/) (email: <slangjis [at] googlemail [dot] com>)
  *
- * wp-footer-log.php by sLaNGjIs <slangjis [at] googlemail [dot] com>
- * Copyright (C) 2007 [sLaNGjIs](https://slangji.wordpress.com/) (email: <slangjis [at] googlemail [dot] com>)
+ * wp-footer-log.php by sLaNGjIs Team <slangjis [at] googlemail [dot] com>
+ * Copyright (C) 2007 [sLaNGjIs Team](http://slangjis.org/) (email: <slangjis [at] googlemail [dot] com>)
  *
  * according to the terms of the GNU General Public License version 2 (or later).
  *
  * According to the Terms of the GNU General Public License version 2 (or later) part of Copyright
  * belongs to your own author and part belongs to their respective others authors:
  *
- * Copyright (C) 2007-2009 [sLaNGjIs](https://slangji.wordpress.com/) (email: <slangjis [at] googlemail [dot] com>)
+ * Copyright (C) 2007-2009 [sLaNGjIs Team](http://slangjis.org/) (email: <slangjis [at] googlemail [dot] com>)
  *
  * VIOLATIONS
  *
@@ -164,18 +164,18 @@ Network: true
 	 * @description Fix Missed Schedule Failed Scheduled Future Posts Virtual or Real Cron Job
 	 * @noted       This plugin patched an important big problem unfixed since WordPress 2.5+ to date
 	 * @install     The configuration is Automatic and plugin NoLogo!
-	 * @author      sLaNGjI's Team
+	 * @author      sLaNGjIs Team
 	 * @status      STABLE
 	 * @requires    2.1+
 	 * @since       2.5+
 	 * @tested      3.7+
-	 * @compatible  4.6-alpha
+	 * @compatible  4.7-alpha
 	 * @branche     2014
 	 * @revision    2016
-	 * @update      1
+	 * @update      3
 	 * @release     2014.1231
-	 * @version     2014.1231.2016.1
-	 * @build       2016-04-11
+	 * @version     2014.1231.2016.3
+	 * @build       2016-08-14
 	 * @approved    2007-08-18
 	 * @license     GPLv2 or later
 	 * @indentation GNU style coding standard
@@ -389,9 +389,9 @@ SQL;
 
 					if ( $file == plugin_basename( __FILE__ ) )
 						{
-							$links[] = '<a href="https://slangji.wordpress.com/donate/">Donate</a>';
-							$links[] = '<a href="https://slangji.wordpress.com/contact/">Contact</a>';
-							$links[] = '<a href="https://slangji.wordpress.com/support/">Support</a>';
+							$links[] = '<a href="http://slangjis.org/donate/">Donate</a>';
+							$links[] = '<a href="http://slangjis.org/contact/">Contact</a>';
+							$links[] = '<a href="http://slangjis.org/support/">Support</a>';
 						}
 					return $links;
 				}

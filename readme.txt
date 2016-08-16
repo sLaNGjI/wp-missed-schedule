@@ -1,10 +1,10 @@
 === Missed Schedule Fix WP Failed Future Posts ===
 Contributors: sLaNGjI
-Donate link: https://slangji.wordpress.com/donate/
+Donate link: http://slangjis.org/donate/
 Tags: sLaNGjIs, cron job, cron jobs, failed, future, future posts, missed, missed schedule, posts, schedule, scheduled, scheduled posts,
 Requires at least: 2.1
 Tested up to: 4.6
-Stable tag: 2014.1231.2016.1
+Stable tag: 2014.1231.2016.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,11 +12,11 @@ wordpress plugin wp missed schedule fix scheduled posts failed on virtual cron j
 
 == Description ==
 
-WordPress plugin <a href="https://slangji.wordpress.com/wp-missed-schedule/">WP Missed Schedule</a> Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist: 10 items every 10 minutes, 60 items every hour, 1 session every 10 minutes, 6 sessions every hour. - Build 2016-04-11 - Stable Branche 2014.1231.2016.1 - Work with WordPress from 2.1+ to 4.5+ and 4.6-alpha - The configuration is automatic and plugin nologo! - [no support provided on WordPress.org forum or reviews](https://wordpress.org/plugins/wp-missed-schedule/other_notes/)
+WordPress plugin <a href="http://slangjis.org/plugins/wp-missed-schedule/">WP Missed Schedule</a> Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist: 10 items every 10 minutes, 60 items every hour, 1 session every 10 minutes, 6 sessions every hour. - Build 2016-08-14 - Stable Branche 2014.1231.2016.3 - Work with WordPress from 2.1+ to 4.6+ and 4.7-alpha - The configuration is automatic and plugin nologo! - [no support provided on WordPress.org forum or reviews](https://wordpress.org/plugins/wp-missed-schedule/other_notes/)
 
 **This plugin was approved on this repository online since 2007-8-18**
 
-<a href="https://slangji.wordpress.com/wp-missed-schedule-pro/">Upgrade to Pro Version</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-gold/">Gold</a> | <a href="https://slangji.wordpress.com/premium-support/">Support</a> | <a href="https://github.com/sLaNGjI/">GitHub</a> | <a href="http://web.archive.org/web/20140716010606/http://secunia.com/advisories/product/51113/">Secunia</a>
+<a href="https://slangji.wordpress.com/wp-missed-schedule-pro/">Upgrade to Pro Version</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-gold/">Gold</a> | <a href="http://slangjis.org/support/">Support</a> | <a href="https://github.com/sLaNGjI/">GitHub</a> | <a href="http://web.archive.org/web/20140716010606/http://secunia.com/advisories/product/51113/">Secunia</a>
 `
 275.000+ Downloads 90.000+ Active Installs
 
@@ -26,7 +26,7 @@ Missed Schedule is a Bug unfixed since WordPress 2.5+ to date!
 
 > **Premium Support** -- this service is free of charge
 
-> [sLaNGjI's Team not provide support on WordPress.org forum](https://wordpress.org/plugins/wp-missed-schedule/other_notes/)
+> [sLaNGjIs Team not provide support on WordPress.org forum](https://wordpress.org/plugins/wp-missed-schedule/other_notes/)
 
 [youtube https://www.youtube.com/watch?v=evlFVjfgb6o]
 
@@ -63,11 +63,11 @@ Read <a href="https://wordpress.org/plugins/wp-missed-schedule/changelog/">Todo 
 `
 New WP Missed Schedule Features and Future Updates
 
-Active Version 2014.1231.2016.1 (2016-04-11) FREE
+Active Version 2014.1231.2016.3 (2016-08-14) FREE
 
 Limited Missed Scheduled Posts Fixing per days!
-Full Support WordPress 2.1+ to 4.5+ Versions
-Preemptive Support WordPress 4.6-alpha 2016 Release
+Full Support WordPress 2.1+ to 4.6+ Versions
+Preemptive Support WordPress 4.7-alpha 2016 Release
 Virtual Cron Checking Interval Method
 Secure Key Tag Auth Support (a New Idea of sLa)
 Prioritization of Plugin Loading
@@ -148,22 +148,14 @@ No need delete anything from database when deleted
 No need delete anything from wp_option when deactivate
 No need delete anything from wp_option when deleted
 `
-* [My others WordPress Plugins](https://slangji.wordpress.com/plugins/) on [Softpedia Webscripts](http://webscripts.softpedia.com/publisher/sLa-1869786722.html) [GitHub](https://github.com/sLaNGjI)
- * [WP Overview (lite)](https://wordpress.org/plugins/wp-overview-lite/) (modules updated)
- * [WP Missed Schedule](https://wordpress.org/plugins/wp-missed-schedule/) 270.000+ Downloads 90.000+ Installs
- * [Disable Admin Bar and Toolbar](https://wordpress.org/plugins/toolbar-removal-completely-disable/) (new)
- * [Hide Admin Bar and Toolbar](https://wordpress.org/plugins/global-admin-bar-hide-or-remove/) (new)
- * [WP Admin Bar Removal](https://wordpress.org/plugins/wp-admin-bar-removal/) Linked at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/Admin-Bar-Removal-completely-disable-73547.html)
- * [WP Admin Bar Removal Node](https://wordpress.org/plugins/wp-admin-bar-node-removal/) (refreshed)
- * [WP Toolbar Removal](https://wordpress.org/plugins/wp-toolbar-removal/) Linked at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/Toolbar-Removal-completely-disable-73548.html)
- * [WP Toolbar Removal Node](https://wordpress.org/plugins/wp-toolbar-node-removal/) (refreshed)
- * [One Click Logout](https://wordpress.org/plugins/one-click-logout/) (new)
- * [One Click Logout Barless](https://wordpress.org/plugins/one-click-logout-barless/) (new)
- * [IE Enhancer and Modernizer](https://wordpress.org/plugins/wp-ie-enhancer-and-modernizer/) Linked at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/IE-Enhancer-and-Modernizer-73546.html)
- * [Memory Load Consumption db size Usage Indicator](https://wordpress.org/plugins/wp-memory-db-indicator/) (new)
- * [Noindex (login) WordPress Deindexing](https://wordpress.org/plugins/wp-login-deindexing/) (refreshed)
- * [Noindex (total) WordPress Deindexing](https://wordpress.org/plugins/wp-total-deindexing/) (refreshed)
- * [Header and Footer Log](https://wordpress.org/plugins/wp-header-footer-log/) Only For Developers
+* [My others WordPress Plugins](http://slangjis.org/plugins/) on [Softpedia Webscripts](http://webscripts.softpedia.com/publisher/sLa-1869786722.html) [GitHub](https://github.com/sLaNGjI)
+ * [WP Overview (lite)](http://slangjis.org/plugins/wp-overview-lite/) (modules updated)
+ * [WP Missed Schedule](http://slangjis.org/plugins/wp-missed-schedule/) 275.000+ Downloads 90.000+ Installs
+ * [Hide Admin Bar and Toolbar](http://slangjis.org/plugins/global-admin-bar-hide-or-remove/) (new)
+ * [WP Admin Bar Removal](http://slangjis.org/plugins/wp-admin-bar-removal/) Linked at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/Admin-Bar-Removal-completely-disable-73547.html)
+ * [WP Toolbar Removal](http://slangjis.org/plugins/wp-toolbar-removal/) Linked at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/Toolbar-Removal-completely-disable-73548.html)
+ * [IE Enhancer and Modernizer](http://slangjis.org/plugins/wp-ie-enhancer-and-modernizer/) Linked at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/IE-Enhancer-and-Modernizer-73546.html)
+ * [Memory Load Consumption db size Usage Indicator](http://slangjis.org/plugins/wp-memory-db-indicator/) (new)
 == Installation ==
 wp missed schedule special gold edition is for advanced users and was installed only on manual mode
 = How to install Special Gold Edition ? =
@@ -269,10 +261,10 @@ using wp-missed-schedule.pot not included on plugin package,
 and available on [assets](https://plugins.svn.wordpress.org/wp-missed-schedule/assets/languages/) to reduce the size of
 ZIP file being served, and no waste user space/bandwidth.
 
-After, send it to sLaNGjI's Team for approval, and publishing.
+After, send it to sLaNGjIs Team for approval, and publishing.
 Translator Credits was applied, indicated, with the name
 of your editor, on readme.txt of this plugin, and also
-on related [translations page](https://slangji.wordpress.com/translations/)
+on related [translations page](http://slangjis.org/translations/)
 = Free plugin version support translations? =
 No, free plugin support basic translations: only Pro Version support full translations.
 = WPML is supported? =
@@ -327,11 +319,11 @@ I hope the fix working fine for you. WordPress should really look into this issu
 11. Language Screenshot
 12. Language Screenshot
 == Changelog ==
-available [new beta version](https://slangji.wordpress.com/wp-missed-schedule-beta/) with code totally rewrited that applies innovative method for interval of checking with lowest load server. This plugin patched an important unfixed issue since WordPress 2.5+ to date because Missed Schedule is Bug! All previous versions, before latest stable, are deprecated, no longer supported, and your distribution files silenty updated: please re-download or re-install it, based on build date, rather on version! - Build 2016-04-11 - Stable Branche 2014.1231.2016.1 - [no support provided on WordPress.org forum or reviews](https://wordpress.org/plugins/wp-missed-schedule/other_notes/)
+available [new beta version](https://slangji.wordpress.com/wp-missed-schedule-beta/) with code totally rewrited that applies innovative method for interval of checking with lowest load server. This plugin patched an important unfixed issue since WordPress 2.5+ to date because Missed Schedule is Bug! All previous versions, before latest stable, are deprecated, no longer supported, and your distribution files silenty updated: please re-download or re-install it, based on build date, rather on version! - Build 2016-08-14 - Stable Branche 2014.1231.2016.3 - [no support provided on WordPress.org forum or reviews](https://wordpress.org/plugins/wp-missed-schedule/other_notes/)
 
 **This plugin was approved on this repository online since 2007-8-18**
 
-<a href="https://slangji.wordpress.com/wp-missed-schedule-pro/">Upgrade to Pro Version</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-gold/">Gold</a> | <a href="https://slangji.wordpress.com/premium-support/">Support</a> | <a href="https://github.com/sLaNGjI/">GitHub</a> | <a href="http://web.archive.org/web/20140716010606/http://secunia.com/advisories/product/51113/">Secunia</a>
+<a href="https://slangji.wordpress.com/wp-missed-schedule-pro/">Upgrade to Pro Version</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-gold/">Gold</a> | <a href="http://slangjis.org/support/">Support</a> | <a href="https://github.com/sLaNGjI/">GitHub</a> | <a href="http://web.archive.org/web/20140716010606/http://secunia.com/advisories/product/51113/">Secunia</a>
 `
 275.000+ Downloads 90.000+ Active Installs
 
@@ -359,13 +351,49 @@ last version number (2014.1231.1.*2*) 2 for example.
 * 250.000+ Downloads 70.000+ Active Installs Day 2015-12-31
 * 200.000+ Downloads 60.000+ Active Installs Day 2015-08-25
 
+= 2014.1231.2016.3 =
+* Maintenance [UPDATE] Compatibility and Reliability Update!
+ * Please update as soon as possible!
+ * Branche 2014 Build 2016-08-14
+ * Release 2014 Version 1231 Revision 2016 Update 3
+ * Work with all WordPress Versions from 2.1+ to 4.6+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.6+
+ * Preemptive Support for WordPress 4.7-alpha
+ * MAINTENANCE Release According WordPress 4.5.3
+ * MAINTENANCE Release According WordPress 4.5.2
+ * MAINTENANCE Release According WordPress 4.4.4
+ * MAINTENANCE Release According WordPress 4.3.5
+ * MAINTENANCE Release According WordPress 4.2.9
+ * MAINTENANCE Release According WordPress 4.1.12
+ * MAINTENANCE Release According WordPress 4.0.12
+ * MAINTENANCE Release According WordPress 3.9.13
+ * MAINTENANCE Release According WordPress 3.8.15
+ * MAINTENANCE Release According WordPress 3.7.15
+ * MAINTENANCE Release According WordPress 3.6.1
+= 2014.1231.2016.2 =
+* Freedom [UPDATE] Undeveloped on wordpress.org since 2016-04-13
+ * Please update as soon as possible!
+ * Branche 2014 Build 2016-04-13
+ * Release 2014 Version 1231 Revision 2016 Update 2
+ * Work with all WordPress Versions from 2.1+ to 4.5+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.5+
+ * Preemptive Support for WordPress 4.6-beta
+ * MAINTENANCE Release According WordPress 4.5.1
+ * MAINTENANCE Release According WordPress 4.4.3
+ * MAINTENANCE Release According WordPress 4.3.4
+ * MAINTENANCE Release According WordPress 4.2.8
+ * MAINTENANCE Release According WordPress 4.1.11
+ * MAINTENANCE Release According WordPress 4.0.11
+ * MAINTENANCE Release According WordPress 3.9.13
+ * MAINTENANCE Release According WordPress 3.8.14
+ * MAINTENANCE Release According WordPress 3.7.14
 = 2014.1231.2016.1 =
 * Multisite Improvements [UPDATED] Speed and Maintenance!
  * Please update as soon as possible!
  * Branche 2014 Build 2016-04-11
  * Release 2014 Version 1231 Revision 2016 Update 1
- * Full Support and Compatibility for WordPress 2.1+ - 4.5+
  * Work with all WordPress Versions from 2.1+ to 4.5+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.5+
  * Preemptive Support for WordPress 4.6-alpha
  * FIXED Somes Multisite Issues
  * UPDATED Somes Minor Bugs
@@ -518,9 +546,11 @@ Beta Version 2015.1231.3.0 Release 2015 Improved FREE:
 * Merge Branche 2014 to 2015 (2014.1231.2016.4)
 * Preemptive Support PHP 5.5+ and 5.6+ (2014.1231.2016.4)
 = Stable Release =
-Stable Version 2014.1231.2016.1 Release 2014 FREE:
+Stable Version 2014.1231.2016.3 Release 2014 FREE:
 
 * Limited Missed Scheduled Posts Fixing per days!
+* Important Maintenance Support Release (2014.1231.2016.3)
+* Undeveloped on wordpress.org to GitHub (2014.1231.2016.2)
 * Preemptive Support WordPress 4.6-alpha (2014.1231.2016.1)
 * Full Support for WordPress 4.5+ Release (2014.1231.2016.1)
 * Network Multisite Improvements (2014.1231.2016.1)
@@ -725,14 +755,18 @@ Stable Version 2013.1231.2015 Release 2013 Reloaded FREE:
  * Old Release History, before 2013, is available on [changelog.txt](http://plugins.svn.wordpress.org/wp-missed-schedule/assets/changelog.txt)
  *
 == Upgrade Notice ==
+= 2014.1231.2016.3 =
+Maintenance [UPDATE] WP 2.1+ to 4.6+ - 4.7-alpha - Important Compatibility Reliability Update! Available and Upgradable directly from WordPress Dashboard on GitHub only - Maintenance Release According WordPress 4.5.3 / 4.5.2 / 4.4.4 / 4.3.5 / 4.2.9 / 4.1.12 / 4.0.12 / 3.9.13 / 3.8.15 / 3.7.15 - Secunia Certified Zero Vulnerabilities Advisories!
+= 2014.1231.2016.2 =
+Freedom [UPDATE] WP 2.1+ to 4.5+ - 4.6-beta (Build 2016-04-13) Undeveloped on wordpress.org since 2016-04-13 Available and Upgradable directly from WordPress Dashboard on GitHub only - Maintenance Release According WordPress 4.5.1 / 4.4.3 / 4.3.4 / 4.2.8 / 4.1.11 / 4.0.11 / 3.9.12 / 3.8.14 / 3.7.14 - Secunia Certified Zero Vulnerabilities Advisories!
 = 2014.1231.2016.1 =
-Multisite Improvements [UPDATE] WP 2.1+ to 4.5+ - 4.6-alpha (Build 2016-04-11) Minor Bugs Issues - Speed Reliability - Security and Maintenance Release According WordPress 4.5+ / 4.4.2 / 4.3.3 / 4.2.7 / 4.1.10 / 4.0.10 / 3.9.11 / 3.8.13 / 3.7.13 - Secunia Certified Zero Vulnerabilities Advisories!
+Multisite Improvements [UPDATE] WP 2.1+ to 4.5+ - 4.6-alpha (Build 2016-04-11) Minor Bugs Issues - Speed Reliability - Security and Maintenance Release According WordPress 4.5.0 / 4.4.2 / 4.3.3 / 4.2.7 / 4.1.10 / 4.0.10 / 3.9.11 / 3.8.13 / 3.7.13 - Secunia Certified Zero Vulnerabilities Advisories!
 == Disclaimer ==
-[sLaNGjI's Team not provide support on wordpress.org forum](https://wordpress.org/plugins/wp-missed-schedule/other_notes/) because we are not interested in reviews o stars on our plugins and themes!
+[sLaNGjIs Team not provide support on wordpress.org forum](https://wordpress.org/plugins/wp-missed-schedule/other_notes/) because we are not interested in reviews o stars on our plugins and themes!
 
 Dear user of plugins or themes: Missed Schedule is a WordPress Bug!
 
-sLaNGjI's Team has started official adventure on WordPress.org forum since 2007!
+sLaNGjIs Team has started official adventure on WordPress.org forum since 2007!
 
 Everything was very different from today: the plugins and themes developed by us were much less, and also the users who used it.
 
@@ -751,8 +785,8 @@ Our team has tried to respond to all for more long years, and maintained the sup
 Due to this big limitation of platform, and the result of failing to provide a service that gives us satisfaction, as of today August 15 2014, we abandon the active support of this type of structure, started since July 7 2007, to try to give one type of personalized service, targeted to the requests of real user utilization and totally Free of Charge:
 
 1. Bugs [sLaNGjI's GitHub](https://github.com/sLaNGjI/)
-1. Suggestions [sLaNGjI's Contact](https://slangji.wordpress.com/contact/)
-1. Support [sLaNGjI's Premium](https://slangji.wordpress.com/premium-support/)
+1. Suggestions [sLaNGjI's Contact](http://slangjis.org/contact/)
+1. Support [sLaNGjI's Premium](http://slangjis.org/support/)
 
 * Please note that:
  * We are not interested in reviews.
@@ -762,11 +796,11 @@ Due to this big limitation of platform, and the result of failing to provide a s
 
 Possibility that some of us then reply or write on it, will be very low!
 == Philosophy ==
-The sLaNGjI's Team Philosophy.
+The sLaNGjIs Team Philosophy.
 
-**sLaNGjI's Team plugins and themes are NoLogo**
+**sLaNGjIs Team plugins and themes are NoLogo**
 
-The philosophy of sLaNGjI's Team plugins and themes is:
+The philosophy of sLaNGjIs Team plugins and themes is:
 
 *LICENSING*
 

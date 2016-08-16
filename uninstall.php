@@ -12,20 +12,21 @@
 	 * @indentation www.gnu.org/prep/standards/standards.html
 	 *
 	 * @github      github.com/sLaNGjI/wp-missed-schedule
-	 * @website     slangji.wordpress.com/wp-missed-schedule
-	 * @wordpress   wordpress.org/plugins/wp-missed-schedule
+	 * @project     slangjis.org/plugins/wp-missed-schedule
 	 *
-	 * @author      sLaNGjIs @ slangji.wordpress.com
-	 * @contact     slangji.wordpress.com/contact
-	 * @donate      slangji.wordpress.com/donate
-	 * @support     slangji.wordpress.com/support
-	 * @translation slangji.wordpress.com/translations
+	 * @author      sLaNGjIs Team
+	 * @website     slangjis.org
+	 * @contact     slangjis.org/contact
+	 * @donate      slangjis.org/donate
+	 * @support     slangjis.org/support
+	 * @translation slangjis.org/translations
+	 * @blog        slangji.wordpress.com
 	 *
-	 * @build       2016-04-11
+	 * @build       2016-08-14
 	 * @requires    WordPress 2.7+
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.7+
-	 * @compatible  WordPress 4.6-alpha
+	 * @compatible  WordPress 4.7-alpha
 	 */
 
 	defined ( 'WP_UNINSTALL_PLUGIN' ) OR exit;
