@@ -26,7 +26,7 @@ Missed Schedule is a Bug unfixed since WordPress 2.5+ to date!
 
 > **Premium Support** -- this service is free of charge
 
-> [sLaNGjIs Team not provide support on WordPress.org forum](https://wordpress.org/plugins/wp-missed-schedule/other_notes/)
+> [sLaNGjIs Team not provide support on WordPress.org forum](https://slangji.wordpress.com/support/)
 
 [youtube https://www.youtube.com/watch?v=evlFVjfgb6o]
 
@@ -264,7 +264,7 @@ ZIP file being served, and no waste user space/bandwidth.
 After, send it to sLaNGjIs Team for approval, and publishing.
 Translator Credits was applied, indicated, with the name
 of your editor, on readme.txt of this plugin, and also
-on related [translations page](http://slangjis.org/translations/)
+on related [translations page](http://slangji.wordpress.com/translations/)
 = Free plugin version support translations? =
 No, free plugin support basic translations: only Pro Version support full translations.
 = WPML is supported? =
@@ -319,7 +319,7 @@ I hope the fix working fine for you. WordPress should really look into this issu
 11. Language Screenshot
 12. Language Screenshot
 == Changelog ==
-available [new beta version](https://slangji.wordpress.com/wp-missed-schedule-beta/) with code totally rewrited that applies innovative method for interval of checking with lowest load server. This plugin patched an important unfixed issue since WordPress 2.5+ to date because Missed Schedule is Bug! All previous versions, before latest stable, are deprecated, no longer supported, and your distribution files silenty updated: please re-download or re-install it, based on build date, rather on version! - Build 2016-08-14 - Stable Branche 2014.1231.2016.3 - [no support provided on WordPress.org forum or reviews](https://wordpress.org/plugins/wp-missed-schedule/other_notes/)
+available [new beta version](https://slangji.wordpress.com/wp-missed-schedule-beta/) with code totally rewrited that applies innovative method for interval of checking with lowest load server. This plugin patched an important unfixed issue since WordPress 2.5+ to date because Missed Schedule is Bug! All previous versions, before latest stable, are deprecated, no longer supported, and your distribution files silenty updated: please re-download or re-install it, based on build date, rather on version! - Build 2016-08-14 - Stable Branche 2014.1231.2016.3 - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/)
 
 **This plugin was approved on this repository online since 2007-8-18**
 
@@ -762,7 +762,7 @@ Freedom [UPDATE] WP 2.1+ to 4.5+ - 4.6-beta (Build 2016-04-13) Undeveloped on wo
 = 2014.1231.2016.1 =
 Multisite Improvements [UPDATE] WP 2.1+ to 4.5+ - 4.6-alpha (Build 2016-04-11) Minor Bugs Issues - Speed Reliability - Security and Maintenance Release According WordPress 4.5.0 / 4.4.2 / 4.3.3 / 4.2.7 / 4.1.10 / 4.0.10 / 3.9.11 / 3.8.13 / 3.7.13 - Secunia Certified Zero Vulnerabilities Advisories!
 == Disclaimer ==
-[sLaNGjIs Team not provide support on wordpress.org forum](https://wordpress.org/plugins/wp-missed-schedule/other_notes/) because we are not interested in reviews o stars on our plugins and themes!
+[sLaNGjIs Team not provide support on wordpress.org forum](https://slangji.wordpress.com/support/) because we are not interested in reviews o stars on our plugins and themes!
 
 Dear user of plugins or themes: Missed Schedule is a WordPress Bug!
 
@@ -786,7 +786,7 @@ Due to this big limitation of platform, and the result of failing to provide a s
 
 1. Bugs [sLaNGjI's GitHub](https://github.com/sLaNGjI/)
 1. Suggestions [sLaNGjI's Contact](http://slangjis.org/contact/)
-1. Support [sLaNGjI's Premium](http://slangjis.org/support/)
+1. Support [sLaNGjI's Premium](https://slangji.wordpress.com/support/premium/)
 
 * Please note that:
  * We are not interested in reviews.
