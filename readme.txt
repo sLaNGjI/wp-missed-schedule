@@ -12,7 +12,7 @@ wordpress plugin wp missed schedule fix scheduled posts failed on virtual cron j
 
 == Description ==
 
-WordPress plugin <a href="http://slangjis.org/plugins/wp-missed-schedule/">WP Missed Schedule</a> Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist: 10 items every 10 minutes, 60 items every hour, 1 session every 10 minutes, 6 sessions every hour. - Build 2016-08-14 - Stable Branche 2014.1231.2016.3 - Work with WordPress from 2.1+ to 4.6+ and 4.7-alpha - The configuration is automatic and plugin nologo! - [no support provided on WordPress.org forum or reviews](https://wordpress.org/plugins/wp-missed-schedule/other_notes/)
+WordPress plugin <a href="http://slangjis.org/plugins/wp-missed-schedule/">WP Missed Schedule</a> Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist: 10 items every 10 minutes, 60 items every hour, 1 session every 10 minutes, 6 sessions every hour. - Build 2016-08-14 - Stable Branche 2014.1231.2016.3 - Work with WordPress from 2.1+ to 4.6+ and 4.7-alpha - The configuration is automatic and plugin nologo! - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/)
 
 **This plugin was approved on this repository online since 2007-8-18**
 
