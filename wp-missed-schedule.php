@@ -2,10 +2,10 @@
 /*
 Plugin Name: WP Missed Schedule
 Plugin URI: http://slangjis.org/plugins/wp-missed-schedule/
-Description: WordPress plugin WP Missed Schedule Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist. The configuration is automatic and plugin nologo! Stable Branche 2014 - Build 2016-08-14 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - The miss link is for verify if exist this issue. The cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later.
+Description: WordPress plugin WP Missed Schedule Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist. The configuration is automatic and plugin nologo! Stable Branche 2014 - Build 2016-09-16 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - The miss link is for verify if exist this issue. The cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later.
 Author: sLaNGjIs Team
 Author URI: http://slangjis.org/plugins/
-Version: 2014.1231.2016.3
+Version: 2014.1231.2016.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Network: true
@@ -174,8 +174,8 @@ Network: true
 	 * @revision    2016
 	 * @update      3
 	 * @release     2014.1231
-	 * @version     2014.1231.2016.3
-	 * @build       2016-08-14
+	 * @version     2014.1231.2016.4
+	 * @build       2016-09-16
 	 * @approved    2007-08-18
 	 * @license     GPLv2 or later
 	 * @indentation GNU style coding standard
