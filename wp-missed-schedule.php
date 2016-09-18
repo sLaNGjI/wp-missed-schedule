@@ -172,7 +172,7 @@ Network: true
 	 * @compatible  4.7-alpha
 	 * @branche     2014
 	 * @revision    2016
-	 * @update      3
+	 * @update      4
 	 * @release     2014.1231
 	 * @version     2014.1231.2016.4
 	 * @build       2016-09-16
