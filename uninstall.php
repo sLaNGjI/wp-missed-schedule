@@ -22,11 +22,11 @@
 	 * @translation slangjis.org/translations
 	 * @blog        slangji.wordpress.com
 	 *
-	 * @build       2016-09-16
+	 * @build       2016-10-28
 	 * @requires    WordPress 2.7+
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.7+
-	 * @compatible  WordPress 4.7-alpha
+	 * @compatible  WordPress 4.7-beta
 	 */
 
 	defined ( 'WP_UNINSTALL_PLUGIN' ) OR exit;

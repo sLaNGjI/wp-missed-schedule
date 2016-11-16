@@ -2,16 +2,16 @@
 /*
 Plugin Name: WP Missed Schedule
 Plugin URI: http://slangjis.org/plugins/wp-missed-schedule/
-Description: WordPress plugin WP Missed Schedule Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist. The configuration is automatic and plugin nologo! Stable Branche 2014 - Build 2016-09-16 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - The miss link is for verify if exist this issue. The cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later.
+Description: WordPress plugin WP Missed Schedule Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist. The configuration is automatic and plugin nologo! This plugin is no longer available on WordPress.org plugins repositoty for explicit request of the author. Stable Branche 2014 - Build 2016-10-28 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - The miss link is for verify if exist this issue. The cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later.
 Author: sLaNGjIs Team
 Author URI: http://slangjis.org/plugins/
-Version: 2014.1231.2016.4
+Version: 2014.1231.2016.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Network: true
  *
  * Requires at least 2.1
- * Tested up to 4.7-alpha
+ * Tested up to 4.7-beta
  * Approved 2007-08-18
  * Active Downloads 275.000+ @ 2016-04-12
  * Active Installs 90.000+ @ 2016-04-12
@@ -169,13 +169,13 @@ Network: true
 	 * @requires    2.1+
 	 * @since       2.5+
 	 * @tested      3.7+
-	 * @compatible  4.7-alpha
+	 * @compatible  4.7-beta
 	 * @branche     2014
 	 * @revision    2016
-	 * @update      4
+	 * @update      5
 	 * @release     2014.1231
-	 * @version     2014.1231.2016.4
-	 * @build       2016-09-16
+	 * @version     2014.1231.2016.5
+	 * @build       2016-10-28
 	 * @approved    2007-08-18
 	 * @license     GPLv2 or later
 	 * @indentation GNU style coding standard
