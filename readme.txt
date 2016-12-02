@@ -3,7 +3,7 @@ Contributors: sLaNGjI
 Donate link: http://slangjis.org/donate/
 Tags: sLaNGjIs, cron job, cron jobs, failed, future, future posts, missed, missed schedule, posts, schedule, scheduled, scheduled posts,
 Requires at least: 2.1
-Tested up to: 4.6
+Tested up to: 4.8
 Stable tag: 2014.1231.2016.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
