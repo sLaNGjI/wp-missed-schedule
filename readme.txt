@@ -12,7 +12,7 @@ wordpress plugin wp missed schedule fix scheduled posts failed on virtual cron j
 
 == Description ==
 
-WordPress plugin <a href="http://slangjis.org/plugins/wp-missed-schedule/">WP Missed Schedule</a> Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist: 10 items every 10 minutes, 60 items every hour, 1 session every 10 minutes, 6 sessions every hour. - Build 2016-11-29 - Stable Branche 2014.1231.2016.6 - Work with WordPress from 2.1+ to 4.6+ and 4.7-beta - The configuration is automatic and plugin nologo! This plugin is no longer available on WordPress.org plugins repositoty for explicit request of the author - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/)
+WordPress plugin <a href="http://slangjis.org/plugins/wp-missed-schedule/">WP Missed Schedule</a> Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist: 10 items every 10 minutes, 60 items every hour, 1 session every 10 minutes, 6 sessions every hour. - Build 2016-11-29 - Stable Branche 2014.1231.2016.6 - Work with WordPress from 2.1+ to 4.7+ and 4.8-alpha - The configuration is automatic and plugin nologo! This plugin is no longer available on WordPress.org plugins repositoty for explicit request of the author - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/)
 
 **This plugin was approved on this repository online since 2007-8-18**
 
@@ -66,9 +66,9 @@ New WP Missed Schedule Features and Future Updates
 Active Version 2014.1231.2016.6 (2016-11-29) FREE
 
 Limited Missed Scheduled Posts Fixing per days!
-Preemptive Support WordPress 4.7-beta 2016 Release
-Full Support WordPress 2.1+ to 4.6+ Versions
-Preemptive Support WordPress 4.7-alpha 2016 Release
+Preemptive Support WordPress 4.8-alpha 2017 Release
+Full Support WordPress 2.1+ to 4.7+ Versions
+Preemptive Support WordPress 4.8-alpha 2017 Release
 Virtual Cron Checking Interval Method
 Secure Key Tag Auth Support (a New Idea of sLa)
 Prioritization of Plugin Loading
@@ -106,9 +106,9 @@ Switching from Local GMT and UTC Time (pro)
 * The state of art for fix big core bug since WordPress 2.5+
 * Secunia Certified Zero Advisories and Vulnerabilities
 * Compatible with: WordPress, bbPress, Buddypress
-* Preemptive Support for WordPress 4.7-beta
-* Work with all WordPress Versions from 2.1+ to 4.6+
-* Preemptive Support for WordPress 4.7-alpha
+* Preemptive Support for WordPress 4.8-alpha
+* Work with all WordPress Versions from 2.1+ to 4.7+
+* Preemptive Support for WordPress 4.8-alpha
 * No interference with others Scheduled Cron Jobs at scale
 * Ready to Single and Network Multisite Environment
 * Full Strict Security Rules Applied
@@ -614,12 +614,14 @@ Beta Version 2015.1231.3.0 Release 2015 Improved FREE:
 * New Cron Checking Interval Method (2014.0316.0230)
 * Prioritization of Plugin Loading (2014.0316.1111)
 = Branche 2014 =
-* Preemptive Support PHP 5.5+ and 5.6+ (2014.1231.2016.8)
-* Merge Branche 2014 to 2015 (2014.1231.2016.7)
+* Preemptive Support PHP 5.5+ and 5.6+ (2014.1231.2016.9)
+* Merge Branche 2014 to 2015 (2014.1231.2016.8)
 = Stable Release =
-Stable Version 2014.1231.2016.4 Release 2014 FREE:
+Stable Version 2014.1231.2016.6 Release 2014 FREE:
 
 * Limited Missed Scheduled Posts Fixing per days!
+* Preemptive Support WordPress 4.8-alpha (2014.1231.2016.6)
+* Preemptive Support WordPress 4.7-beta (2014.1231.2016.5)
 * Preemptive Support WordPress 4.7-alpha (2014.1231.2016.4)
 * Important Maintenance Support Release (2014.1231.2016.3)
 * Undeveloped on wordpress.org to GitHub (2014.1231.2016.2)
