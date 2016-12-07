@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Missed Schedule
 Plugin URI: http://slangjis.org/plugins/wp-missed-schedule/
-Description: WordPress plugin WP Missed Schedule Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist. Work with WordPress from 2.1+ to 4.7+ and 4.8-alpha - The configuration is automatic and plugin nologo! This plugin is no longer available on WordPress.org plugins repository for explicit request of the author. Stable Branche 2014 - Build 2016-11-29 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later.
+Description: WordPress plugin WP Missed Schedule Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist. Work with WordPress from 2.1+ to 4.7+ and 4.8-alpha - The configuration is automatic and plugin nologo! This plugin is no longer available on WordPress.org plugins repository for explicit request of the author. Stable Branche 2014 - Build 2016-12-06 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later.
 Author: sLaNGjIs Team
 Author URI: http://slangjis.org/plugins/
 Version: 2014.1231.2016.6
@@ -175,7 +175,7 @@ Network: true
 	 * @update      6
 	 * @release     2014.1231
 	 * @version     2014.1231.2016.6
-	 * @build       2016-11-29
+	 * @build       2016-12-06
 	 * @approved    2007-08-18
 	 * @license     GPLv2 or later
 	 * @indentation GNU style coding standard
@@ -238,6 +238,12 @@ Network: true
 					delete_transient( 'timeout_wp_scheduled_missed' );
 				}
 
+			if ( $wp_version >= 3.0 )
+				{
+					delete_site_transient( 'wp_scheduled_missed' );
+					delete_site_transient( 'timeout_wp_scheduled_missed' );
+				}
+
 			wp_clear_scheduled_hook( 'missed_schedule_cron' );
 			wp_clear_scheduled_hook( 'wp_missed_schedule' );
 			wp_clear_scheduled_hook( 'wp_scheduled_missed' );
@@ -279,14 +285,44 @@ Network: true
 
 			if ( $wp_version >= 2.8 )
 				{
-					$wp_scheduled_missed = get_option( WPMS_OPTION, false );
+					if ( $wp_version < 3.0 )
+						{
+							$wp_scheduled_missed = get_option( WPMS_OPTION, false );
 
-					get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+							get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
 
-					if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 600 ) ) ) )
-						return;
+							if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 600 ) ) ) )
+								return;
 
-					set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+							set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+						}
+
+					if ( $wp_version >= 3.0 )
+						{
+							if ( ! is_multisite() )
+								{
+									$wp_scheduled_missed = get_option( WPMS_OPTION, false );
+
+									get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+
+									if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 600 ) ) ) )
+										return;
+
+									set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+								}
+
+							if ( is_multisite() )
+								{
+									$wp_scheduled_missed = get_option( WPMS_OPTION, false );
+
+									get_site_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+
+									if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 600 ) ) ) )
+										return;
+
+									set_site_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+								}
+						}
 				}
 
 			update_option( WPMS_OPTION, time() );
@@ -532,6 +568,12 @@ SQL;
 						{
 							delete_transient( 'wp_scheduled_missed' );
 							delete_transient( 'timeout_wp_scheduled_missed' );
+						}
+
+					if ( $wp_version >= 3.0 )
+						{
+							delete_site_transient( 'wp_scheduled_missed' );
+							delete_site_transient( 'timeout_wp_scheduled_missed' );
 						}
 
 						wp_clear_scheduled_hook( 'missed_schedule_cron' );
