@@ -2,10 +2,10 @@
 /*
 Plugin Name: WP Missed Schedule
 Plugin URI: http://slangjis.org/plugins/wp-missed-schedule/
-Description: WordPress plugin WP Missed Schedule Fix scheduled future posts failed only with on virtual or real cron job bug and re-publishing them correctly fixed 10 items each session every 10 minutes without waste resources the others will be solved on next sessions until no longer exist. Work with WordPress from 2.1+ to 4.7+ and 4.8-alpha - The configuration is automatic and plugin nologo! This plugin is no longer available on WordPress.org plugins repository for explicit request of the author. Stable Branche 2014 - Build 2016-12-06 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later.
+Description: WordPress plugin WP Missed Schedule Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.7+ and 4.8-alpha single or multisite install - The configuration is automatic and plugin nologo! - Stable Branche 2014 - Build 2016-12-08 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later.
 Author: sLaNGjIs Team
 Author URI: http://slangjis.org/plugins/
-Version: 2014.1231.2016.6
+Version: 2014.1231.2016.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Network: true
@@ -172,10 +172,10 @@ Network: true
 	 * @compatible  4.8-alpha
 	 * @branche     2014
 	 * @revision    2016
-	 * @update      6
+	 * @update      7
 	 * @release     2014.1231
-	 * @version     2014.1231.2016.6
-	 * @build       2016-12-06
+	 * @version     2014.1231.2016.7
+	 * @build       2016-12-08
 	 * @approved    2007-08-18
 	 * @license     GPLv2 or later
 	 * @indentation GNU style coding standard
@@ -279,7 +279,7 @@ Network: true
 				{
 					$wp_scheduled_missed = get_option( WPMS_OPTION, false );
 
-					if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 600 ) ) ) )
+					if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 900 ) ) ) )
 						return;
 				}
 
@@ -289,12 +289,12 @@ Network: true
 						{
 							$wp_scheduled_missed = get_option( WPMS_OPTION, false );
 
-							get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+							get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
 
-							if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 600 ) ) ) )
+							if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 900 ) ) ) )
 								return;
 
-							set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+							set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
 						}
 
 					if ( $wp_version >= 3.0 )
@@ -303,24 +303,24 @@ Network: true
 								{
 									$wp_scheduled_missed = get_option( WPMS_OPTION, false );
 
-									get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+									get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
 
-									if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 600 ) ) ) )
+									if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 900 ) ) ) )
 										return;
 
-									set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+									set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
 								}
 
 							if ( is_multisite() )
 								{
 									$wp_scheduled_missed = get_option( WPMS_OPTION, false );
 
-									get_site_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+									get_site_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
 
-									if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 600 ) ) ) )
+									if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 900 ) ) ) )
 										return;
 
-									set_site_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 600 );
+									set_site_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
 								}
 						}
 				}
