@@ -184,6 +184,18 @@ Network: true
 	 * @keytag      7f71ee70ea1ce6795c69c81df4ea13ac5cf230b4
 	 */
 
+    /**
+     * バッチ処理で更新される間隔(Sec)
+     */
+	define( 'UPDATE_INTERVAL', 300);
+
+    /**
+     * バッチ処理で更新される本数
+     */
+    define( 'UPDATE_POSTS', 20);
+
+
+
 	defined( 'ABSPATH' ) OR exit;
 
 	defined( 'WPINC' ) OR exit;
@@ -279,7 +291,7 @@ Network: true
 				{
 					$wp_scheduled_missed = get_option( WPMS_OPTION, false );
 
-					if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 900 ) ) ) )
+					if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( UPDATE_INTERVAL ) ) ) )
 						return;
 				}
 
@@ -289,12 +301,12 @@ Network: true
 						{
 							$wp_scheduled_missed = get_option( WPMS_OPTION, false );
 
-							get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
+							get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, UPDATE_INTERVAL );
 
-							if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 900 ) ) ) )
+							if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( UPDATE_INTERVAL ) ) ) )
 								return;
 
-							set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
+							set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, UPDATE_INTERVAL );
 						}
 
 					if ( $wp_version >= 3.0 )
@@ -303,36 +315,35 @@ Network: true
 								{
 									$wp_scheduled_missed = get_option( WPMS_OPTION, false );
 
-									get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
+									get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, UPDATE_INTERVAL );
 
-									if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 900 ) ) ) )
+									if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( UPDATE_INTERVAL ) ) ) )
 										return;
 
-									set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
+									set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, UPDATE_INTERVAL );
 								}
 
 							if ( is_multisite() )
 								{
 									$wp_scheduled_missed = get_option( WPMS_OPTION, false );
 
-									get_site_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
+									get_site_transient( 'wp_scheduled_missed', $wp_scheduled_missed, UPDATE_INTERVAL );
 
-									if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 900 ) ) ) )
+									if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( UPDATE_INTERVAL ) ) ) )
 										return;
 
-									set_site_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
+									set_site_transient( 'wp_scheduled_missed', $wp_scheduled_missed, UPDATE_INTERVAL );
 								}
 						}
 				}
 
 			update_option( WPMS_OPTION, time() );
-
+            $limit = UPDATE_POSTS;
 			if ( $wp_version >= 2.3 )
 				{
 					global $wpdb;
-
 					$qry = <<<SQL
- SELECT ID FROM {$wpdb->posts} WHERE ( ( post_date > 0 && post_date <= %s ) ) AND post_status = 'future' LIMIT 0,10 
+ SELECT ID FROM {$wpdb->posts} WHERE ( ( post_date > 0 && post_date <= %s ) ) AND post_status = 'future' LIMIT 0,{$limit}
 SQL;
 
 					$sql = $wpdb->prepare( $qry, current_time( 'mysql', 0 ) );
@@ -344,7 +355,7 @@ SQL;
 				{
 					global $wpdb;
 
-					$scheduledIDs = $wpdb->get_col( "SELECT`ID`FROM `{$wpdb->posts}` " . " WHERE ( " . " ( ( `post_date` > 0 ) && ( `post_date` <= CURRENT_TIMESTAMP() ) ) OR " . " ( ( `post_date_gmt` > 0 ) && ( `post_date_gmt` <= UTC_TIMESTAMP() ) ) " . " ) AND `post_status` = 'future' LIMIT 0,10" );
+					$scheduledIDs = $wpdb->get_col( "SELECT`ID`FROM `{$wpdb->posts}` " . " WHERE ( " . " ( ( `post_date` > 0 ) && ( `post_date` <= CURRENT_TIMESTAMP() ) ) OR " . " ( ( `post_date_gmt` > 0 ) && ( `post_date_gmt` <= UTC_TIMESTAMP() ) ) " . " ) AND `post_status` = 'future' LIMIT 0,{$limit}" );
 				}
 
 			if ( ! count( $scheduledIDs ) )
