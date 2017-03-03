@@ -5,9 +5,9 @@
 	 * @subpackage  WP Missed Schedule
 	 * @description Uninstall Module
 	 * @development Code in Becoming!
-	 * @license     GPLv2 or later
+	 * @license     GPLv3 or later
 	 *
-	 * @gnu         www.gnu.org/licenses/gpl-2.0.html
+	 * @gnu         www.gnu.org/licenses/gpl-3.0.html
 	 * @humans      humanstxt.org/Standard.html
 	 * @indentation www.gnu.org/prep/standards/standards.html
 	 *
@@ -22,10 +22,11 @@
 	 * @translation slangjis.org/translations
 	 * @blog        slangji.wordpress.com
 	 *
-	 * @build       2016-12-08
+	 * @build       2016-02-27
 	 * @requires    WordPress 2.7+
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.7+
+	 * @updated     WordPress 4.7+
 	 * @compatible  WordPress 4.8-alpha
 	 */
 
@@ -33,13 +34,41 @@
 
 	$option_names = array( 
 			'byrev_fixshedule_next_verify',
-			'missed_schedule',
 			'scheduled_post_guardian_next_run',
 			'simpul_missed_schedule',
 			'wpt_scheduled_check',
+			'missed_schedule',
+			'missed_scheduled',
+			'schedule_missed',
+			'scheduled_missed',
+			'missed_schedule_cron',
+			'missed_scheduled_cron',
+			'schedule_missed_cron',
+			'scheduled_missed_cron',
+			'missed_schedule_options',
+			'missed_scheduled_options',
+			'schedule_missed_options',
+			'scheduled_missed_options',
+			'missed_schedule_cron_options',
+			'missed_scheduled_cron_options',
+			'schedule_missed_cron_options',
+			'scheduled_missed_cron_options',
 			'wp_missed_schedule',
+			'wp_missed_scheduled',
+			'wp_schedule_missed',
 			'wp_scheduled_missed',
+			'wp_missed_schedule_cron',
+			'wp_missed_scheduled_cron',
+			'wp_schedule_missed_cron',
+			'wp_scheduled_missed_cron',
+			'wp_missed_schedule_options',
+			'wp_missed_scheduled_options',
+			'wp_schedule_missed_options',
 			'wp_scheduled_missed_options',
+			'wp_missed_schedule_cron_options',
+			'wp_missed_scheduled_cron_options',
+			'wp_schedule_missed_cron_options',
+			'wp_scheduled_missed_cron_options',
 	);
 
 	global $wp_version;

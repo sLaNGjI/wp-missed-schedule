@@ -2,12 +2,12 @@
 /*
 Plugin Name: WP Missed Schedule
 Plugin URI: http://slangjis.org/plugins/wp-missed-schedule/
-Description: WordPress plugin WP Missed Schedule Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.7+ and 4.8-alpha single or multisite install - The configuration is automatic and plugin nologo! - Stable Branche 2014 - Build 2016-12-08 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later.
+Description: WordPress plugin WP Missed Schedule Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.7+ and 4.8-alpha single or multisite install - The configuration is automatic and plugin nologo! - Stable Branche 2014 - Build 2017-02-27 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later. Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
 Author: sLaNGjIs Team
 Author URI: http://slangjis.org/plugins/
-Version: 2014.1231.2016.7
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Version: 2014.1231.2017.1
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Network: true
  *
  * Requires at least 2.1
@@ -24,7 +24,9 @@ Network: true
  *
  * ALPHA DEVELOPMENT Release is available only on [GitHub](https://github.com/sLaNGjI)
  *
- * BETA Release: Version 2015 Build 1231 Revision 3 Update 0
+ *   BETA Release Branche 2015: Version 2017 Build 1231 Revision 3 Update 1
+ *
+ * STABLE Release Branche 2014: Version 2017 Build 0227 Revision 1231 Update 1
  *
  * REQUIREMENTS
  *
@@ -36,9 +38,9 @@ Network: true
  * We recommend Apache or Nginx as the most robust and featureful server for running WordPress,
  * but any server that supports PHP and MySQL will do.
  *
- * Use of PHP 5.5+ or 5.6+ or 7.0+ is considered a custom user choice not recommended for now.
+ * Use of PHP 5.5+ or 5.6+ or 7.0+ or 7.1+ is considered a custom user choice not recommended for now.
  *
- * Work also with PHP 4+ or later and MySQL 4+ or greater (depending of hosting features and WordPress version)
+ * Work also with PHP 4.0+ or later and MySQL 4.0+ or greater (depending of hosting features and WordPress version)
  *
  * CONFIGURATION
  *
@@ -52,11 +54,13 @@ Network: true
  *
  * This plugin patched an important big problem unfixed since WordPress 2.5+ to date.
  *
- * Copyright (C) 2007-2016 [sLaNGjIs Team](http://slangjis.org/) (email: <slangjis [at] googlegmail [dot] com>))
+ * This plugin work on all versions of WordPress 2.1+ to date.
+ *
+ * Copyright (C) 2007-2017 [sLaNGjIs Team](http://slangjis.org/) (email: <slangjis [at] googlegmail [dot] com>))
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the [GNU General Public License](https://wordpress.org/about/gpl/)
- * as published by the Free Software Foundation; either version 2
+ * as published by the Free Software Foundation; either version 3
  * of the License, or (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -76,7 +80,7 @@ Network: true
  * without any fitness for a particular or specific purpose, without any type
  * of future assistance from your own author or the others authors.
  *
- * The license under which the WordPress software is released is the GPLv2 (or later) from the
+ * The license under which the WordPress software is released is the GPLv3 (or later) from the
  * Free Software Foundation. A copy of the license is included with every copy of WordPress.
  *
  * Part of this license outlines requirements for derivative works, such as plugins or themes.
@@ -85,7 +89,7 @@ Network: true
  * There is some legal grey area regarding what is considered a derivative work, but we feel
  * strongly that plugins and themes are derivative work and thus inherit the GPL license.
  *
- * The license for this software can be found on [Free Software Foundation](https://www.gnu.org/licenses/gpl-2.0.html)
+ * The license for this software can be found on [Free Software Foundation](https://www.gnu.org/licenses/gpl-3.0.html)
  * and as license.txt into this plugin package.
  *
  * The author of plugin is available at any time, to make changes, or corrections, to respect specifications.
@@ -97,7 +101,7 @@ Network: true
  * wp-header-footer-login-log.php by sLaNGjIs Team <slangjis [at] googlemail [dot] com>
  * Copyright (C) 2007-2009 [sLaNGjIs Team](http://slangjis.org/) (email: <slangjis [at] googlemail [dot] com>)
  *
- * according to the terms of the GNU General Public License version 2 (or later).
+ * according to the terms of the GNU General Public License version 3 (or later).
  *
  * This wp-header-footer-login-log.php uses (or it parts) code derived from:
  *
@@ -110,9 +114,9 @@ Network: true
  * wp-footer-log.php by sLaNGjIs Team <slangjis [at] googlemail [dot] com>
  * Copyright (C) 2007 [sLaNGjIs Team](http://slangjis.org/) (email: <slangjis [at] googlemail [dot] com>)
  *
- * according to the terms of the GNU General Public License version 2 (or later).
+ * according to the terms of the GNU General Public License version 3 (or later).
  *
- * According to the Terms of the GNU General Public License version 2 (or later) part of Copyright
+ * According to the Terms of the GNU General Public License version 3 (or later) part of Copyright
  * belongs to your own author and part belongs to their respective others authors:
  *
  * Copyright (C) 2007-2009 [sLaNGjIs Team](http://slangjis.org/) (email: <slangjis [at] googlemail [dot] com>)
@@ -156,6 +160,11 @@ Network: true
  * CHANGELOG
  *
  * [to-do list and changelog](https://wordpress.org/plugins/wp-missed-schedule/changelog/)
+ *
+ * TODO
+ *
+ * Anti bad procedure: activate, deactivate, install, uninstall plugin routines by WordPress "dummies" of "genius" ...
+ * Improved WordPress version identification mechanism if $wp_version is not present, hidden, or identificable.
  */
 
 	/**
@@ -168,16 +177,16 @@ Network: true
 	 * @status      STABLE
 	 * @requires    2.1+
 	 * @since       2.5+
-	 * @tested      3.7+
+	 * @tested      4.7+ (old 3.7+)
 	 * @compatible  4.8-alpha
 	 * @branche     2014
-	 * @revision    2016
-	 * @update      7
+	 * @revision    2017
+	 * @update      1
 	 * @release     2014.1231
-	 * @version     2014.1231.2016.7
-	 * @build       2016-12-08
+	 * @version     2014.1231.2017.1
+	 * @build       2017-02-27
 	 * @approved    2007-08-18
-	 * @license     GPLv2 or later
+	 * @license     GPLv3 or later
 	 * @indentation GNU style coding standard
 	 * @keybit      eLCQM540z78BbFMtmFXj3lC62b79H8651411574J4YQCb3g46FsK338kT29FPANa8
 	 * @keysum      FBE04369B6316C2D32562B10398C60D7461AEC7B
@@ -193,6 +202,8 @@ Network: true
 			header( 'HTTP/0.9 403 Forbidden' );
 			header( 'HTTP/1.0 403 Forbidden' );
 			header( 'HTTP/1.1 403 Forbidden' );
+			header( 'HTTP/1.2 403 Forbidden' );
+			header( 'HTTP/1.3 403 Forbidden' );
 			header( 'Status: 403 Forbidden' );
 			header( 'Connection: Close' );
 				exit;
@@ -222,31 +233,96 @@ Network: true
 			if ( ! current_user_can( 'activate_plugins' ) )
 				return;
 
-			delete_option( 'byrev_fixshedule_next_verify' );
-			delete_option( 'missed_schedule' );
-			delete_option( 'scheduled_post_guardian_next_run' );
-			delete_option( 'simpul_missed_schedule' );
-			delete_option( 'wpt_scheduled_check' );
-			delete_option( 'wp_missed_schedule' );
-			delete_option( 'wp_scheduled_missed' );
-
 			global $wp_version;
 
-			if ( $wp_version >= 2.8 )
+			if ( $wp_version >= 2.1 )
 				{
-					delete_transient( 'wp_scheduled_missed' );
-					delete_transient( 'timeout_wp_scheduled_missed' );
+					delete_option( 'byrev_fixshedule_next_verify' );
+					delete_option( 'scheduled_post_guardian_next_run' );
+					delete_option( 'simpul_missed_schedule' );
+					delete_option( 'wpt_scheduled_check' );
+					delete_option( 'wp_missed_schedule' );
+					delete_option( 'wp_missed_scheduled' );
+					delete_option( 'wp_schedule_missed' );
+					delete_option( 'wp_scheduled_missed' );
+					delete_option( 'missed_schedule' );
+					delete_option( 'missed_scheduled' );
+					delete_option( 'schedule_missed' );
+					delete_option( 'scheduled_missed' );
 				}
 
 			if ( $wp_version >= 3.0 )
 				{
-					delete_site_transient( 'wp_scheduled_missed' );
-					delete_site_transient( 'timeout_wp_scheduled_missed' );
+					delete_site_option( 'byrev_fixshedule_next_verify' );
+					delete_site_option( 'scheduled_post_guardian_next_run' );
+					delete_site_option( 'simpul_missed_schedule' );
+					delete_site_option( 'wpt_scheduled_check' );
+					delete_site_option( 'wp_missed_schedule' );
+					delete_site_option( 'wp_missed_scheduled' );
+					delete_site_option( 'wp_schedule_missed' );
+					delete_site_option( 'wp_scheduled_missed' );
+					delete_site_option( 'missed_schedule' );
+					delete_site_option( 'missed_scheduled' );
+					delete_site_option( 'schedule_missed' );
+					delete_site_option( 'scheduled_missed' );
 				}
 
+			if ( $wp_version >= 2.8 )
+				{
+					delete_transient( 'wp_missed_schedule' );
+					delete_transient( 'wp_missed_scheduled' );
+					delete_transient( 'timeout_wp_missed_schedule' );
+					delete_transient( 'timeout_wp_missed_scheduled' );
+					delete_transient( 'wp_schedule_missed' );
+					delete_transient( 'wp_scheduled_missed' );
+					delete_transient( 'timeout_wp_schedule_missed' );
+					delete_transient( 'timeout_wp_scheduled_missed' );
+					delete_transient( 'missed_schedule' );
+					delete_transient( 'missed_scheduled' );
+					delete_transient( 'timeout_missed_schedule' );
+					delete_transient( 'timeout_missed_scheduled' );
+					delete_transient( 'schedule_missed' );
+					delete_transient( 'scheduled_missed' );
+					delete_transient( 'timeout_schedule_missed' );
+					delete_transient( 'timeout_scheduled_missed' );
+				}
+
+			if ( $wp_version >= 3.0 )
+				{
+					delete_site_transient( 'wp_missed_schedule' );
+					delete_site_transient( 'wp_missed_scheduled' );
+					delete_site_transient( 'timeout_wp_missed_schedule' );
+					delete_site_transient( 'timeout_wp_missed_scheduled' );
+					delete_site_transient( 'wp_schedule_missed' );
+					delete_site_transient( 'wp_scheduled_missed' );
+					delete_site_transient( 'timeout_wp_schedule_missed' );
+					delete_site_transient( 'timeout_wp_scheduled_missed' );
+					delete_site_transient( 'missed_schedule' );
+					delete_site_transient( 'missed_scheduled' );
+					delete_site_transient( 'timeout_missed_schedule' );
+					delete_site_transient( 'timeout_missed_scheduled' );
+					delete_site_transient( 'schedule_missed' );
+					delete_site_transient( 'scheduled_missed' );
+					delete_site_transient( 'timeout_schedule_missed' );
+					delete_site_transient( 'timeout_scheduled_missed' );
+				}
+
+			wp_clear_scheduled_hook( 'missed_schedule' );
+			wp_clear_scheduled_hook( 'missed_scheduled' );
 			wp_clear_scheduled_hook( 'missed_schedule_cron' );
+			wp_clear_scheduled_hook( 'missed_scheduled_cron' );
 			wp_clear_scheduled_hook( 'wp_missed_schedule' );
+			wp_clear_scheduled_hook( 'wp_missed_scheduled' );
+			wp_clear_scheduled_hook( 'wp_missed_schedule_cron' );
+			wp_clear_scheduled_hook( 'wp_missed_scheduled_cron' );
+			wp_clear_scheduled_hook( 'wp_schedule_missed' );
 			wp_clear_scheduled_hook( 'wp_scheduled_missed' );
+			wp_clear_scheduled_hook( 'wp_schedule_missed_cron' );
+			wp_clear_scheduled_hook( 'wp_scheduled_missed_cron' );
+			wp_clear_scheduled_hook( 'schedule_missed' );
+			wp_clear_scheduled_hook( 'scheduled_missed' );
+			wp_clear_scheduled_hook( 'schedule_missed_cron' );
+			wp_clear_scheduled_hook( 'scheduled_missed_cron' );
 		}
 	register_activation_hook( __FILE__, 'wpms_activation', 0 );
 
@@ -269,7 +345,7 @@ Network: true
 		}
 	add_action( 'activated_plugin', 'wpms_1st', 0 );
 
-	define( 'WPMS_OPTION', 'wp_scheduled_missed' );
+	define( 'WPMS_OPTION', 'scheduled_missed' );
 
 	function wpms_init()
 		{
@@ -277,9 +353,9 @@ Network: true
 
 			if ( $wp_version < 2.8 )
 				{
-					$wp_scheduled_missed = get_option( WPMS_OPTION, false );
+					$scheduled_missed = get_option( WPMS_OPTION, false );
 
-					if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 900 ) ) ) )
+					if ( ( $scheduled_missed !== false ) && ( $scheduled_missed > ( time() - ( 900 ) ) ) )
 						return;
 				}
 
@@ -287,40 +363,40 @@ Network: true
 				{
 					if ( $wp_version < 3.0 )
 						{
-							$wp_scheduled_missed = get_option( WPMS_OPTION, false );
+							$scheduled_missed = get_option( WPMS_OPTION, false );
 
-							get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
+							get_transient( 'scheduled_missed', $scheduled_missed, 900 );
 
-							if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 900 ) ) ) )
+							if ( ( $scheduled_missed !== false ) && ( $scheduled_missed > ( time() - ( 900 ) ) ) )
 								return;
 
-							set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
+							set_transient( 'scheduled_missed', $scheduled_missed, 900 );
 						}
 
 					if ( $wp_version >= 3.0 )
 						{
 							if ( ! is_multisite() )
 								{
-									$wp_scheduled_missed = get_option( WPMS_OPTION, false );
+									$scheduled_missed = get_option( WPMS_OPTION, false );
 
-									get_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
+									get_transient( 'scheduled_missed', $scheduled_missed, 900 );
 
-									if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 900 ) ) ) )
+									if ( ( $scheduled_missed !== false ) && ( $scheduled_missed > ( time() - ( 900 ) ) ) )
 										return;
 
-									set_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
+									set_transient( 'scheduled_missed', $scheduled_missed, 900 );
 								}
 
 							if ( is_multisite() )
 								{
-									$wp_scheduled_missed = get_option( WPMS_OPTION, false );
+									$scheduled_missed = get_option( WPMS_OPTION, false );
 
-									get_site_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
+									get_site_transient( 'scheduled_missed', $scheduled_missed, 900 );
 
-									if ( ( $wp_scheduled_missed !== false ) && ( $wp_scheduled_missed > ( time() - ( 900 ) ) ) )
+									if ( ( $scheduled_missed !== false ) && ( $scheduled_missed > ( time() - ( 900 ) ) ) )
 										return;
 
-									set_site_transient( 'wp_scheduled_missed', $wp_scheduled_missed, 900 );
+									set_site_transient( 'scheduled_missed', $scheduled_missed, 900 );
 								}
 						}
 				}
@@ -439,8 +515,8 @@ SQL;
 			if ( ! is_home() && ! is_front_page() )
 				return;
 
-			echo "\r\n<!--Plugin WP Missed Schedule Active - Secured with Genuine Authenticity KeyTag-->\r\n";
-			echo "\r\n<!-- This site is patched against a big problem not solved since WordPress 2.5 -->\r\n\r\n";
+			echo "\r\n<!--Plugin WP Missed Schedule Active - PATCH - Secured with Genuine Authenticity KeyTag-->\r\n";
+			echo "\r\n<!-- This site is patched against a big problem not solved since WordPress 2.5 to date -->\r\n\r\n";
 		}
 	add_action( 'wp_head', 'wpms_shfl', 100 );
 	add_action( 'wp_footer', 'wpms_shfl', 100 );
@@ -470,25 +546,96 @@ SQL;
 			if ( ! current_user_can( 'activate_plugins' ) )
 				return;
 
-			delete_option( 'byrev_fixshedule_next_verify' );
-			delete_option( 'missed_schedule' );
-			delete_option( 'scheduled_post_guardian_next_run' );
-			delete_option( 'simpul_missed_schedule' );
-			delete_option( 'wpt_scheduled_check' );
-			delete_option( 'wp_missed_schedule' );
-			delete_option( 'wp_scheduled_missed' );
-
 			global $wp_version;
+
+			if ( $wp_version >= 2.1 )
+				{
+					delete_option( 'byrev_fixshedule_next_verify' );
+					delete_option( 'scheduled_post_guardian_next_run' );
+					delete_option( 'simpul_missed_schedule' );
+					delete_option( 'wpt_scheduled_check' );
+					delete_option( 'wp_missed_schedule' );
+					delete_option( 'wp_missed_scheduled' );
+					delete_option( 'wp_schedule_missed' );
+					delete_option( 'wp_scheduled_missed' );
+					delete_option( 'missed_schedule' );
+					delete_option( 'missed_scheduled' );
+					delete_option( 'schedule_missed' );
+					delete_option( 'scheduled_missed' );
+				}
+
+			if ( $wp_version >= 3.0 )
+				{
+					delete_site_option( 'byrev_fixshedule_next_verify' );
+					delete_site_option( 'scheduled_post_guardian_next_run' );
+					delete_site_option( 'simpul_missed_schedule' );
+					delete_site_option( 'wpt_scheduled_check' );
+					delete_site_option( 'wp_missed_schedule' );
+					delete_site_option( 'wp_missed_scheduled' );
+					delete_site_option( 'wp_schedule_missed' );
+					delete_site_option( 'wp_scheduled_missed' );
+					delete_site_option( 'missed_schedule' );
+					delete_site_option( 'missed_scheduled' );
+					delete_site_option( 'schedule_missed' );
+					delete_site_option( 'scheduled_missed' );
+				}
 
 			if ( $wp_version >= 2.8 )
 				{
+					delete_transient( 'wp_missed_schedule' );
+					delete_transient( 'wp_missed_scheduled' );
+					delete_transient( 'timeout_wp_missed_schedule' );
+					delete_transient( 'timeout_wp_missed_scheduled' );
+					delete_transient( 'wp_schedule_missed' );
 					delete_transient( 'wp_scheduled_missed' );
+					delete_transient( 'timeout_wp_schedule_missed' );
 					delete_transient( 'timeout_wp_scheduled_missed' );
+					delete_transient( 'missed_schedule' );
+					delete_transient( 'missed_scheduled' );
+					delete_transient( 'timeout_missed_schedule' );
+					delete_transient( 'timeout_missed_scheduled' );
+					delete_transient( 'schedule_missed' );
+					delete_transient( 'scheduled_missed' );
+					delete_transient( 'timeout_schedule_missed' );
+					delete_transient( 'timeout_scheduled_missed' );
 				}
 
+			if ( $wp_version >= 3.0 )
+				{
+					delete_site_transient( 'wp_missed_schedule' );
+					delete_site_transient( 'wp_missed_scheduled' );
+					delete_site_transient( 'timeout_wp_missed_schedule' );
+					delete_site_transient( 'timeout_wp_missed_scheduled' );
+					delete_site_transient( 'wp_schedule_missed' );
+					delete_site_transient( 'wp_scheduled_missed' );
+					delete_site_transient( 'timeout_wp_schedule_missed' );
+					delete_site_transient( 'timeout_wp_scheduled_missed' );
+					delete_site_transient( 'missed_schedule' );
+					delete_site_transient( 'missed_scheduled' );
+					delete_site_transient( 'timeout_missed_schedule' );
+					delete_site_transient( 'timeout_missed_scheduled' );
+					delete_site_transient( 'schedule_missed' );
+					delete_site_transient( 'scheduled_missed' );
+					delete_site_transient( 'timeout_schedule_missed' );
+					delete_site_transient( 'timeout_scheduled_missed' );
+				}
+
+			wp_clear_scheduled_hook( 'missed_schedule' );
+			wp_clear_scheduled_hook( 'missed_scheduled' );
 			wp_clear_scheduled_hook( 'missed_schedule_cron' );
+			wp_clear_scheduled_hook( 'missed_scheduled_cron' );
 			wp_clear_scheduled_hook( 'wp_missed_schedule' );
+			wp_clear_scheduled_hook( 'wp_missed_scheduled' );
+			wp_clear_scheduled_hook( 'wp_missed_schedule_cron' );
+			wp_clear_scheduled_hook( 'wp_missed_scheduled_cron' );
+			wp_clear_scheduled_hook( 'wp_schedule_missed' );
 			wp_clear_scheduled_hook( 'wp_scheduled_missed' );
+			wp_clear_scheduled_hook( 'wp_schedule_missed_cron' );
+			wp_clear_scheduled_hook( 'wp_scheduled_missed_cron' );
+			wp_clear_scheduled_hook( 'schedule_missed' );
+			wp_clear_scheduled_hook( 'scheduled_missed' );
+			wp_clear_scheduled_hook( 'schedule_missed_cron' );
+			wp_clear_scheduled_hook( 'scheduled_missed_cron' );
 		}
 	register_deactivation_hook( __FILE__, 'wpms_deactivation', 0 );
 
@@ -504,17 +651,52 @@ SQL;
 					if ( $wp_version < 3.0 )
 						{
 							delete_option( 'byrev_fixshedule_next_verify' );
-							delete_option( 'missed_schedule' );
 							delete_option( 'scheduled_post_guardian_next_run' );
 							delete_option( 'simpul_missed_schedule' );
 							delete_option( 'wpt_scheduled_check' );
 							delete_option( 'wp_missed_schedule' );
+							delete_option( 'wp_missed_scheduled' );
+							delete_option( 'wp_schedule_missed' );
 							delete_option( 'wp_scheduled_missed' );
+							delete_option( 'missed_schedule' );
+							delete_option( 'missed_scheduled' );
+							delete_option( 'schedule_missed' );
+							delete_option( 'scheduled_missed' );
 						}
 
 					if ( ( $wp_version >= 2.6 ) and ( $wp_version < 3.0 ) )
 						{
-							delete_option( 'wp_scheduled_missed_options' );
+							delete_option( 'scheduled_missed_options' );
+							delete_option( 'scheduled_missed_cron_options' );
+						}
+
+					if ( ( $wp_version >= 2.6 ) and ( $wp_version >= 3.0 ) )
+						{
+							if ( ! is_multisite() )
+								{
+									delete_option( 'scheduled_missed_options' );
+									delete_option( 'scheduled_missed_cron_options' );
+								}
+
+							if ( is_multisite() )
+								{
+									delete_site_option( 'scheduled_missed_options' );
+									delete_site_option( 'scheduled_missed_cron_options' );
+
+									global $wpdb;
+
+									$blog_ids = $wpdb->get_col( "SELECT blog_id FROM $wpdb->blogs" );
+									$original_blog_id = get_current_blog_id();
+
+									foreach ( $blog_ids as $blog_id )
+										{
+											switch_to_blog( $blog_id );
+
+											delete_site_option( 'scheduled_missed_options' );
+											delete_site_option( 'scheduled_missed_cron_options' );
+										}
+									switch_to_blog( $original_blog_id );
+								}
 						}
 
 					if ( $wp_version >= 3.0 )
@@ -522,25 +704,33 @@ SQL;
 							if ( ! is_multisite() )
 								{
 									delete_option( 'byrev_fixshedule_next_verify' );
-									delete_option( 'missed_schedule' );
 									delete_option( 'scheduled_post_guardian_next_run' );
 									delete_option( 'simpul_missed_schedule' );
 									delete_option( 'wpt_scheduled_check' );
 									delete_option( 'wp_missed_schedule' );
+									delete_option( 'wp_missed_scheduled' );
+									delete_option( 'wp_schedule_missed' );
 									delete_option( 'wp_scheduled_missed' );
-									delete_option( 'wp_scheduled_missed_options' );
+									delete_option( 'missed_schedule' );
+									delete_option( 'missed_scheduled' );
+									delete_option( 'schedule_missed' );
+									delete_option( 'scheduled_missed' );
 								}
 
 							if ( is_multisite() )
 								{
 									delete_option( 'byrev_fixshedule_next_verify' );
-									delete_option( 'missed_schedule' );
 									delete_option( 'scheduled_post_guardian_next_run' );
 									delete_option( 'simpul_missed_schedule' );
 									delete_option( 'wpt_scheduled_check' );
 									delete_option( 'wp_missed_schedule' );
+									delete_option( 'wp_missed_scheduled' );
+									delete_option( 'wp_schedule_missed' );
 									delete_option( 'wp_scheduled_missed' );
-									delete_option( 'wp_scheduled_missed_options' );
+									delete_option( 'missed_schedule' );
+									delete_option( 'missed_scheduled' );
+									delete_option( 'schedule_missed' );
+									delete_option( 'scheduled_missed' );
 
 									global $wpdb;
 
@@ -552,33 +742,129 @@ SQL;
 											switch_to_blog( $blog_id );
 
 											delete_site_option( 'byrev_fixshedule_next_verify' );
-											delete_site_option( 'missed_schedule' );
 											delete_site_option( 'scheduled_post_guardian_next_run' );
 											delete_site_option( 'simpul_missed_schedule' );
 											delete_site_option( 'wpt_scheduled_check' );
 											delete_site_option( 'wp_missed_schedule' );
+											delete_site_option( 'wp_missed_scheduled' );
+											delete_site_option( 'wp_schedule_missed' );
 											delete_site_option( 'wp_scheduled_missed' );
-											delete_site_option( 'wp_scheduled_missed_options' );
+											delete_site_option( 'missed_schedule' );
+											delete_site_option( 'missed_scheduled' );
+											delete_site_option( 'schedule_missed' );
+											delete_site_option( 'scheduled_missed' );
 										}
 									switch_to_blog( $original_blog_id );
 								}
 						}
 
-					if ( $wp_version >= 2.8 )
+					if ( ( $wp_version >= 2.8 ) and ( $wp_version < 3.0 ) )
 						{
+							delete_transient( 'wp_missed_schedule' );
+							delete_transient( 'wp_missed_scheduled' );
+							delete_transient( 'timeout_wp_missed_schedule' );
+							delete_transient( 'timeout_wp_missed_scheduled' );
+							delete_transient( 'wp_schedule_missed' );
 							delete_transient( 'wp_scheduled_missed' );
+							delete_transient( 'timeout_wp_schedule_missed' );
 							delete_transient( 'timeout_wp_scheduled_missed' );
+							delete_transient( 'missed_schedule' );
+							delete_transient( 'missed_scheduled' );
+							delete_transient( 'timeout_missed_schedule' );
+							delete_transient( 'timeout_missed_scheduled' );
+							delete_transient( 'schedule_missed' );
+							delete_transient( 'scheduled_missed' );
+							delete_transient( 'timeout_schedule_missed' );
+							delete_transient( 'timeout_scheduled_missed' );
 						}
 
 					if ( $wp_version >= 3.0 )
 						{
-							delete_site_transient( 'wp_scheduled_missed' );
-							delete_site_transient( 'timeout_wp_scheduled_missed' );
+							if ( ! is_multisite() )
+								{
+									delete_transient( 'wp_missed_schedule' );
+									delete_transient( 'wp_missed_scheduled' );
+									delete_transient( 'timeout_wp_missed_schedule' );
+									delete_transient( 'timeout_wp_missed_scheduled' );
+									delete_transient( 'wp_schedule_missed' );
+									delete_transient( 'wp_scheduled_missed' );
+									delete_transient( 'timeout_wp_schedule_missed' );
+									delete_transient( 'timeout_wp_scheduled_missed' );
+									delete_transient( 'missed_schedule' );
+									delete_transient( 'missed_scheduled' );
+									delete_transient( 'timeout_missed_schedule' );
+									delete_transient( 'timeout_missed_scheduled' );
+									delete_transient( 'schedule_missed' );
+									delete_transient( 'scheduled_missed' );
+									delete_transient( 'timeout_schedule_missed' );
+									delete_transient( 'timeout_scheduled_missed' );
+								}
+
+							if ( is_multisite() )
+								{
+									delete_transient( 'wp_missed_schedule' );
+									delete_transient( 'wp_missed_scheduled' );
+									delete_transient( 'timeout_wp_missed_schedule' );
+									delete_transient( 'timeout_wp_missed_scheduled' );
+									delete_transient( 'wp_schedule_missed' );
+									delete_transient( 'wp_scheduled_missed' );
+									delete_transient( 'timeout_wp_schedule_missed' );
+									delete_transient( 'timeout_wp_scheduled_missed' );
+									delete_transient( 'missed_schedule' );
+									delete_transient( 'missed_scheduled' );
+									delete_transient( 'timeout_missed_schedule' );
+									delete_transient( 'timeout_missed_scheduled' );
+									delete_transient( 'schedule_missed' );
+									delete_transient( 'scheduled_missed' );
+									delete_transient( 'timeout_schedule_missed' );
+									delete_transient( 'timeout_scheduled_missed' );
+
+									global $wpdb;
+
+									$blog_ids = $wpdb->get_col( "SELECT blog_id FROM $wpdb->blogs" );
+									$original_blog_id = get_current_blog_id();
+
+									foreach ( $blog_ids as $blog_id )
+										{
+											switch_to_blog( $blog_id );
+
+											delete_site_transient( 'wp_missed_schedule' );
+											delete_site_transient( 'wp_missed_scheduled' );
+											delete_site_transient( 'timeout_wp_missed_schedule' );
+											delete_site_transient( 'timeout_wp_missed_scheduled' );
+											delete_site_transient( 'wp_schedule_missed' );
+											delete_site_transient( 'wp_scheduled_missed' );
+											delete_site_transient( 'timeout_wp_schedule_missed' );
+											delete_site_transient( 'timeout_wp_scheduled_missed' );
+											delete_site_transient( 'missed_schedule' );
+											delete_site_transient( 'missed_scheduled' );
+											delete_site_transient( 'timeout_missed_schedule' );
+											delete_site_transient( 'timeout_missed_scheduled' );
+											delete_site_transient( 'schedule_missed' );
+											delete_site_transient( 'scheduled_missed' );
+											delete_site_transient( 'timeout_schedule_missed' );
+											delete_site_transient( 'timeout_scheduled_missed' );
+										}
+									switch_to_blog( $original_blog_id );
+								}
 						}
 
-						wp_clear_scheduled_hook( 'missed_schedule_cron' );
-						wp_clear_scheduled_hook( 'wp_missed_schedule' );
-						wp_clear_scheduled_hook( 'wp_scheduled_missed' );
+					wp_clear_scheduled_hook( 'missed_schedule' );
+					wp_clear_scheduled_hook( 'missed_scheduled' );
+					wp_clear_scheduled_hook( 'missed_schedule_cron' );
+					wp_clear_scheduled_hook( 'missed_scheduled_cron' );
+					wp_clear_scheduled_hook( 'wp_missed_schedule' );
+					wp_clear_scheduled_hook( 'wp_missed_scheduled' );
+					wp_clear_scheduled_hook( 'wp_missed_schedule_cron' );
+					wp_clear_scheduled_hook( 'wp_missed_scheduled_cron' );
+					wp_clear_scheduled_hook( 'wp_schedule_missed' );
+					wp_clear_scheduled_hook( 'wp_scheduled_missed' );
+					wp_clear_scheduled_hook( 'wp_schedule_missed_cron' );
+					wp_clear_scheduled_hook( 'wp_scheduled_missed_cron' );
+					wp_clear_scheduled_hook( 'schedule_missed' );
+					wp_clear_scheduled_hook( 'scheduled_missed' );
+					wp_clear_scheduled_hook( 'schedule_missed_cron' );
+					wp_clear_scheduled_hook( 'scheduled_missed_cron' );
 				}
 			register_uninstall_hook( __FILE__, 'wpms_uninstall', 0 );
 		}

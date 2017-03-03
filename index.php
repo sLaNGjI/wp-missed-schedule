@@ -1,7 +1,11 @@
 <?php 
 header( 'HTTP/0.9 404 Not Found' );
 header( 'HTTP/1.0 404 Not Found' );
-header( 'HTTP/1.1 404 Not Found' )
+header( 'HTTP/1.1 404 Not Found' );
+header( 'HTTP/1.2 404 Not Found' );
+header( 'HTTP/1.3 404 Not Found' );
+header( 'Status: 404 Not Found' );
+header( 'Connection: Close' )
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">

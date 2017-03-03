@@ -631,8 +631,16 @@ to attach them to the start of each source file to most effectively
 state the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
+<<<<<<< .mine
+    <one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) <year>  <name of author>
+||||||| .r2
+    {description}
+    Copyright (C) {year}  {fullname}
+=======
     {one line to give the program's name and a brief idea of what it does.}
     Copyright (C) {year}  {name of author}
+>>>>>>> .r27
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -652,8 +660,16 @@ Also add information on how to contact you by electronic and paper mail.
   If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:
 
+<<<<<<< .mine
+    <program>  Copyright (C) <year>  <name of author>
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+||||||| .r2
+    Gnomovision version 69, Copyright (C) year name of author
+    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+=======
     {project}  Copyright (C) {year}  {fullname}
     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+>>>>>>> .r27
     This is free software, and you are welcome to redistribute it
     under certain conditions; type `show c' for details.
 
