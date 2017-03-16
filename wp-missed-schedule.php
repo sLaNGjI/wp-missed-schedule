@@ -2,10 +2,10 @@
 /*
 Plugin Name: WP Missed Schedule
 Plugin URI: http://slangjis.org/plugins/wp-missed-schedule/
-Description: WordPress plugin WP Missed Schedule Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.7+ and 4.8-alpha single or multisite install - The configuration is automatic and plugin nologo! - Stable Branche 2014 - Build 2017-02-27 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later. Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
+Description: WordPress plugin WP Missed Schedule Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.7+ and 4.8-alpha single or multisite install - The configuration is automatic and plugin nologo! - Stable Branche 2014 - Build 2017-03-16 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later. Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
 Author: sLaNGjIs Team
 Author URI: http://slangjis.org/plugins/
-Version: 2014.1231.2017.1
+Version: 2014.1231.2017.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Network: true
@@ -26,7 +26,7 @@ Network: true
  *
  *   BETA Release Branche 2015: Version 2017 Build 1231 Revision 3 Update 1
  *
- * STABLE Release Branche 2014: Version 2017 Build 0227 Revision 1231 Update 1
+ * STABLE Release Branche 2014: Version 2017 Build 0316 Revision 1231 Update 2
  *
  * REQUIREMENTS
  *
@@ -181,10 +181,10 @@ Network: true
 	 * @compatible  4.8-alpha
 	 * @branche     2014
 	 * @revision    2017
-	 * @update      1
+	 * @update      2
 	 * @release     2014.1231
-	 * @version     2014.1231.2017.1
-	 * @build       2017-02-27
+	 * @version     2014.1231.2017.2
+	 * @build       2017-03-16
 	 * @approved    2007-08-18
 	 * @license     GPLv3 or later
 	 * @indentation GNU style coding standard
