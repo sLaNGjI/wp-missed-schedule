@@ -2,10 +2,10 @@
 /*
 Plugin Name: WP Missed Schedule
 Plugin URI: http://slangjis.org/plugins/wp-missed-schedule/
-Description: WordPress plugin WP Missed Schedule Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.7+ and 4.8-alpha single or multisite install - The configuration is automatic and plugin nologo! - Stable Branche 2014 - Build 2017-03-16 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later. Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
+Description: WordPress plugin WP Missed Schedule Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.7+ and 4.8-alpha single or multisite install - The configuration is automatic and plugin nologo! - Stable Branche 2014 - Build 2017-03-17 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later. Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
 Author: sLaNGjIs Team
 Author URI: http://slangjis.org/plugins/
-Version: 2014.1231.2017.2
+Version: 2014.1231.2017.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Network: true
@@ -15,7 +15,7 @@ Network: true
  * Approved 2007-08-18
  * Active Downloads 275.000+ @ 2016-04-12
  * Active Installs 90.000+ @ 2016-04-12
- * KeyTag 7f71ee70ea1ce6795c69c81df4ea13ac5cf230b4
+ * KeyTag 787c178ab89b0f4378c345b2024af8e2a2aaf1fe
  * Donate link http://slangjis.org/donate/
  * Indentation GNU style coding standard
  * Indentation URI https://www.gnu.org/prep/standards/standards.html
@@ -181,16 +181,16 @@ Network: true
 	 * @compatible  4.8-alpha
 	 * @branche     2014
 	 * @revision    2017
-	 * @update      2
+	 * @update      3
 	 * @release     2014.1231
-	 * @version     2014.1231.2017.2
-	 * @build       2017-03-16
+	 * @version     2014.1231.2017.3
+	 * @build       2017-03-17
 	 * @approved    2007-08-18
 	 * @license     GPLv3 or later
 	 * @indentation GNU style coding standard
-	 * @keybit      eLCQM540z78BbFMtmFXj3lC62b79H8651411574J4YQCb3g46FsK338kT29FPANa8
-	 * @keysum      FBE04369B6316C2D32562B10398C60D7461AEC7B
-	 * @keytag      7f71ee70ea1ce6795c69c81df4ea13ac5cf230b4
+	 * @keybit      g46FsK338kT29FPANa8lC62b79H8651411574J4YQCb3eLCQM540z78BbFMtmFXj3
+	 * @keysum      7D6B6E6B01008EC2CA6A5B17D5F6164E98E73CE0
+	 * @keytag      787c178ab89b0f4378c345b2024af8e2a2aaf1fe
 	 */
 
 	defined( 'ABSPATH' ) OR exit;
@@ -526,10 +526,10 @@ SQL;
 			if ( ! is_admin() && ! current_user_can( 'administrator' ) )
 				return;
 
-			echo "\r\n<!--Secured AuthTag - ".sha1(sha1("eLCQM540z78BbFMtmFXj3lC62b79H8651411574J4YQCb3g46FsK338kT29FPANa8"."FBE04369B6316C2D32562B10398C60D7461AEC7B"))."-->\r\n";
-			echo "\r\n<!--Verified KeyTag - 7f71ee70ea1ce6795c69c81df4ea13ac5cf230b4-->\r\n";
+			echo "\r\n<!--Secured AuthTag - ".sha1(sha1("g46FsK338kT29FPANa8lC62b79H8651411574J4YQCb3eLCQM540z78BbFMtmFXj3"."7D6B6E6B01008EC2CA6A5B17D5F6164E98E73CE0"))."-->\r\n";
+			echo "\r\n<!--Verified KeyTag - 787c178ab89b0f4378c345b2024af8e2a2aaf1fe-->\r\n";
 
-			if ( sha1(sha1("eLCQM540z78BbFMtmFXj3lC62b79H8651411574J4YQCb3g46FsK338kT29FPANa8"."FBE04369B6316C2D32562B10398C60D7461AEC7B")) == '7f71ee70ea1ce6795c69c81df4ea13ac5cf230b4' )
+			if ( sha1(sha1("g46FsK338kT29FPANa8lC62b79H8651411574J4YQCb3eLCQM540z78BbFMtmFXj3"."7D6B6E6B01008EC2CA6A5B17D5F6164E98E73CE0")) == '787c178ab89b0f4378c345b2024af8e2a2aaf1fe' )
 				{
 					echo "\r\n<!-- Your copy of Plugin WP Missed Schedule (free) is Genuine -->\r\n\r\n";
 				}
