@@ -919,7 +919,7 @@ Stable Version 2013.1231.2015 Release 2013 Reloaded FREE:
  *
 == Upgrade Notice ==
 = 2014.1231.2017.3 =
-Major [UPDATE] WP 2.1+ to 4.7+ - Preemptive Support 4.8-alpha - Build 2017-03-17 - Somes Important Improvements Core and Transients Major Update - Undeveloped on wordpress.org since 2016-04-13 - Available on GitHub only for Author Request - Upgradable directly from WordPress Dashboard on GitHub only - Maintenance Release According WordPress 4.7.3 / 4.6.4 / 4.5.7 / 4.4.8 / 4.3.9 / 4.2.13 / 4.1.15 / 4.0.16 / 3.9.17 / 3.8.19 / 3.7.19 - Secunia Certified Zero Vulnerabilities Advisories!
+Major [UPDATE] WP 2.1+ to 4.7+ - Preemptive Support 4.8-alpha - Build 2017-03-17 - Somes Important Core and Transients Improvements - Security Update - Undeveloped on wordpress.org since 2016-04-13 - Available on GitHub only for Author Request - Upgradable directly from WordPress Dashboard on GitHub only - Maintenance Release According WordPress 4.7.3 / 4.6.4 / 4.5.7 / 4.4.8 / 4.3.9 / 4.2.13 / 4.1.15 / 4.0.16 / 3.9.17 / 3.8.19 / 3.7.19 - Secunia Certified Zero Vulnerabilities Advisories!
 == Disclaimer ==
 [sLaNGjIs Team not provide support on wordpress.org forum](https://slangji.wordpress.com/support/) because we are not interested in reviews o stars on our plugins and themes!
 
