@@ -1,4 +1,4 @@
-WP Missed Schedule - Version 2014.1231.2017.3 Build 2017-03-17 - SHA1 Checksum
+WP Missed Schedule - Version 2014.1231.2017.3 Build 2017-04-20 - SHA1 Checksum
 
 ----------------------------- Tags Branche 2014 ------------------------------
 
@@ -14,6 +14,6 @@ keybit.txt                            7D6B6E6B01008EC2CA6A5B17D5F6164E98E73CE0
 LICENSE.md                            8624BCDAE55BAEEF00CD11D5DFCFA60F68710A02
 license.txt                           4CC77B90AF91E615A64AE04893FDFFA7939DB84C
 no-support-gived-on-forum.txt         C96CB7D0F84952AE375F358F5624A78CEE2174C4
-readme.txt                            79F68B4882E7E8BAD28DBDB434FBF12BA3EB4207
+readme.txt                            8ECAC1C706963F799FB0F5268AB28D3CF0622813
 uninstall.php                         204C5EF46FA6EFFD6EC79E5E24F248B469D1B45D
 wp-missed-schedule.php                B38325FFF1ADE83EE3F07A93577DD998D04DB2F1
