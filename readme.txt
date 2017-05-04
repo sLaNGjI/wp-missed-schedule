@@ -12,7 +12,7 @@ wordpress plugin wp missed schedule fix scheduled posts failed on virtual cron j
 
 == Description ==
 
-WordPress plugin <a href="http://slangjis.org/plugins/wp-missed-schedule/">WP Missed Schedule</a> Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist: 10 items every 15 minutes, 40 items every hour, 1 session every 15 minutes, 4 sessions every hour. Work with virtual or real cron job on WordPress from 2.1+ to 4.7+ and 4.8-alpha single or multisite install - The configuration is automatic and plugin nologo! - Build 2017-03-17 - Stable Branche 2014.1231.2017.3 - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a> - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/) Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
+WordPress plugin <a href="http://slangjis.org/plugins/wp-missed-schedule/">WP Missed Schedule</a> Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist: 10 items every 15 minutes, 40 items every hour, 1 session every 15 minutes, 4 sessions every hour. Work with virtual or real cron job on WordPress from 2.1+ to 4.7+ and 4.8-alpha single or multisite install - The configuration is automatic and plugin nologo! - Build 2017-04-20 - Stable Branche 2014.1231.2017.3 - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a> - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/) Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
 
 **This plugin was approved on this repository online since 2007-8-18**
 
@@ -65,7 +65,7 @@ Read <a href="https://wordpress.org/plugins/wp-missed-schedule/changelog/">Todo 
 `
 New WP Missed Schedule Features and Future Updates
 
-Active Version 2014.1231.2017.3 (2017-03-17) FREE
+Active Version 2014.1231.2017.3 (2017-04-20) FREE
 
 Limited Missed Scheduled Posts Fixing per days!
 Preemptive Support WordPress 4.8-alpha 2017 Release
@@ -83,7 +83,7 @@ Fast Queries with index table and CPU Load Optimization
 W3 Total Cache and others Caching Plugins Compatibility
 JetPack and Social Publishing Plugins Transparency
 
-Beta Version 2015.1231.3.1 (2017-02-27) FREE
+Beta Version 2015.1231.4.1 (2017-04-20) FREE
 
 Limited Missed Scheduled Posts Fixing per days!
 Real Cron Checking Interval Method
@@ -323,7 +323,7 @@ I hope the fix working fine for you. WordPress should really look into this issu
 11. Language Screenshot
 12. Language Screenshot
 == Changelog ==
-available [new beta version](https://slangji.wordpress.com/wp-missed-schedule-beta/) with code totally rewrited that applies innovative method for interval of checking with lowest load server. This plugin patched an important unfixed issue since WordPress 2.5.0+ to date because Missed Schedule is Bug! All previous versions, before latest stable, are deprecated, no longer supported, and your distribution files silenty updated: please re-download or re-install it, based on build date, rather on version! This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on [GitHub](https://github.com/sLaNGjI/wp-missed-schedule/) - Build 2017-03-17 - Stable Branche 2014.1231.2017.3 - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/) Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
+available [new beta version](https://slangji.wordpress.com/wp-missed-schedule-beta/) with code totally rewrited that applies innovative method for interval of checking with lowest load server. This plugin patched an important unfixed issue since WordPress 2.5.0+ to date because Missed Schedule is Bug! All previous versions, before latest stable, are deprecated, no longer supported, and your distribution files silenty updated: please re-download or re-install it, based on build date, rather on version! This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on [GitHub](https://github.com/sLaNGjI/wp-missed-schedule/) - Build 2017-04-20 - Stable Branche 2014.1231.2017.3 - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/) Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
 
 **This plugin was approved on this repository online since 2007-8-18**
 
@@ -357,6 +357,27 @@ last version number (2014.1231.1.*2*) 2 for example.
 * 250.000+ Downloads 70.000+ Active Installs Day 2015-12-31
 * 200.000+ Downloads 60.000+ Active Installs Day 2015-08-25
 
+= 2014.1231.2017.3 =
+* Compatibility [UPDATE] Maintenance Release
+ * Please update as soon as possible!
+ * Undeveloped on wordpress.org since 2016-04-13
+ * Available on GitHub only for Author Request!
+ * Branche 2014 Build 2017-04-20
+ * Release 2014 Version 1231 Revision 2017 Update 3
+ * Work with all WordPress Versions from 2.1+ to 4.7+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.7+
+ * Preemptive Support for WordPress 4.8-alpha
+ * MAINTENANCE Release According WordPress 4.7.4
+ * MAINTENANCE Release According WordPress 4.6.5
+ * MAINTENANCE Release According WordPress 4.5.8
+ * MAINTENANCE Release According WordPress 4.4.9
+ * MAINTENANCE Release According WordPress 4.3.10
+ * MAINTENANCE Release According WordPress 4.2.14
+ * MAINTENANCE Release According WordPress 4.1.17
+ * MAINTENANCE Release According WordPress 4.0.17
+ * MAINTENANCE Release According WordPress 3.9.18
+ * MAINTENANCE Release According WordPress 3.8.20
+ * MAINTENANCE Release According WordPress 3.7.20
 = 2014.1231.2017.2 =
 * Compatibility [UPDATE] Maintenance Release
  * Please update as soon as possible!
@@ -383,7 +404,7 @@ last version number (2014.1231.1.*2*) 2 for example.
  * Please update as soon as possible!
  * Undeveloped on wordpress.org since 2016-04-13
  * Available on GitHub only for Author Request!
- * Branche 2014 Build 2017-02-27
+ * Branche 2014 Build 2017-01-26
  * Release 2014 Version 1231 Revision 2017 Update 1
  * Work with all WordPress Versions from 2.1+ to 4.7+
  * Full Support and Compatibility for WordPress 2.1+ - 4.7+
@@ -919,7 +940,7 @@ Stable Version 2013.1231.2015 Release 2013 Reloaded FREE:
  *
 == Upgrade Notice ==
 = 2014.1231.2017.3 =
-Major [UPDATE] WP 2.1+ to 4.7+ - Preemptive Support 4.8-alpha - Build 2017-03-17 - Somes Important Core and Transients Improvements - Security Update - Undeveloped on wordpress.org since 2016-04-13 - Available on GitHub only for Author Request - Upgradable directly from WordPress Dashboard on GitHub only - Maintenance Release According WordPress 4.7.3 / 4.6.4 / 4.5.7 / 4.4.8 / 4.3.9 / 4.2.13 / 4.1.15 / 4.0.16 / 3.9.17 / 3.8.19 / 3.7.19 - Secunia Certified Zero Vulnerabilities Advisories!
+Major [UPDATE] WP 2.1+ to 4.7+ - Preemptive Support 4.8-alpha - Build 2017-04-20 - Somes Important Core and Transients Improvements - Security Update - Undeveloped on wordpress.org since 2016-04-13 - Available on GitHub only for Author Request - Upgradable directly from WordPress Dashboard on GitHub only - Maintenance Release According WordPress 4.7.4 / 4.6.5 / 4.5.8 / 4.4.9 / 4.3.10 / 4.2.14 / 4.1.17 / 4.0.17 / 3.9.18 / 3.8.20 / 3.7.20 - Secunia Certified Zero Vulnerabilities Advisories!
 == Disclaimer ==
 [sLaNGjIs Team not provide support on wordpress.org forum](https://slangji.wordpress.com/support/) because we are not interested in reviews o stars on our plugins and themes!
 
