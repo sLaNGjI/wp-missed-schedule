@@ -23,6 +23,7 @@
 	 * @blog        slangji.wordpress.com
 	 *
 	 * @build       2017-05-21
+	 * @version     2014.1231.2017.4
 	 * @requires    WordPress 2.7+
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.7+
