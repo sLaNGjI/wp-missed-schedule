@@ -22,12 +22,12 @@
 	 * @translation slangjis.org/translations
 	 * @blog        slangji.wordpress.com
 	 *
-	 * @build       2017-03-16
+	 * @build       2017-05-21
 	 * @requires    WordPress 2.7+
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.7+
 	 * @updated     WordPress 4.7+
-	 * @compatible  WordPress 4.8-alpha
+	 * @compatible  WordPress 4.8-beta
 	 */
 
 	defined ( 'WP_UNINSTALL_PLUGIN' ) OR exit;
@@ -56,7 +56,7 @@
 			'wp_missed_schedule',
 			'wp_missed_scheduled',
 			'wp_schedule_missed',
-			'wp_scheduled_missed',
+			//'wp_scheduled_missed',
 			'wp_missed_schedule_cron',
 			'wp_missed_scheduled_cron',
 			'wp_schedule_missed_cron',
