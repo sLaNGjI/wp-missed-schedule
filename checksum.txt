@@ -20,4 +20,14 @@ wp-missed-schedule.php                222AA6D8F89F463508A68BD01B2D8DB5E114A35E
 
 ------------------------------------------------------------------------------
 
-Please note: verify checksum.txt SHA1 Checksum online at slangjis.org/checksum
+Security Note: 
+
+Before install this plugin verify your checksum.txt SHA1 checksum authenticity
+
+online visiting site: http://slangjis.org/plugins/wp-missed-schedule/checksum/
+
+Recommended:
+
+If you not have a program for verify SHA1 download: MD5 & SHA Checksum Utility
+
+available on http://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/
