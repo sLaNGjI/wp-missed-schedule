@@ -28,7 +28,7 @@
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.7+
 	 * @updated     WordPress 4.7+
-	 * @compatible  WordPress 4.8-beta
+	 * @compatible  WordPress 4.8-RC1
 	 */
 
 	defined ( 'WP_UNINSTALL_PLUGIN' ) OR exit;
