@@ -26,10 +26,6 @@ env:
 matrix:
   allow_failures:
     - php: 7.2
-  include:
-    - php: 5.2
-      env: WP_VERSION=latest WP_MULTISITE=0
-      env: WP_VERSION=latest WP_MULTISITE=1
 
 script:
   - find . \( -name '*.php' \) -exec php -lf {} \;
