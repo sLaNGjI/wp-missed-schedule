@@ -1,4 +1,5 @@
 language: php
+
 php:
   - 7.1.5
   - 7.1.0
@@ -18,12 +19,24 @@ php:
   - 5.2.17
   - 5.2
 
+env:
+  - WP_VERSION=latest WP_MULTISITE=0
+  - WP_VERSION=latest WP_MULTISITE=1
+
 matrix:
   allow_failures:
     - php: 7.2
+  include:
+    - php: 5.2
+      env: WP_VERSION=latest WP_MULTISITE=0
+      env: WP_VERSION=latest WP_MULTISITE=1
 
 script:
   - find . \( -name '*.php' \) -exec php -lf {} \;
 
 notifications:
   email: false
+    on_success: never
+    on_failure: change
+
+
