@@ -36,7 +36,5 @@ script:
 
 notifications:
   email: false
-    on_success: never
-    on_failure: change
 
 
