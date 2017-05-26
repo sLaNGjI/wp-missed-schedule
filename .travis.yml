@@ -8,17 +8,10 @@ php:
   - 5.4.45
   - 5.3.29
   - 5.2.17
-  - 5.1.6
-  - 5.0.5
-  - 4.4.9
-  - 4.3.11
-  - 4.2.3
-  - 4.1.2
-  - 4.0.6
 
 matrix:
   allow_failures:
-    - php: 7.0
+    - php: 7.2
 
 script:
   - find . \( -name '*.php' \) -exec php -lf {} \;
