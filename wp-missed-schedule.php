@@ -10,16 +10,31 @@ License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Network: true
  *
+ * GitHub Plugin URI: https://github.com/sLaNGjI/wp-missed-schedule/
+ * GitHub Branch:     master
+ * GitHub Languages:  https://github.com/sLaNGjI/wp-missed-schedule/
+ * Requires WP:       2.1
+ * Requires PHP:      5.2
+ *
  * Requires at least 2.1
- * Tested up to 4.8-beta
- * Approved 2007-08-18
- * Active Downloads 275.000+ @ 2016-04-12
- * Active Installs 90.000+ @ 2016-04-12
+ * Tested up to      4.8-RC1
+ *
  * KeyTag 787c178ab89b0f4378c345b2024af8e2a2aaf1fe
+ *
+ * Approved                  @ 2007-08-18 (on wordpress.org repository)
+ * Retired                   @ 2016-04-13 (on wordpress.org repository)
+ * Active Downloads 275.000+ @ 2016-04-12 (on wordpress.org repository)
+ * Active Installs   90.000+ @ 2016-04-12 (on wordpress.org repository)
+ *
+ * This plugin was undeveloped from wordpress.org on 2016-04-13 to insanity of this directory
+ * for explicit author request and is now actively developed and maintained only on github.com
+ *
  * Donate link http://slangjis.org/donate/
+ *
  * Indentation GNU style coding standard
  * Indentation URI https://www.gnu.org/prep/standards/standards.html
- * Humans We are the humans behind
+ *
+ * Humans     We are the humans behind
  * Humans URI https://humanstxt.org/Standard.html
  *
  *  ALPHA Branche 2016: Release 2016 Build 1231 Revision 2017 Update 5
@@ -32,11 +47,11 @@ Network: true
  *
  * To run this plugin on your WordPress host just needs a couple of things:
  *
- *   PHP version 5.2+ or   later (minimun)   PHP 5.3+ or   later (recommended)   PHP 5.4+ or   later (best)
- * MySQL version 5.0+ or greater (minumun) MySQL 5.5+ or greater (recommended) MySQL 5.7+ or greater (best)
+ *   PHP version 5.2+ or   later (minimun)   PHP 5.4+ or   later (recommended)
+ * MySQL version 5.0+ or greater (minumun) MySQL 5.5+ or greater (recommended)
  *
  * We recommend Apache or Nginx as the most robust and featureful server for running WordPress,
- * but any server that supports PHP and MySQL will do.
+ * but any server that supports PHP and MySQL or MariaDB will do.
  *
  * Use of PHP 5.5+ or 5.6+ or 7.0+ or 7.1+ is considered a custom user choice not recommended for now.
  *
@@ -48,7 +63,7 @@ Network: true
  *
  * LICENSING - license.txt
  *
- * [WP Missed Schedule](https://wordpress.org/plugins/wp-missed-schedule/)
+ * [WP Missed Schedule](https://github.com/sLaNGjI/wp-missed-schedule/)
  *
  * Fix Missed Schedule Failed Scheduled Future Posts Virtual or Real Cron Job.
  *
@@ -159,7 +174,7 @@ Network: true
  *
  * CHANGELOG
  *
- * [to-do list and changelog](https://wordpress.org/plugins/wp-missed-schedule/changelog/)
+ * [to-do list and changelog](https://github.com/sLaNGjI/wp-missed-schedule/changelog.txt)
  *
  * TODO
  *
@@ -168,8 +183,11 @@ Network: true
  */
 
 	/**
+	 * WP Missed Schedule
+	 *
 	 * @package     WP Missed Schedule
 	 * @subpackage  WordPress PlugIn
+	 * @link        https://github.com/sLaNGjI/wp-missed-schedule/
 	 * @description Fix Missed Schedule Failed Scheduled Future Posts Virtual or Real Cron Job
 	 * @noted       This plugin patched an important big problem unfixed since WordPress 2.5+ to date
 	 * @install     The configuration is Automatic and plugin NoLogo!
@@ -178,7 +196,7 @@ Network: true
 	 * @requires    2.1+
 	 * @since       2.5+
 	 * @tested      4.7+ (old 3.7+)
-	 * @compatible  4.8-beta
+	 * @compatible  4.8-RC1
 	 * @branche     2014
 	 * @revision    2017
 	 * @update      4
@@ -193,9 +211,9 @@ Network: true
 	 * @keytag      787c178ab89b0f4378c345b2024af8e2a2aaf1fe
 	 */
 
-	defined( 'WPINC' ) or die;
-
 	defined( 'ABSPATH' ) or exit;
+
+	defined( 'WPINC' ) or die;
 
 	if ( ! function_exists( 'add_action' ) )
 		{
@@ -224,6 +242,22 @@ Network: true
 				}
 
 			wp_die( __( 'This plugin requires WordPress 2.1+ or greater: Activation Stopped.' ) );
+		}
+	else
+		{
+	if ( version_compare( '5.2.0', PHP_VERSION, '>=' ) )
+		{
+			if ( $wp_version >= 2.5 )
+				{			
+					function wpms_psd()
+						{
+							deactivate_plugins( plugin_basename( __FILE__ ) );
+						}
+					add_action( 'admin_init', 'wpms_psd', 0 );
+				}
+
+			wp_die( __( 'You can no longer run this plugin in PHP version prior to 5.2+ contact your hosting provider for system upgrade!<br/>
+			<br/>Please note that to continue using a PHP version below 5.2+ need to install the 2013.1231 version of this plugin.' ) );
 		}
 	else
 		{
@@ -927,6 +961,7 @@ SQL;
 				}
 			register_uninstall_hook( __FILE__, 'wpms_uninstall', 0 );
 		}
+	}
 	}
 	}
 	}

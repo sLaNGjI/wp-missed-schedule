@@ -4,7 +4,7 @@ WP Missed Schedule - Version 2014.1231.2017.4 Build 2017-05-21 - SHA1 Checksum
 
 .gitignore                            662C2F54102E0A311BA6FC9FC30B8FFA86C37900
 .htaccess                             F28410E3EFD440C457B66815579C5E338FA7D7C0
-.travis.yml                           1BEBDDA8C28A4B17763E49D209C15A0323BF4E98
+.travis.yml                           E4813260693693CEA5CC5A071EA213DEE45597CF
 changelog.txt                         DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
 CHANGES.md                            DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
 gpl-3.0.txt                           8624BCDAE55BAEEF00CD11D5DFCFA60F68710A02
@@ -17,9 +17,9 @@ LICENSE                               2043C218EDA49C51DED56EA6CCE5DF1B91614175
 LICENSE.md                            2043C218EDA49C51DED56EA6CCE5DF1B91614175
 license.txt                           79285179577BE4E7403395E645D180C8B6F29311
 no-support-gived-on-forum.txt         C96CB7D0F84952AE375F358F5624A78CEE2174C4
-readme.txt                            FAC3F869B43550E62A30C4F5C980217E60642EA9
+readme.txt                            57035D6D345DC18CC4EFDDE8035BF2E429549646
 uninstall.php                         16C0CAC50413835196F53EC485955E7560064B10
-wp-missed-schedule.php                222AA6D8F89F463508A68BD01B2D8DB5E114A35E
+wp-missed-schedule.php                43080C724360DA46B016529D970770963A3F4E17
 
 ------------------------------------------------------------------------------
 
