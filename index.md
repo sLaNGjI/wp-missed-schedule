@@ -4,17 +4,21 @@ Donate link: http://slangjis.org/donate/
 Tags: sLaNGjIs, cron job, cron jobs, failed, future, future posts, missed, missed schedule, posts, schedule, scheduled, scheduled posts,
 Requires at least: 2.1
 Tested up to: 4.8
-Stable tag: 2014.1231.2016.7
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 2014.1231.2017.4
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 wordpress plugin wp missed schedule fix scheduled posts failed on virtual cron job bug and republish them fixed 10 items each session every 15 minutes
 
 == Description ==
 
-WordPress plugin <a href="http://slangjis.org/plugins/wp-missed-schedule/">WP Missed Schedule</a> Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist: 10 items every 15 minutes, 40 items every hour, 1 session every 15 minutes, 4 sessions every hour. Work with virtual or real cron job on WordPress from 2.1+ to 4.7+ and 4.8-alpha single or multisite install - The configuration is automatic and plugin nologo! - Build 2016-12-08 - Stable Branche 2014.1231.2016.7 - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a> - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/)
+WordPress plugin <a href="http://slangjis.org/plugins/wp-missed-schedule/">WP Missed Schedule</a> Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist: 10 items every 15 minutes, 40 items every hour, 1 session every 15 minutes, 4 sessions every hour. Work with virtual or real cron job on WordPress from 2.1+ to 4.7+ and 4.8-RC1 single or multisite install - The configuration is automatic and plugin nologo! - Build 2017-05-21 - Stable Branche 2014.1231.2017.4 - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a> - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/) Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
 
 **This plugin was approved on this repository online since 2007-8-18**
+
+Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
+
+[![Build Status](https://travis-ci.org/sLaNGjI/wp-missed-schedule.svg?branch=master)](https://travis-ci.org/sLaNGjI/wp-missed-schedule/)
 
 <a href="https://slangji.wordpress.com/wp-missed-schedule-pro/">Upgrade to Pro Version</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-gold/">Gold</a> | <a href="http://slangjis.org/support/">Support</a> | <a href="https://github.com/sLaNGjI/wp-missed-schedule">GitHub Project</a> | <a href="https://slangji.github.io/wp-missed-schedule/">GitHub Pages</a> - <a href="http://web.archive.org/web/20140716010606/http://secunia.com/advisories/product/51113/">Secunia</a>
 `
@@ -63,12 +67,13 @@ Read <a href="https://wordpress.org/plugins/wp-missed-schedule/changelog/">Todo 
 `
 New WP Missed Schedule Features and Future Updates
 
-Active Version 2014.1231.2016.7 (2016-12-08) FREE
+Active Version 2014.1231.2017.4 (2017-05-21) FREE
 
 Limited Missed Scheduled Posts Fixing per days!
+Preemptive Support WordPress 4.8-RC1 2017 Release
+Preemptive Support WordPress 4.8-beta 2017 Release
 Preemptive Support WordPress 4.8-alpha 2017 Release
 Full Support WordPress 2.1+ to 4.7+ Versions
-Preemptive Support WordPress 4.8-alpha 2017 Release
 Virtual Cron Checking Interval Method
 Secure Key Tag Auth Support (a New Idea of sLa)
 Prioritization of Plugin Loading
@@ -81,7 +86,7 @@ Fast Queries with index table and CPU Load Optimization
 W3 Total Cache and others Caching Plugins Compatibility
 JetPack and Social Publishing Plugins Transparency
 
-Beta Version 2015.1231.3.0 (2015-08-28) FREE
+Beta Version 2015.1231.2017.4 (2017-05-21) FREE
 
 Limited Missed Scheduled Posts Fixing per days!
 Real Cron Checking Interval Method
@@ -103,12 +108,11 @@ Switching from Local GMT and UTC Time (pro)
 `
 = Common Rules =
 * Fix Missed Schedule Failed Future Posts Scheduled Items
-* The state of art for fix big core bug since WordPress 2.5+
 * Secunia Certified Zero Advisories and Vulnerabilities
-* Compatible with: WordPress, bbPress, Buddypress
-* Preemptive Support for WordPress 4.8-alpha
+* The state of art for fix big core bug since WordPress 2.5+
 * Work with all WordPress Versions from 2.1+ to 4.7+
-* Preemptive Support for WordPress 4.8-alpha
+* Preemptive Support for WordPress 4.8-RC1
+* Compatible with: WordPress, bbPress, Buddypress
 * No interference with others Scheduled Cron Jobs at scale
 * Ready to Single and Network Multisite Environment
 * Full Strict Security Rules Applied
@@ -124,10 +128,11 @@ Switching from Local GMT and UTC Time (pro)
 * Full Support Deactivation Hook
 * Full Support Uninstall Hook
 * Full Support uninstall.php
-* Support PHP 4+ and 5+ or later
-* Support MySQL 4+ and 5+ or greater
+* Support PHP 4.0+ and 5.0+ and 7.0+ or later
+* Support MySQL 4.0+ and 5.0+ or greater
+* Support MariaDB 5.0+ or greater
 * Work with Shared and VPS Hosting
-* Work under [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html) or later License
+* Work under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) or later License
 * Implement [GNU style](https://www.gnu.org/prep/standards/standards.html) coding standard indentation
 * Meet detailed [Plugin Guidelines](https://wordpress.org/plugins/about/guidelines/) quality requirements
 * Support for [Theme Check](https://wordpress.org/plugins/theme-check/) specifications
@@ -321,9 +326,11 @@ I hope the fix working fine for you. WordPress should really look into this issu
 11. Language Screenshot
 12. Language Screenshot
 == Changelog ==
-available [new beta version](https://slangji.wordpress.com/wp-missed-schedule-beta/) with code totally rewrited that applies innovative method for interval of checking with lowest load server. This plugin patched an important unfixed issue since WordPress 2.5+ to date because Missed Schedule is Bug! All previous versions, before latest stable, are deprecated, no longer supported, and your distribution files silenty updated: please re-download or re-install it, based on build date, rather on version! This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on [GitHub](https://github.com/sLaNGjI/wp-missed-schedule/) - Build 2016-12-08 - Stable Branche 2014.1231.2016.7 - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/)
+available [new beta version](https://slangji.wordpress.com/wp-missed-schedule-beta/) with code totally rewrited that applies innovative method for interval of checking with lowest load server. This plugin patched an important unfixed issue since WordPress 2.5+ to date because Missed Schedule is Bug! All previous versions, before latest stable, are deprecated, no longer supported, and your distribution files silenty updated: please re-download or re-install it, based on build date, rather on version! This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on [GitHub](https://github.com/sLaNGjI/wp-missed-schedule/) - Build 2017-05-21 - Stable Branche 2014.1231.2017.4 - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/) Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
 
 **This plugin was approved on this repository online since 2007-8-18**
+
+Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
 
 <a href="https://slangji.wordpress.com/wp-missed-schedule-pro/">Upgrade to Pro Version</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-gold/">Gold</a> | <a href="http://slangjis.org/support/">Support</a> | <a href="https://github.com/sLaNGjI/">GitHub</a> | <a href="http://web.archive.org/web/20140716010606/http://secunia.com/advisories/product/51113/">Secunia</a>
 `
@@ -353,6 +360,138 @@ last version number (2014.1231.1.*2*) 2 for example.
 * 250.000+ Downloads 70.000+ Active Installs Day 2015-12-31
 * 200.000+ Downloads 60.000+ Active Installs Day 2015-08-25
 
+= 2014.1231.2017.4 =
+* Security [UPDATE] Security and Maintenance Release
+ * Please update as soon as possible!
+ * Undeveloped on wordpress.org since 2016-04-13
+ * Available on GitHub only for Author Request!
+ * Branche 2014 Build 2017-05-21
+ * Release 2014 Version 1231 Revision 2017 Update 4
+ * Work with all WordPress Versions from 2.1+ to 4.7+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.7+
+ * Preemptive Support for WordPress 4.8-beta
+ * MAINTENANCE Release According WordPress 4.7.5
+ * MAINTENANCE Release According WordPress 4.6.6
+ * MAINTENANCE Release According WordPress 4.5.9
+ * MAINTENANCE Release According WordPress 4.4.10
+ * MAINTENANCE Release According WordPress 4.3.11
+ * MAINTENANCE Release According WordPress 4.2.15
+ * MAINTENANCE Release According WordPress 4.1.18
+ * MAINTENANCE Release According WordPress 4.0.18
+ * MAINTENANCE Release According WordPress 3.9.19
+ * MAINTENANCE Release According WordPress 3.8.21
+ * MAINTENANCE Release According WordPress 3.7.21
+= 2014.1231.2017.3 =
+* Compatibility [UPDATE] Maintenance Release
+ * Please update as soon as possible!
+ * Undeveloped on wordpress.org since 2016-04-13
+ * Available on GitHub only for Author Request!
+ * Branche 2014 Build 2017-04-20
+ * Release 2014 Version 1231 Revision 2017 Update 3
+ * Work with all WordPress Versions from 2.1+ to 4.7+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.7+
+ * Preemptive Support for WordPress 4.8-alpha
+ * MAINTENANCE Release According WordPress 4.7.4
+ * MAINTENANCE Release According WordPress 4.6.5
+ * MAINTENANCE Release According WordPress 4.5.8
+ * MAINTENANCE Release According WordPress 4.4.9
+ * MAINTENANCE Release According WordPress 4.3.10
+ * MAINTENANCE Release According WordPress 4.2.14
+ * MAINTENANCE Release According WordPress 4.1.17
+ * MAINTENANCE Release According WordPress 4.0.17
+ * MAINTENANCE Release According WordPress 3.9.18
+ * MAINTENANCE Release According WordPress 3.8.20
+ * MAINTENANCE Release According WordPress 3.7.20
+= 2014.1231.2017.2 =
+* Compatibility [UPDATE] Maintenance Release
+ * Please update as soon as possible!
+ * Undeveloped on wordpress.org since 2016-04-13
+ * Available on GitHub only for Author Request!
+ * Branche 2014 Build 2017-03-16
+ * Release 2014 Version 1231 Revision 2017 Update 2
+ * Work with all WordPress Versions from 2.1+ to 4.7+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.7+
+ * Preemptive Support for WordPress 4.8-alpha
+ * MAINTENANCE Release According WordPress 4.7.3
+ * MAINTENANCE Release According WordPress 4.6.4
+ * MAINTENANCE Release According WordPress 4.5.7
+ * MAINTENANCE Release According WordPress 4.4.8
+ * MAINTENANCE Release According WordPress 4.3.9
+ * MAINTENANCE Release According WordPress 4.2.13
+ * MAINTENANCE Release According WordPress 4.1.16
+ * MAINTENANCE Release According WordPress 4.0.16
+ * MAINTENANCE Release According WordPress 3.9.17
+ * MAINTENANCE Release According WordPress 3.8.19
+ * MAINTENANCE Release According WordPress 3.7.19
+= 2014.1231.2017.1 =
+* Support [UPDATE] Important and Improved Major Update
+ * Please update as soon as possible!
+ * Undeveloped on wordpress.org since 2016-04-13
+ * Available on GitHub only for Author Request!
+ * Branche 2014 Build 2017-01-26
+ * Release 2014 Version 1231 Revision 2017 Update 1
+ * Work with all WordPress Versions from 2.1+ to 4.7+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.7+
+ * Preemptive Support for WordPress 4.8-alpha
+ * ADD gpl-3.0.txt
+ * DELETED gpl-2.0.txt
+ * ENHANCEMENT Somes Core Improvements
+ * ENHANCEMENT Somes Transients Improvements
+ * FIXED checksun.txt and SHA1 values
+ * MIGRATED Licensing from GPLv2 to GPLv3
+ * UPDATED LICENSE.md
+ * UPDATED license.txt
+ * UPDATED Plugin Activation Procedure
+ * UPDATED Plugin Deactivation Procedure
+ * UPDATED Plugin Uninstall Routines
+ * UPDATED Plugin HTTP send Headers
+ * UPDATED Security Rules
+ * UPDATED index.html
+ * UPDATED index.php
+ * UPDATED .travis.yml
+ * MAINTENANCE Release According WordPress 4.7.2
+ * MAINTENANCE Release According WordPress 4.7.1
+ * MAINTENANCE Release According WordPress 4.6.3
+ * MAINTENANCE Release According WordPress 4.6.2
+ * MAINTENANCE Release According WordPress 4.5.6
+ * MAINTENANCE Release According WordPress 4.5.5
+ * MAINTENANCE Release According WordPress 4.4.7
+ * MAINTENANCE Release According WordPress 4.4.6
+ * MAINTENANCE Release According WordPress 4.3.8
+ * MAINTENANCE Release According WordPress 4.3.7
+ * MAINTENANCE Release According WordPress 4.2.12
+ * MAINTENANCE Release According WordPress 4.2.11
+ * MAINTENANCE Release According WordPress 4.1.15
+ * MAINTENANCE Release According WordPress 4.1.14
+ * MAINTENANCE Release According WordPress 4.0.15
+ * MAINTENANCE Release According WordPress 4.0.14
+ * MAINTENANCE Release According WordPress 3.9.16
+ * MAINTENANCE Release According WordPress 3.9.15
+ * MAINTENANCE Release According WordPress 3.8.18
+ * MAINTENANCE Release According WordPress 3.8.17
+ * MAINTENANCE Release According WordPress 3.7.18
+ * MAINTENANCE Release According WordPress 3.7.17
+= 2014.1231.2016.7 =
+* Support [UPDATE] Preemptive Support WordPress 4.8-alpha
+ * Please update as soon as possible!
+ * Undeveloped on wordpress.org since 2016-04-13
+ * Available on GitHub only for Author Request!
+ * Branche 2014 Build 2016-12-08
+ * Release 2014 Version 1231 Revision 2016 Update 7
+ * Work with all WordPress Versions from 2.1+ to 4.7+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.7+
+ * Preemptive Support for WordPress 4.8-alpha
+ * MAINTENANCE Release According WordPress 4.7
+ * MAINTENANCE Release According WordPress 4.6.1
+ * MAINTENANCE Release According WordPress 4.5.4
+ * MAINTENANCE Release According WordPress 4.4.5
+ * MAINTENANCE Release According WordPress 4.3.6
+ * MAINTENANCE Release According WordPress 4.2.10
+ * MAINTENANCE Release According WordPress 4.1.13
+ * MAINTENANCE Release According WordPress 4.0.13
+ * MAINTENANCE Release According WordPress 3.9.14
+ * MAINTENANCE Release According WordPress 3.8.16
+ * MAINTENANCE Release According WordPress 3.7.16
 = 2014.1231.2016.6 =
 * Support [UPDATE] Preemptive Support WordPress 4.8-alpha
  * Please update as soon as possible!
@@ -365,7 +504,6 @@ last version number (2014.1231.1.*2*) 2 for example.
  * Preemptive Support for WordPress 4.8-alpha
  * MAINTENANCE Release According WordPress 4.7
  * MAINTENANCE Release According WordPress 4.6.1
- * MAINTENANCE Release According WordPress 4.6
  * MAINTENANCE Release According WordPress 4.5.4
  * MAINTENANCE Release According WordPress 4.4.5
  * MAINTENANCE Release According WordPress 4.3.6
@@ -375,7 +513,6 @@ last version number (2014.1231.1.*2*) 2 for example.
  * MAINTENANCE Release According WordPress 3.9.14
  * MAINTENANCE Release According WordPress 3.8.16
  * MAINTENANCE Release According WordPress 3.7.16
- * MAINTENANCE Release According WordPress 3.6.1
 = 2014.1231.2016.5 =
 * Support [UPDATE] Preemptive Support WordPress 4.7-beta
  * Please update as soon as possible!
@@ -388,7 +525,6 @@ last version number (2014.1231.1.*2*) 2 for example.
  * Preemptive Support for WordPress 4.7-beta
  * Preemptive Support for WordPress 4.7-alpha
  * MAINTENANCE Release According WordPress 4.6.1
- * MAINTENANCE Release According WordPress 4.6
  * MAINTENANCE Release According WordPress 4.5.4
  * MAINTENANCE Release According WordPress 4.4.5
  * MAINTENANCE Release According WordPress 4.3.6
@@ -398,7 +534,6 @@ last version number (2014.1231.1.*2*) 2 for example.
  * MAINTENANCE Release According WordPress 3.9.14
  * MAINTENANCE Release According WordPress 3.8.16
  * MAINTENANCE Release According WordPress 3.7.16
- * MAINTENANCE Release According WordPress 3.6.1
 = 2014.1231.2016.4 =
 * Support [UPDATE] Preemptive Support WordPress 4.7-alpha
  * Please update as soon as possible!
@@ -410,7 +545,6 @@ last version number (2014.1231.1.*2*) 2 for example.
  * Full Support and Compatibility for WordPress 2.1+ - 4.6+
  * Preemptive Support for WordPress 4.7-alpha
  * MAINTENANCE Release According WordPress 4.6.1
- * MAINTENANCE Release According WordPress 4.6
  * MAINTENANCE Release According WordPress 4.5.4
  * MAINTENANCE Release According WordPress 4.4.5
  * MAINTENANCE Release According WordPress 4.3.6
@@ -420,7 +554,6 @@ last version number (2014.1231.1.*2*) 2 for example.
  * MAINTENANCE Release According WordPress 3.9.14
  * MAINTENANCE Release According WordPress 3.8.16
  * MAINTENANCE Release According WordPress 3.7.16
- * MAINTENANCE Release According WordPress 3.6.1
 = 2014.1231.2016.3 =
 * Maintenance [UPDATE] Compatibility and Reliability Update!
  * Please update as soon as possible!
@@ -431,6 +564,7 @@ last version number (2014.1231.1.*2*) 2 for example.
  * Work with all WordPress Versions from 2.1+ to 4.6+
  * Full Support and Compatibility for WordPress 2.1+ - 4.6+
  * Preemptive Support for WordPress 4.7-alpha
+ * MAINTENANCE Release According WordPress 4.6
  * MAINTENANCE Release According WordPress 4.5.3
  * MAINTENANCE Release According WordPress 4.5.2
  * MAINTENANCE Release According WordPress 4.4.4
@@ -446,8 +580,8 @@ last version number (2014.1231.1.*2*) 2 for example.
  * Please update as soon as possible!
  * Branche 2014 Build 2016-04-13
  * Release 2014 Version 1231 Revision 2016 Update 2
- * Work with all WordPress Versions from 2.1+ to 4.5+
- * Full Support and Compatibility for WordPress 2.1+ - 4.5+
+ * Work with all WordPress Versions from 2.1+ to 4.5.0+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.5.0+
  * Preemptive Support for WordPress 4.6-beta
  * MAINTENANCE Release According WordPress 4.5.1
  * MAINTENANCE Release According WordPress 4.4.3
@@ -463,8 +597,8 @@ last version number (2014.1231.1.*2*) 2 for example.
  * Please update as soon as possible!
  * Branche 2014 Build 2016-04-11
  * Release 2014 Version 1231 Revision 2016 Update 1
- * Work with all WordPress Versions from 2.1+ to 4.5+
- * Full Support and Compatibility for WordPress 2.1+ - 4.5+
+ * Work with all WordPress Versions from 2.1+ to 4.5.0+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.5.0+
  * Preemptive Support for WordPress 4.6-alpha
  * FIXED Somes Multisite Issues
  * UPDATED Somes Minor Bugs
@@ -484,7 +618,7 @@ last version number (2014.1231.1.*2*) 2 for example.
  * Please update as soon as possible!
  * Branche 2014 Build 2016-01-06
  * Release 2014 Version 1231 Revision 2016 Update 0
- * Full Support and Compatibility for WordPress 2.1+ - 4.4+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.4.0+
  * Preemptive Support for WordPress 4.5-beta
  * SECURITY Secunia Zero Advisories and Vulnerabilities
  * SECURITY a new idea of sLa: KeyTag and AuthTag authenticity
@@ -501,7 +635,7 @@ last version number (2014.1231.1.*2*) 2 for example.
  * MAINTENANCE Release According WordPress 3.9.10
  * MAINTENANCE Release According WordPress 3.8.12
  * MAINTENANCE Release According WordPress 3.7.12
- * NEW Work with all WordPress Versions from 2.1+ to 4.4+
+ * NEW Work with all WordPress Versions from 2.1+ to 4.4.0+
  * NEW Strict Transients Support
  * UPDATED uninstall.php
  * UPDATED readme.txt
@@ -512,7 +646,7 @@ last version number (2014.1231.1.*2*) 2 for example.
  * Please update as soon as possible!
  * Branche 2014 Build 2015-12-31
  * Release 2014 Version 1231 Revision 2015 Update 4
- * Full Support and Compatibility for WordPress 2.1+ - 4.4+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.4.0+
  * Preemptive Support for WordPress 4.5-alpha
  * MAINTENANCE Release According WordPress 4.4
  * MAINTENANCE Release According WordPress 4.3.1
@@ -527,7 +661,7 @@ last version number (2014.1231.1.*2*) 2 for example.
  * FIXED If Requirements Not Match Control Panel Loop
  * FIXED If Requirements Not Match Dashboard Freeze
  * FIXED Somes Priority Filter Issues
- * NEW Work with all WordPress Versions from 2.1+ to 4.4+
+ * NEW Work with all WordPress Versions from 2.1+ to 4.4.0+
  * NEW Transients Caching to Reduce db Queries and Server Load
  * NEW Prioritization of Plugin Loading
  * NEW Plugin Self Deactivation if Requirements Not Match
@@ -591,48 +725,50 @@ last version number (2014.1231.1.*2*) 2 for example.
  * INCLUDED All Features of Major Release 2013.1231.2014
  * INCLUDED All Features of Major Release 2013.1231.2013
 = To-Do List =
-= Branche 2016 (alpha) =
+= Branche 2017 (alpha) =
+* PHP 7.1+ Compatibility Updates (no date set)
 * All in One Virtual and Real Cron Method (no date set)
-* PHP 7 and 8 Compatibility Updates (no date set)
+* Merge Branche 2016 to 2017 (no date set)
+= Branche 2016 (alpha) =
+* PHP 7.0+ Compatibility Updates (no date set)
 * Introducing PHP 5 Construct and Destruct (no date set)
-* Merge Branche 2014 and 2015 to 2016 (2016.1231.0.0)
+* Merge Branche 2015 to 2016 (no date set)
 = Branche 2015 (beta) =
-* Admin DashBoard Help and FAQ Panel (2015.1231.6.0)
-* Customization of all Plugin Options (2015.1231.5.0)
-* Admin Menu Classic Plugin Settings Page (2015.1231.5.0)
-* Merge Branche 2014 to 2015 (2015.1231.4.0)
-* Preemptive Support PHP 5.5+ and 5.6+ (2015.1231.4.0)
-* Preemptive Support WordPress 4.6-alpha (2015.1231.4.0)
+* Admin DashBoard Help and FAQ Panel (2015.1231.2017.6)
+* Customization of all Plugin Options (2015.1231.2017.6)
+* Admin Menu Classic Plugin Settings Page (2015.1231.2017.6)
 = Beta Release =
-Beta Version 2015.1231.3.0 Release 2015 Improved FREE:
+Beta Version 2015.1231.4.0 Release 2015 Improved FREE:
 
 * Limited Missed Scheduled Posts Fixing per days!
+* Preemptive Support PHP 5.5+ and 5.6+ (2015.1231.4.0)
 * Network Multisite Improvements (2015.1231.3.0)
 * Full Support uninstall.php (2015.0228.3)
 * Full Support Uninstall Hook (2015.0228.2)
-* Merge Branche 2013 to 2015 (2015.0110.1833)
+* Merge Branche 2014 to 2015 (2015.0110.1833)
 * New Cron Checking Interval Method (2014.0316.0230)
 * Prioritization of Plugin Loading (2014.0316.1111)
 = Branche 2014 =
-* Preemptive Support PHP 5.5+ and 5.6+ (2014.1231.2016.9)
-* Merge Branche 2014 to 2015 (2014.1231.2016.8)
+* Preemptive Support PHP 5.5+ and 5.6+ (2014.1231.2016.7)
 = Stable Release =
-Stable Version 2014.1231.2016.6 Release 2014 FREE:
+Stable Version 2014.1231.2017.4 Release 2014 FREE:
 
 * Limited Missed Scheduled Posts Fixing per days!
+* Preemptive Support WordPress 4.8-RC1 (2014.1231.2017.4)
+* Preemptive Support WordPress 4.8-beta (2014.1231.2016.7)
 * Preemptive Support WordPress 4.8-alpha (2014.1231.2016.6)
 * Preemptive Support WordPress 4.7-beta (2014.1231.2016.5)
 * Preemptive Support WordPress 4.7-alpha (2014.1231.2016.4)
 * Important Maintenance Support Release (2014.1231.2016.3)
 * Undeveloped on wordpress.org to GitHub (2014.1231.2016.2)
 * Preemptive Support WordPress 4.6-alpha (2014.1231.2016.1)
-* Full Support for WordPress 4.5+ Release (2014.1231.2016.1)
+* Full Support for WordPress 4.5.0+ Release (2014.1231.2016.1)
 * Network Multisite Improvements (2014.1231.2016.1)
 * Secunia Zero Advisories Vulnerabilities (2014.1231.2016.0)
 * Fixed Panel Loop and Dashboard Freeze (2014.1231.2015.4)
 * Preemptive Support WordPress 4.5-alpha (2014.1231.2015)
 * Plugin Self Deactivation Festures (2014.1231.2015)
-* Full Support for WordPress 4.4+ Release (2014.1231.2015)
+* Full Support for WordPress 4.4.0+ Release (2014.1231.2015)
 * Full Support for WordPress 4.3+ Release (2014.1231.2015)
 * Full Support for WordPress 4.2+ Release (2014.1231.2015)
 * Multisite Uninstall Routine Support (2014.1231.2014)
@@ -656,7 +792,7 @@ Stable Version 2014.1231.2016.6 Release 2014 FREE:
 * Merge Genuine Aut Tag from Pro Version (2014.0221.2015)
 * Merge Secured Key Tag from Pro Version (2014.0207.2015)
 = Gold Release =
-Gold Version 2014.1231.2016.1 Release 2014 FREE:
+Gold Version 2014.1231.2017.4 Release 2014 FREE:
 `
 Please noted that the All in One Special Gold Edition
 Version with vary Frequencies of Checking is dedicated to
@@ -668,6 +804,10 @@ Development Version (code in becoming) Dev Preemptive FREE:
 * Limited Missed Scheduled Posts Fixing per days!
 * Customization of all Plugin Options (concept only)
 * All in One Virtual and Real Cron Method (concept only)
+* Preemptive Support WP 4.9-alpha (Build 2017)
+* Preemptive Support WP 4.8-alpha (Build 2017)
+* Preemptive Support WP 4.7-alpha (Build 2016)
+* Preemptive Support WP 4.6-alpha (Build 2016)
 * Preemptive Support WP 4.5-alpha (2015.1221.0450-DEV)
 * Preemptive Support WP 4.4-alpha (2015.0818.0440-DEV)
 * Preemptive Support WP 4.3-alpha (2015.0323.0430-DEV)
@@ -716,15 +856,15 @@ Stable Version 2013.1231.2015 Release 2013 Reloaded FREE:
 * Preemptive Support WordPress 3.6-alpha (2013.0131.3333)
 * Ticket #3786523 [Strange Messages](https://wordpress.org/support/topic/activate-the-plugin-then-show-strange-messages/) (2013.0130.2222)
 * Scheduled Posts Regression <a href="https://core.trac.wordpress.org/ticket/22944">#22944</a> (2013.0106.1111)
-* Full Support for WordPress 3.5+ Release (2013.0106.1111)
+* Full Support for WordPress 3.5.0+ Release (2013.0106.1111)
 = 2013.1231.2015 =
 * Major Release [RELOADED] The plugin does not have a valid header!
  * Please update as soon as possible!
  * Branche 2013 Build 2015-12-31
  * Release 2013 Revision 2015 Update 0
- * Full Support and Compatibility for WordPress 2.3+ - 4.4+
+ * Full Support and Compatibility for WordPress 2.3+ - 4.4.0+
  * Preemptive Support for WordPress 4.5-alpha
- * MAINTENANCE Release According WordPress 4.4+
+ * MAINTENANCE Release According WordPress 4.4.0+
  * MAINTENANCE Release According WordPress 4.3+
  * MAINTENANCE Release According WordPress 4.2+
  * MERGED Genuine Aut Tag from Pro Version (Only for Admin)
@@ -829,8 +969,8 @@ Stable Version 2013.1231.2015 Release 2013 Reloaded FREE:
  * Old Release History, before 2013, is available on [changelog.txt](http://plugins.svn.wordpress.org/wp-missed-schedule/assets/changelog.txt)
  *
 == Upgrade Notice ==
-= 2014.1231.2016.6 =
-Support [UPDATE] WP 2.1+ to 4.7+ - 4.8-alpha - Build 2016-12-06 - Preemptive Support WordPress 4.8-alpha - Undeveloped on wordpress.org since 2016-04-13 - Available on GitHub only for Author Request - Upgradable directly from WordPress Dashboard on GitHub only - Maintenance Release According WordPress 4.8-alpha / 4.7 / 4.6.1 / 4.5.4 / 4.4.5 / 4.3.6 / 4.2.10 / 4.1.13 / 4.0.13 / 3.9.14 / 3.8.16 / 3.7.16 / 3.6.1 - Secunia Certified Zero Vulnerabilities Advisories!
+= 2014.1231.2017.4 =
+Security and Compatibility [UPDATE] WP 2.1+ to 4.7+ - Preemptive Support 4.8-RC1 - Build 2017-05-21 - Security and Maintenance Update - Somes Important Core and Transients Improvements - Undeveloped on wordpress.org since 2016-04-13 - Available on GitHub only for Author Request - Upgradable directly from WordPress Dashboard on GitHub only - Maintenance Release According WordPress 4.7.5 / 4.6.6 / 4.5.9 / 4.4.10 / 4.3.11 / 4.2.15 / 4.1.18 / 4.0.18 / 3.9.19 / 3.8.21 / 3.7.21 - Secunia Certified Zero Vulnerabilities Advisories!
 == Disclaimer ==
 [sLaNGjIs Team not provide support on wordpress.org forum](https://slangji.wordpress.com/support/) because we are not interested in reviews o stars on our plugins and themes!
 
@@ -874,8 +1014,10 @@ The philosophy of sLaNGjIs Team plugins and themes is:
 
 *LICENSING*
 
-* GPLv2 or later - NOT GPLv3 or later - since is not officially allowed from the licensing
-* GPLv2 or later - NOT GPLv2 or greater - because greater corresponds to GPLv3
+* GPLv3 or later   - officially allowed - update licensing asap
+* GPLv2 or later   - deprecated - not retroactive - update licensing asap to GPLv3
+* GPLv3 or greater - deprecated - not applicable  - because greater corresponds to GPLv4
+* GPLv2 or greater - deprecated - not applicable  - update licensing asap to GPLv3
 
 *BRANDING*
 
