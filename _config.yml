@@ -1,5 +1,5 @@
 title: WP Missed Schedule Fix WP Failed Future Posts
-description: Find missed schedule posts and it republish them correctly. Checking every 5 minutes all posts that match the problem, and fixed 5 items per session.
+description: WordPress plugin WP Missed Schedule Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist. The configuration is automatic!
 google_analytics: 
 show_downloads: true
 theme: jekyll-theme-minimal
