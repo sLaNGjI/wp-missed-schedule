@@ -31,7 +31,11 @@
 	 * @compatible  WordPress 4.8-RC1
 	 */
 
-	defined ( 'WP_UNINSTALL_PLUGIN' ) OR exit;
+	defined( 'ABSPATH' ) or exit;
+
+	defined( 'WPINC' ) or exit;
+
+	defined ( 'WP_UNINSTALL_PLUGIN' ) or exit;
 
 	$option_names = array( 
 			'byrev_fixshedule_next_verify',
