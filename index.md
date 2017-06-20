@@ -21,11 +21,13 @@ Do not install into mu-plugins directory because need to run functions activatio
 [![Build Status](https://travis-ci.org/sLaNGjI/wp-missed-schedule.svg?branch=master)](https://travis-ci.org/sLaNGjI/wp-missed-schedule/)
 
 <a href="https://slangji.wordpress.com/wp-missed-schedule-pro/">Upgrade to Pro Version</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-gold/">Gold</a> | <a href="http://slangjis.org/support/">Support</a> | <a href="https://github.com/sLaNGjI/wp-missed-schedule">GitHub Project</a> | <a href="https://slangji.github.io/wp-missed-schedule/">GitHub Pages</a> - <a href="http://web.archive.org/web/20140716010606/http://secunia.com/advisories/product/51113/">Secunia</a>
+
 `
 275.000+ Downloads 90.000+ Active Installs
 
 A Special Thanks to all who have Installed
 `
+
 Missed Schedule is a Bug unfixed since WordPress 2.5+ to date!
 
 > **Premium Support** -- this service is free of charge
@@ -51,6 +53,7 @@ This plugin is designed for heavy use of scheduled future posts and rss grabbing
 The plugin code was totally rewrited for maximum compatibility with W3 Total Cache and others caching plugins, JetPack and others social publishing plugins, transparency and interference free with others scheduled cron jobs at scale.
 
 This plugin not need others actions from the administrator except activate, deactivate or delete it: is ready to single, network multisite installations, and old WPMU 2.6 to 2.9+ (latest is 2.9.2) multi users and run on shared, dedicated, cloud and vps hosting, with high and low resources.
+
 `
 Failed run when a good post goes to future.
 
@@ -63,7 +66,9 @@ The Posts won, but the Missed is lost!
 
 Proverbs 21:39
 `
+
 Read <a href="https://wordpress.org/plugins/wp-missed-schedule/changelog/">Todo List</a> for stay up to date on future changes ...
+
 `
 New WP Missed Schedule Features and Future Updates
 
@@ -108,6 +113,7 @@ Manual Change the Frequency of Checking (pro)
 Manual Change the Number of Failed Posts Fixed (pro)
 Switching from Local GMT and UTC Time (pro)
 `
+
 = Common Rules =
 * Fix Missed Schedule Failed Future Posts Scheduled Items
 * Secunia Certified Zero Advisories and Vulnerabilities
@@ -138,6 +144,7 @@ Switching from Local GMT and UTC Time (pro)
 * Implement [GNU style](https://www.gnu.org/prep/standards/standards.html) coding standard indentation
 * Meet detailed [Plugin Guidelines](https://wordpress.org/plugins/about/guidelines/) quality requirements
 * Support for [Theme Check](https://wordpress.org/plugins/theme-check/) specifications
+
 `
 Please noted that on WordPress MultiSite, activation,
 and options panel is only available on Super Admin!
@@ -145,7 +152,9 @@ and options panel is only available on Super Admin!
 Action Link Cron on left when plugin is activated is
 accessible only with WP Crontrol plugin Active!
 `
+
 Scheduled Posts Regression <a href="https://core.trac.wordpress.org/ticket/22944">#22944</a> fixed on WP 3.5.1 is not related to this plugin.
+
 `
 Nothing is written into hosting space disk
 wp_option table auto cleaned when deactivate or deleted
@@ -157,6 +166,7 @@ No need delete anything from database when deleted
 No need delete anything from wp_option when deactivate
 No need delete anything from wp_option when deleted
 `
+
 * [My others WordPress Plugins](http://slangjis.org/plugins/) on [Softpedia Webscripts](http://webscripts.softpedia.com/publisher/sLa-1869786722.html) [GitHub](https://github.com/sLaNGjI)
  * [WP Overview (lite)](http://slangjis.org/plugins/wp-overview-lite/) (modules updated)
  * [WP Missed Schedule](http://slangjis.org/plugins/wp-missed-schedule/) 275.000+ Downloads 90.000+ Installs
@@ -333,12 +343,15 @@ available [new beta version](https://slangji.wordpress.com/wp-missed-schedule-be
 Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
 
 <a href="https://slangji.wordpress.com/wp-missed-schedule-pro/">Upgrade to Pro Version</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-gold/">Gold</a> | <a href="http://slangjis.org/support/">Support</a> | <a href="https://github.com/sLaNGjI/">GitHub</a> | <a href="http://web.archive.org/web/20140716010606/http://secunia.com/advisories/product/51113/">Secunia</a>
+
 `
 275.000+ Downloads 90.000+ Active Installs
 
 A Special Thanks to all who have Installed
 `
+
 We always recommend upgrading to the latest version!
+
 `
 Legend:
 
