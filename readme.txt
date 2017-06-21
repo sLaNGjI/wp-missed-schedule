@@ -1,4 +1,4 @@
-=== WP Missed Schedule ===
+=== WP Missed Schedule (Original) ===
 Contributors: sLaNGjI
 Requires at least: 2.1
 Tested up to: 4.8
