@@ -1,5 +1,5 @@
 === WP Missed Schedule Original ===
-Contributors: sLaNGjI
+Contributors: sLaNGjIs Team
 Requires at least: 2.1
 Tested up to: 4.8
 Stable tag: 2014.1231.2017.5
