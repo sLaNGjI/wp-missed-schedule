@@ -1,12 +1,12 @@
-=== Missed Schedule Fix WP Failed Future Posts ===
+=== Missed Schedule (The Original) ===
 Contributors: sLaNGjI
-Donate link: http://slangjis.org/donate/
 Requires at least: 2.1
 Tested up to: 4.8
 Stable tag: 2014.1231.2017.5
-Tags: sLaNGjIs, cron job, cron jobs, failed, future, future posts, missed, missed schedule, posts, schedule, scheduled, scheduled posts,
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Donate link: http://slangjis.org/donate/
+Tags: sLaNGjIs, cron job, cron jobs, failed, future, future posts, missed, missed schedule, posts, schedule, scheduled, scheduled posts,
 
 wordpress plugin wp missed schedule fix scheduled posts failed on virtual cron job bug and republish them fixed 10 items each session every 15 minutes
 
@@ -39,6 +39,8 @@ Missed Schedule is a Bug unfixed since WordPress 2.5+ to date!
 > **Bug Reports**
 >
 > Welcomed on [GitHub](https://github.com/sLaNGjI/) but no bugs issues will be closed.
+
+Missed Schedule Fix WP Failed Future Posts
 
 This plugin not decrease server performance why check the internal WordPress virtual cron job, to not waste resources, and not the real cron job of the server at scale.
 
