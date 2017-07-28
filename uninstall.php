@@ -22,13 +22,13 @@
 	 * @translation slangjis.org/translations
 	 * @blog        slangji.wordpress.com
 	 *
-	 * @build       2017-05-31
-	 * @version     2014.1231.2017.5
+	 * @build       2017-06-30
+	 * @version     2014.1231.2017.6
 	 * @requires    WordPress 2.7+
 	 * @since       WordPress 2.7+
-	 * @tested      WordPress 3.7+
-	 * @updated     WordPress 4.7+
-	 * @compatible  WordPress 4.8-RC1
+	 * @tested      WordPress 3.6+
+	 * @updated     WordPress 4.8+
+	 * @compatible  WordPress 4.9-alpha
 	 */
 
 	defined( 'ABSPATH' ) or exit;
@@ -37,11 +37,26 @@
 
 	defined ( 'WP_UNINSTALL_PLUGIN' ) or exit;
 
-	$option_names = array( 
-			'byrev_fixshedule_next_verify',
-			'scheduled_post_guardian_next_run',
-			'simpul_missed_schedule',
-			'wpt_scheduled_check',
+	$hooks_names = array( 
+			'missed_schedule',
+			'missed_scheduled',
+			'missed_schedule_cron',
+			'missed_scheduled_cron',
+			'wp_missed_schedule',
+			'wp_missed_scheduled',
+			'wp_missed_schedule_cron',
+			'wp_missed_scheduled_cron',
+			'wp_schedule_missed',
+			'wp_scheduled_missed',
+			'wp_schedule_missed_cron',
+			'wp_scheduled_missed_cron',
+			'schedule_missed',
+			'scheduled_missed',
+			'schedule_missed_cron',
+			'scheduled_missed_cron'
+	);
+
+	$options_names = array( 
 			'missed_schedule',
 			'missed_scheduled',
 			'schedule_missed',
@@ -61,7 +76,6 @@
 			'wp_missed_schedule',
 			'wp_missed_scheduled',
 			'wp_schedule_missed',
-			'wp_scheduled_missed',
 			'wp_missed_schedule_cron',
 			'wp_missed_scheduled_cron',
 			'wp_schedule_missed_cron',
@@ -73,7 +87,24 @@
 			'wp_missed_schedule_cron_options',
 			'wp_missed_scheduled_cron_options',
 			'wp_schedule_missed_cron_options',
-			'wp_scheduled_missed_cron_options',
+			'wp_scheduled_missed_cron_options'
+	);
+
+	$transients_names = array( 
+			'wp_missed_schedule',
+			'wp_missed_scheduled',
+			'timeout_wp_missed_schedule',
+			'timeout_wp_missed_scheduled',
+			'wp_schedule_missed',
+			'timeout_wp_schedule_missed',
+			'missed_schedule',
+			'missed_scheduled',
+			'timeout_missed_schedule',
+			'timeout_missed_scheduled',
+			'schedule_missed',
+			'scheduled_missed',
+			'timeout_schedule_missed',
+			'timeout_scheduled_missed'
 	);
 
 	global $wp_version;
@@ -82,17 +113,43 @@
 		{
 			if ( ! is_multisite() )
 				{
-					foreach ( $option_names as $option_name )
+					foreach ( $hooks_names as $hook_name )
 						{
+							flush_rewrite_rules();
+							wp_clear_scheduled_hook( $hook_name );
+						}
+
+					foreach ( $options_names as $option_name )
+						{
+							flush_rewrite_rules();
 							delete_option( $option_name );
+						}
+
+					foreach ( $transients_names as $transient_name )
+						{
+							flush_rewrite_rules();
+							delete_transient( $transient_name );
 						}
 				}
 
 			if ( is_multisite() )
 				{
-					foreach ( $option_names as $option_name )
+					foreach ( $hooks_names as $hook_name )
 						{
-							delete_option( $option_name );
+							flush_rewrite_rules();
+							wp_clear_scheduled_hook( $hook_name );
+						}
+
+					foreach ( $options_names as $option_name )
+						{
+							flush_rewrite_rules();
+							delete_site_option( $option_name );
+						}
+
+					foreach ( $transients_names as $transient_name )
+						{
+							flush_rewrite_rules();
+							delete_site_transient( $transient_name );
 						}
 
 					global $wpdb;
@@ -104,9 +161,24 @@
 						{
 							switch_to_blog( $blog_id );
 
-							foreach ( $option_names as $option_name )
+							foreach ( $hooks_names as $hook_name )
 								{
+									flush_rewrite_rules();
+									wp_clear_scheduled_hook( $hook_name );
+								}
+
+							foreach ( $options_names as $option_name )
+								{
+									flush_rewrite_rules();
+									delete_option( $option_name );
 									delete_site_option( $option_name );
+								}
+
+							foreach ( $transients_names as $transient_name )
+								{
+									flush_rewrite_rules();
+									delete_transient( $transient_name );
+									delete_site_transient( $transient_name );
 								}
 						}
 					switch_to_blog( $original_blog_id );
