@@ -1,26 +1,36 @@
 <?php 
 /*
- Plugin Name: WP Missed Schedule
+ Plugin Name: WP Missed Schedule (The Original)
  Plugin URI:  http://slangjis.org/plugins/wp-missed-schedule/
- Description: WordPress plugin WP Missed Schedule Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.7+ and 4.8-RC1 single or multisite install - The configuration is automatic and plugin nologo! - Stable Branche 2014 - Build 2017-05-31 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2015</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later. Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
+ Description: The Original Plugin for WordPress WP Missed Schedule Fix only <strong>scheduled failed future posts</strong>, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without wasting resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.8+ and 4.9-alpha single or multisite install - The configuration is automatic and plugin nologo! - <a href="https://slangji.wordpress.com/wp-missed-schedule/">Stable Branche 2014/2015</a> - Build 2017-05-31 Reloaded - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2016</a> - <a href="https://slangji.wordpress.com/wp-missed-schedule-alpha/">Alpha Branche 2018</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later. Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
+ Version:     2014.1231.2017.5
  Author:      sLaNGjIs Team
  Author URI:  http://slangjis.org/plugins/
- Version:     2014.1231.2017.5
  License:     GPLv3 or later (license.txt)
  License URI: https://www.gnu.org/licenses/gpl-3.0.html
  Network:     true
  *
- * GitHub Plugin URI: https://github.com/sLaNGjI/wp-missed-schedule/
- * GitHub Branch:     master
- * GitHub Languages:  https://github.com/sLaNGjI/wp-missed-schedule/
- * Requires WP:       2.1
- * Requires PHP:      5.2
+ GitHub Plugin URI: https://github.com/sLaNGjI/wp-missed-schedule/
+ GitHub Branch:     master
+ GitHub Languages:  https://github.com/sLaNGjI/wp-missed-schedule/
+ Requires WP:       2.1
+ Requires PHP:      5.2
  *
  * Requires at least 2.1
- * Tested up to      4.8
- * Stable tag        2014.1231
+ * Tested up to      4.9
+ * Contributors      sLaNGjIs Team
+ * Donate link       http://slangjis.org/donate/
+ * Indentation       GNU style coding standard
+ * Indentation URI   https://www.gnu.org/prep/standards/standards.html
+ * Humans            We are the humans behind
+ * Humans URI        https://humanstxt.org/Standard.html
  *
  * KeyTag 787c178ab89b0f4378c345b2024af8e2a2aaf1fe
+ *
+ *  OLDER Branche Release 2013 Build 1231 - (branche)
+ * STABLE Branche Release 2014 Build 1231 - (tags)
+ *   BETA Branche Release 2015 Build 1231 - (trunk)
+ *  ALPHA Branche Release 2016 Build 1231 - (code in becoming)
  *
  * Approved                  @ 2007-08-18 (on wordpress.org repository)
  * Retired                   @ 2016-04-13 (on wordpress.org repository)
@@ -30,22 +40,9 @@
  * This plugin was undeveloped from wordpress.org on 2016-04-13 to insanity of this directory
  * for explicit author request and is now actively developed and maintained only on github.com
  *
- * Contributors sLaNGjIs Team
- * Donate link  http://slangjis.org/donate/
+ * USAGE
  *
- * Indentation GNU style coding standard
- * Indentation URI https://www.gnu.org/prep/standards/standards.html
- *
- * Humans     We are the humans behind
- * Humans URI https://humanstxt.org/Standard.html
- *
- * Usage No configuration necessary. Upload, activate and done. For advanced features check out WPMS Pro.
- *
- *  ALPHA Branche 2016: Release 2016 Build 1231 Revision 2017 Update 6
- *
- *   BETA Branche 2015: Release 2015 Build 1231 Revision 2017 Update 4
- *
- * STABLE Branche 2014: Release 2014 Build 1231 Revision 2017 Update 5
+ * No configuration necessary. Upload, activate, and done. For advanced features check out WPMS Pro.
  *
  * REQUIREMENTS
  *
@@ -187,20 +184,21 @@
  */
 
 	/**
-	 * WP Missed Schedule
+	 * WP Missed Schedule (The Original)
 	 *
 	 * @package     WP Missed Schedule
 	 * @subpackage  WordPress PlugIn
 	 * @link        https://github.com/sLaNGjI/wp-missed-schedule/
-	 * @description Fix Missed Schedule Failed Scheduled Future Posts Virtual or Real Cron Job
-	 * @noted       This plugin patched an important big problem unfixed since WordPress 2.5+ to date
+	 * @description Fix only Missed Schedule Failed Scheduled Future Posts on Virtual or Real Cron Job.
+	 * @noted       This plugin patched an important big problem unfixed since WordPress 2.5+ to date.
 	 * @install     The configuration is Automatic and plugin NoLogo!
+	 * @usage       No configuration necessary. Upload, activate, and done.
 	 * @author      sLaNGjIs Team
 	 * @status      STABLE
 	 * @requires    2.1+
 	 * @since       2.5+
-	 * @tested      4.7+ (old 3.6+)
-	 * @compatible  4.8-RC1
+	 * @tested      4.8+ (old 3.6+)
+	 * @compatible  4.9-alpha
 	 * @branche     2014
 	 * @revision    2017
 	 * @update      5
@@ -266,25 +264,25 @@
 		}
 	else
 		{
-	if ( get_option( 'wp_scheduled_missed' ) )
-		{
-			wp_die( __( '2 - This WordPress installation is infected with a malware variant of WP Missed Schedule: Activation Stopped!<br />
-			<br />Uninstall all not original or forked versions of this plugin and retry: read more on the <a href="http://slangjis.org/unauthorized-code-use-and-copy-of-slangjis-plugins-or-themes/">cause of infection</a><br />
-			<br /><br /><strong>This is because you used, or have used, an unpublished version of this plugin, and have another similar plugin installed and activated, or you have installed an unauthorized forked version, or have installed a copy of this plugin that does not respect the trademark, and assigning the license to the authors who created it.</strong><br />
-			<br /><br />It may also happen that you did not perform the correct uninstallation procedure of the previous version, and the correct installation of the latest current version, or have another similar plugin activated.<br />
-			<br />The correct procedure to use is only this:<br />
-			<br />- Deactivate all similar plugins that have previously installed and activated.<br />
-			<br />- Decide if you need to uninstall all similar plugins to resolve the issue, if this message persists.<br />
-			<br />- Clean manually the options table if the similar plugins not cleaning your options data automatically.<br />
-			<br />- Deactivate the old version, or the version to be need to update, of plugin WP Missed Schedule.<br />
-			<br />- Flushing cache, and wait for the necessary time.<br />
-			<br />- Install, or copy manually via FTP, the new version of plugin WP Missed Schedule.<br />
-			<br />- Activate the new version of plugin WP Missed Schedule.<br />
-			<br />Overwrite an old version of this plugin directly via FTP, or directly overwrite a version to upgrade, it may also be the cause of this type of error.<br />
-			<br /><u>Remember that this plugin does not work properly if installed in the mu-plugin directory!</u>' ) );
-		}
-	else
-		{
+//	if ( get_option( 'wp_scheduled_missed' ) )
+//		{
+//			wp_die( __( '2 - This WordPress installation is infected with a malware variant of WP Missed Schedule: Activation Stopped!<br />
+//			<br />Uninstall all not original or forked versions of this plugin and retry: read more on the <a href="http://slangjis.org/unauthorized-code-use-and-copy-of-slangjis-plugins-or-themes/">cause of infection</a><br />
+//			<br /><br /><strong>This is because you used, or have used, an unpublished version of this plugin, and have another similar plugin installed and activated, or you have installed an unauthorized forked version, or have installed a copy of this plugin that does not respect the trademark, and assigning the license to the authors who created it.</strong><br />
+//			<br /><br />It may also happen that you did not perform the correct uninstallation procedure of the previous version, and the correct installation of the latest current version, or have another similar plugin activated.<br />
+//			<br />The correct procedure to use is only this:<br />
+//			<br />- Deactivate all similar plugins that have previously installed and activated.<br />
+//			<br />- Decide if you need to uninstall all similar plugins to resolve the issue, if this message persists.<br />
+//			<br />- Clean manually the options table if the similar plugins not cleaning your options data automatically.<br />
+//			<br />- Deactivate the old version, or the version to be need to update, of plugin WP Missed Schedule.<br />
+//			<br />- Flushing cache, and wait for the necessary time.<br />
+//			<br />- Install, or copy manually via FTP, the new version of plugin WP Missed Schedule.<br />
+//			<br />- Activate the new version of plugin WP Missed Schedule.<br />
+//			<br />Overwrite an old version of this plugin directly via FTP, or directly overwrite a version to upgrade, it may also be the cause of this type of error.<br />
+//			<br /><u>Remember that this plugin does not work properly if installed in the mu-plugin directory!</u>' ) );
+//		}
+//	else
+//		{
 	if ( get_option( 'wp_scheduled_missed_time' ) )
 		{
 			wp_die( __( '3 - This WordPress installation is infected with a malware variant of WP Missed Schedule: Activation Stopped!<br />
@@ -518,6 +516,7 @@
 
 			if ( $wp_version >= 2.1 )
 				{
+					flush_rewrite_rules();
 					delete_option( 'byrev_fixshedule_next_verify' );
 					delete_option( 'scheduled_post_guardian_next_run' );
 					//delete_option( 'simpul_missed_schedule' );
@@ -525,7 +524,7 @@
 					delete_option( 'wp_missed_schedule' );
 					delete_option( 'wp_missed_scheduled' );
 					delete_option( 'wp_schedule_missed' );
-					//delete_option( 'wp_scheduled_missed' );
+					delete_option( 'wp_scheduled_missed' );                                                               # Future ALPHA conding reserved
 					delete_option( 'missed_schedule' );
 					delete_option( 'missed_scheduled' );
 					delete_option( 'schedule_missed' );
@@ -534,6 +533,7 @@
 
 			if ( $wp_version >= 3.0 )
 				{
+					flush_rewrite_rules();
 					delete_site_option( 'byrev_fixshedule_next_verify' );
 					delete_site_option( 'scheduled_post_guardian_next_run' );
 					//delete_site_option( 'simpul_missed_schedule' );
@@ -541,7 +541,7 @@
 					delete_site_option( 'wp_missed_schedule' );
 					delete_site_option( 'wp_missed_scheduled' );
 					delete_site_option( 'wp_schedule_missed' );
-					//delete_site_option( 'wp_scheduled_missed' );
+					delete_site_option( 'wp_scheduled_missed' );                                                          # Future ALPHA conding reserved
 					delete_site_option( 'missed_schedule' );
 					delete_site_option( 'missed_scheduled' );
 					delete_site_option( 'schedule_missed' );
@@ -550,14 +550,15 @@
 
 			if ( $wp_version >= 2.8 )
 				{
+					flush_rewrite_rules();
 					delete_transient( 'wp_missed_schedule' );
 					delete_transient( 'wp_missed_scheduled' );
 					delete_transient( 'timeout_wp_missed_schedule' );
 					delete_transient( 'timeout_wp_missed_scheduled' );
 					delete_transient( 'wp_schedule_missed' );
-					//delete_transient( 'wp_scheduled_missed' );
+					delete_transient( 'wp_scheduled_missed' );                                                            # Future ALPHA conding reserved
 					delete_transient( 'timeout_wp_schedule_missed' );
-					//delete_transient( 'timeout_wp_scheduled_missed' );
+					delete_transient( 'timeout_wp_scheduled_missed' );                                                    # Future ALPHA conding reserved
 					delete_transient( 'missed_schedule' );
 					delete_transient( 'missed_scheduled' );
 					delete_transient( 'timeout_missed_schedule' );
@@ -570,14 +571,15 @@
 
 			if ( $wp_version >= 3.0 )
 				{
+					flush_rewrite_rules();
 					delete_site_transient( 'wp_missed_schedule' );
 					delete_site_transient( 'wp_missed_scheduled' );
 					delete_site_transient( 'timeout_wp_missed_schedule' );
 					delete_site_transient( 'timeout_wp_missed_scheduled' );
 					delete_site_transient( 'wp_schedule_missed' );
-					//delete_site_transient( 'wp_scheduled_missed' );
+					delete_site_transient( 'wp_scheduled_missed' );                                                       # Future ALPHA conding reserved
 					delete_site_transient( 'timeout_wp_schedule_missed' );
-					//delete_site_transient( 'timeout_wp_scheduled_missed' );
+					delete_site_transient( 'timeout_wp_scheduled_missed' );                                               # Future ALPHA conding reserved
 					delete_site_transient( 'missed_schedule' );
 					delete_site_transient( 'missed_scheduled' );
 					delete_site_transient( 'timeout_missed_schedule' );
@@ -588,6 +590,7 @@
 					delete_site_transient( 'timeout_scheduled_missed' );
 				}
 
+			flush_rewrite_rules();
 			wp_clear_scheduled_hook( 'missed_schedule' );
 			wp_clear_scheduled_hook( 'missed_scheduled' );
 			wp_clear_scheduled_hook( 'missed_schedule_cron' );
@@ -715,7 +718,9 @@ SQL;
 					wp_publish_post( $scheduledID );
 				}
 
-			update_option( WPMS_OPTION, time() + 900 );
+
+
+
 		}
 	add_action( 'init', 'wpms_init', 0 );
 
@@ -754,6 +759,7 @@ SQL;
 				{
 					$links[] = '<a href="tools.php?page=crontrol_admin_manage_page">Cron</a>';
 					$links[] = '<a href="edit.php?post_status=future&post_type=post">Miss</a>';
+					$links[] = '<a href="'. esc_url( 'https://slangji.wordpress.com/plugins/wp-missed-schedule-pro/' ) .'" target="_blank" style="color: #3db634">' . __( 'Upgrade', 'widget-options' ) . '</a>';
 						return $links;
 				}
 
@@ -833,6 +839,7 @@ SQL;
 
 			if ( $wp_version >= 2.1 )
 				{
+					flush_rewrite_rules();
 					delete_option( 'byrev_fixshedule_next_verify' );
 					delete_option( 'scheduled_post_guardian_next_run' );
 					//delete_option( 'simpul_missed_schedule' );
@@ -840,7 +847,7 @@ SQL;
 					delete_option( 'wp_missed_schedule' );
 					delete_option( 'wp_missed_scheduled' );
 					delete_option( 'wp_schedule_missed' );
-					//delete_option( 'wp_scheduled_missed' );
+					delete_option( 'wp_scheduled_missed' );                                                               # Future ALPHA conding reserved
 					delete_option( 'missed_schedule' );
 					delete_option( 'missed_scheduled' );
 					delete_option( 'schedule_missed' );
@@ -849,6 +856,7 @@ SQL;
 
 			if ( $wp_version >= 3.0 )
 				{
+					flush_rewrite_rules();
 					delete_site_option( 'byrev_fixshedule_next_verify' );
 					delete_site_option( 'scheduled_post_guardian_next_run' );
 					//delete_site_option( 'simpul_missed_schedule' );
@@ -856,7 +864,7 @@ SQL;
 					delete_site_option( 'wp_missed_schedule' );
 					delete_site_option( 'wp_missed_scheduled' );
 					delete_site_option( 'wp_schedule_missed' );
-					//delete_site_option( 'wp_scheduled_missed' );
+					delete_site_option( 'wp_scheduled_missed' );                                                          # Future ALPHA conding reserved
 					delete_site_option( 'missed_schedule' );
 					delete_site_option( 'missed_scheduled' );
 					delete_site_option( 'schedule_missed' );
@@ -865,14 +873,15 @@ SQL;
 
 			if ( $wp_version >= 2.8 )
 				{
+					flush_rewrite_rules();
 					delete_transient( 'wp_missed_schedule' );
 					delete_transient( 'wp_missed_scheduled' );
 					delete_transient( 'timeout_wp_missed_schedule' );
 					delete_transient( 'timeout_wp_missed_scheduled' );
 					delete_transient( 'wp_schedule_missed' );
-					//delete_transient( 'wp_scheduled_missed' );
+					delete_transient( 'wp_scheduled_missed' );                                                            # Future ALPHA conding reserved
 					delete_transient( 'timeout_wp_schedule_missed' );
-					//delete_transient( 'timeout_wp_scheduled_missed' );
+					delete_transient( 'timeout_wp_scheduled_missed' );                                                    # Future ALPHA conding reserved
 					delete_transient( 'missed_schedule' );
 					delete_transient( 'missed_scheduled' );
 					delete_transient( 'timeout_missed_schedule' );
@@ -885,14 +894,15 @@ SQL;
 
 			if ( $wp_version >= 3.0 )
 				{
+					flush_rewrite_rules();
 					delete_site_transient( 'wp_missed_schedule' );
 					delete_site_transient( 'wp_missed_scheduled' );
 					delete_site_transient( 'timeout_wp_missed_schedule' );
 					delete_site_transient( 'timeout_wp_missed_scheduled' );
 					delete_site_transient( 'wp_schedule_missed' );
-					//delete_site_transient( 'wp_scheduled_missed' );
+					delete_site_transient( 'wp_scheduled_missed' );                                                       # Future ALPHA conding reserved
 					delete_site_transient( 'timeout_wp_schedule_missed' );
-					//delete_site_transient( 'timeout_wp_scheduled_missed' );
+					delete_site_transient( 'timeout_wp_scheduled_missed' );                                               # Future ALPHA conding reserved
 					delete_site_transient( 'missed_schedule' );
 					delete_site_transient( 'missed_scheduled' );
 					delete_site_transient( 'timeout_missed_schedule' );
@@ -903,6 +913,7 @@ SQL;
 					delete_site_transient( 'timeout_scheduled_missed' );
 				}
 
+			flush_rewrite_rules();
 			wp_clear_scheduled_hook( 'missed_schedule' );
 			wp_clear_scheduled_hook( 'missed_scheduled' );
 			wp_clear_scheduled_hook( 'missed_schedule_cron' );
@@ -933,6 +944,7 @@ SQL;
 
 					if ( $wp_version < 3.0 )
 						{
+							flush_rewrite_rules();
 							delete_option( 'byrev_fixshedule_next_verify' );
 							delete_option( 'scheduled_post_guardian_next_run' );
 							//delete_option( 'simpul_missed_schedule' );
@@ -940,7 +952,7 @@ SQL;
 							delete_option( 'wp_missed_schedule' );
 							delete_option( 'wp_missed_scheduled' );
 							delete_option( 'wp_schedule_missed' );
-							//delete_option( 'wp_scheduled_missed' );
+							delete_option( 'wp_scheduled_missed' );                                                       # Future ALPHA conding reserved
 							delete_option( 'missed_schedule' );
 							delete_option( 'missed_scheduled' );
 							delete_option( 'schedule_missed' );
@@ -949,6 +961,7 @@ SQL;
 
 					if ( ( $wp_version >= 2.6 ) and ( $wp_version < 3.0 ) )
 						{
+							flush_rewrite_rules();
 							delete_option( 'scheduled_missed_options' );
 							delete_option( 'scheduled_missed_cron_options' );
 						}
@@ -957,12 +970,14 @@ SQL;
 						{
 							if ( ! is_multisite() )
 								{
+									flush_rewrite_rules();
 									delete_option( 'scheduled_missed_options' );
 									delete_option( 'scheduled_missed_cron_options' );
 								}
 
 							if ( is_multisite() )
 								{
+									flush_rewrite_rules();
 									delete_site_option( 'scheduled_missed_options' );
 									delete_site_option( 'scheduled_missed_cron_options' );
 
@@ -975,6 +990,7 @@ SQL;
 										{
 											switch_to_blog( $blog_id );
 
+											flush_rewrite_rules();
 											delete_site_option( 'scheduled_missed_options' );
 											delete_site_option( 'scheduled_missed_cron_options' );
 										}
@@ -986,6 +1002,7 @@ SQL;
 						{
 							if ( ! is_multisite() )
 								{
+									flush_rewrite_rules();
 									delete_option( 'byrev_fixshedule_next_verify' );
 									delete_option( 'scheduled_post_guardian_next_run' );
 									//delete_option( 'simpul_missed_schedule' );
@@ -993,7 +1010,7 @@ SQL;
 									delete_option( 'wp_missed_schedule' );
 									delete_option( 'wp_missed_scheduled' );
 									delete_option( 'wp_schedule_missed' );
-									//delete_option( 'wp_scheduled_missed' );
+									delete_option( 'wp_scheduled_missed' );                                               # Future ALPHA conding reserved
 									delete_option( 'missed_schedule' );
 									delete_option( 'missed_scheduled' );
 									delete_option( 'schedule_missed' );
@@ -1002,6 +1019,7 @@ SQL;
 
 							if ( is_multisite() )
 								{
+									flush_rewrite_rules();
 									delete_option( 'byrev_fixshedule_next_verify' );
 									delete_option( 'scheduled_post_guardian_next_run' );
 									//delete_option( 'simpul_missed_schedule' );
@@ -1009,7 +1027,7 @@ SQL;
 									delete_option( 'wp_missed_schedule' );
 									delete_option( 'wp_missed_scheduled' );
 									delete_option( 'wp_schedule_missed' );
-									//delete_option( 'wp_scheduled_missed' );
+									delete_option( 'wp_scheduled_missed' );                                               # Future ALPHA conding reserved
 									delete_option( 'missed_schedule' );
 									delete_option( 'missed_scheduled' );
 									delete_option( 'schedule_missed' );
@@ -1024,6 +1042,7 @@ SQL;
 										{
 											switch_to_blog( $blog_id );
 
+											flush_rewrite_rules();
 											delete_site_option( 'byrev_fixshedule_next_verify' );
 											delete_site_option( 'scheduled_post_guardian_next_run' );
 											//delete_site_option( 'simpul_missed_schedule' );
@@ -1031,7 +1050,7 @@ SQL;
 											delete_site_option( 'wp_missed_schedule' );
 											delete_site_option( 'wp_missed_scheduled' );
 											delete_site_option( 'wp_schedule_missed' );
-											//delete_site_option( 'wp_scheduled_missed' );
+											delete_site_option( 'wp_scheduled_missed' );                                  # Future ALPHA conding reserved
 											delete_site_option( 'missed_schedule' );
 											delete_site_option( 'missed_scheduled' );
 											delete_site_option( 'schedule_missed' );
@@ -1043,14 +1062,15 @@ SQL;
 
 					if ( ( $wp_version >= 2.8 ) and ( $wp_version < 3.0 ) )
 						{
+							flush_rewrite_rules();
 							delete_transient( 'wp_missed_schedule' );
 							delete_transient( 'wp_missed_scheduled' );
 							delete_transient( 'timeout_wp_missed_schedule' );
 							delete_transient( 'timeout_wp_missed_scheduled' );
 							delete_transient( 'wp_schedule_missed' );
-							//delete_transient( 'wp_scheduled_missed' );
+							delete_transient( 'wp_scheduled_missed' );                                                    # Future ALPHA conding reserved
 							delete_transient( 'timeout_wp_schedule_missed' );
-							//delete_transient( 'timeout_wp_scheduled_missed' );
+							delete_transient( 'timeout_wp_scheduled_missed' );                                            # Future ALPHA conding reserved
 							delete_transient( 'missed_schedule' );
 							delete_transient( 'missed_scheduled' );
 							delete_transient( 'timeout_missed_schedule' );
@@ -1065,14 +1085,15 @@ SQL;
 						{
 							if ( ! is_multisite() )
 								{
+									flush_rewrite_rules();
 									delete_transient( 'wp_missed_schedule' );
 									delete_transient( 'wp_missed_scheduled' );
 									delete_transient( 'timeout_wp_missed_schedule' );
 									delete_transient( 'timeout_wp_missed_scheduled' );
 									delete_transient( 'wp_schedule_missed' );
-									//delete_transient( 'wp_scheduled_missed' );
+									delete_transient( 'wp_scheduled_missed' );                                            # Future ALPHA conding reserved
 									delete_transient( 'timeout_wp_schedule_missed' );
-									//delete_transient( 'timeout_wp_scheduled_missed' );
+									delete_transient( 'timeout_wp_scheduled_missed' );                                    # Future ALPHA conding reserved
 									delete_transient( 'missed_schedule' );
 									delete_transient( 'missed_scheduled' );
 									delete_transient( 'timeout_missed_schedule' );
@@ -1085,14 +1106,15 @@ SQL;
 
 							if ( is_multisite() )
 								{
+									flush_rewrite_rules();
 									delete_transient( 'wp_missed_schedule' );
 									delete_transient( 'wp_missed_scheduled' );
 									delete_transient( 'timeout_wp_missed_schedule' );
 									delete_transient( 'timeout_wp_missed_scheduled' );
 									delete_transient( 'wp_schedule_missed' );
-									//delete_transient( 'wp_scheduled_missed' );
+									delete_transient( 'wp_scheduled_missed' );                                            # Future ALPHA conding reserved
 									delete_transient( 'timeout_wp_schedule_missed' );
-									//delete_transient( 'timeout_wp_scheduled_missed' );
+									delete_transient( 'timeout_wp_scheduled_missed' );                                    # Future ALPHA conding reserved
 									delete_transient( 'missed_schedule' );
 									delete_transient( 'missed_scheduled' );
 									delete_transient( 'timeout_missed_schedule' );
@@ -1111,14 +1133,15 @@ SQL;
 										{
 											switch_to_blog( $blog_id );
 
+											flush_rewrite_rules();
 											delete_site_transient( 'wp_missed_schedule' );
 											delete_site_transient( 'wp_missed_scheduled' );
 											delete_site_transient( 'timeout_wp_missed_schedule' );
 											delete_site_transient( 'timeout_wp_missed_scheduled' );
 											delete_site_transient( 'wp_schedule_missed' );
-											//delete_site_transient( 'wp_scheduled_missed' );
+											delete_site_transient( 'wp_scheduled_missed' );                               # Future ALPHA conding reserved
 											delete_site_transient( 'timeout_wp_schedule_missed' );
-											//delete_site_transient( 'timeout_wp_scheduled_missed' );
+											delete_site_transient( 'timeout_wp_scheduled_missed' );                       # Future ALPHA conding reserved
 											delete_site_transient( 'missed_schedule' );
 											delete_site_transient( 'missed_scheduled' );
 											delete_site_transient( 'timeout_missed_schedule' );
@@ -1132,6 +1155,7 @@ SQL;
 								}
 						}
 
+					flush_rewrite_rules();
 					wp_clear_scheduled_hook( 'missed_schedule' );
 					wp_clear_scheduled_hook( 'missed_scheduled' );
 					wp_clear_scheduled_hook( 'missed_schedule_cron' );
@@ -1166,5 +1190,5 @@ SQL;
 	}
 	}
 	}
-    }
+//    }
 ?>
