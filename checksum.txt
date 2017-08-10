@@ -1,6 +1,6 @@
 WP Missed Schedule - Version 2014.1231.2017.5 Build 2017-05-31 - SHA1 Checksum
 
------------------------------ Tags Branche 2014 ------------------------------
+--------------------------- Tags Branche 2014/2015 ---------------------------
 
 .gitignore                            662C2F54102E0A311BA6FC9FC30B8FFA86C37900
 .htaccess                             F28410E3EFD440C457B66815579C5E338FA7D7C0
@@ -21,8 +21,8 @@ LICENSE.md                            2043C218EDA49C51DED56EA6CCE5DF1B91614175
 license.txt                           79285179577BE4E7403395E645D180C8B6F29311
 no-support-gived-on-forum.txt         C96CB7D0F84952AE375F358F5624A78CEE2174C4
 readme.txt                            F976D904EEEA8F28164C9BCE9AD3AF1666646CC5
-uninstall.php                         5881E7880E2C406FDAED7542740449DBB65F6BC0
-wp-missed-schedule.php                DFE5A8D75615F214AD8B09110D0A9E4C318290EF
+uninstall.php                         FEBEAF519DCD70C82E914310AF8D9FECE88D38AF
+wp-missed-schedule.php                B8D9686AF2597A7091D1621A1E0CADCD874A60FF
 
 ------------------------------------------------------------------------------
 
