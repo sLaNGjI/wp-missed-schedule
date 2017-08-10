@@ -22,8 +22,8 @@
 	 * @translation slangjis.org/translations
 	 * @blog        slangji.wordpress.com
 	 *
-	 * @build       2017-06-30
-	 * @version     2014.1231.2017.6
+	 * @build       2017-07-31
+	 * @version     2014.1231.2017.7
 	 * @requires    WordPress 2.7+
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.6+
@@ -76,6 +76,7 @@
 			'wp_missed_schedule',
 			'wp_missed_scheduled',
 			'wp_schedule_missed',
+			'wp_scheduled_missed',                                                                    # Future ALPHA conding reserved
 			'wp_missed_schedule_cron',
 			'wp_missed_scheduled_cron',
 			'wp_schedule_missed_cron',
@@ -96,7 +97,9 @@
 			'timeout_wp_missed_schedule',
 			'timeout_wp_missed_scheduled',
 			'wp_schedule_missed',
+			'wp_scheduled_missed',                                                                    # Future ALPHA conding reserved
 			'timeout_wp_schedule_missed',
+			'timeout_wp_scheduled_missed',                                                            # Future ALPHA conding reserved
 			'missed_schedule',
 			'missed_scheduled',
 			'timeout_missed_schedule',
