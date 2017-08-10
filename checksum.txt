@@ -22,7 +22,7 @@ license.txt                           79285179577BE4E7403395E645D180C8B6F29311
 no-support-gived-on-forum.txt         C96CB7D0F84952AE375F358F5624A78CEE2174C4
 readme.txt                            F976D904EEEA8F28164C9BCE9AD3AF1666646CC5
 uninstall.php                         FEBEAF519DCD70C82E914310AF8D9FECE88D38AF
-wp-missed-schedule.php                B8D9686AF2597A7091D1621A1E0CADCD874A60FF
+wp-missed-schedule.php                4582B0FBC6DB47DD0ED57A513689019747FC2B89
 
 ------------------------------------------------------------------------------
 
