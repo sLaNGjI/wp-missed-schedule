@@ -1,0 +1,8 @@
+{
+    "name": "all3dp/wp-missed-schedule",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": ">=5.5",
+        "composer/installers": "*"
+    }
+}
