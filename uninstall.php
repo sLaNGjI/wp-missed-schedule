@@ -22,8 +22,8 @@
 	 * @translation slangjis.org/translations
 	 * @blog        slangji.wordpress.com
 	 *
-	 * @build       2017-08-31
-	 * @version     2014.1231.2017.8
+	 * @build       2017-09-28
+	 * @version     2014.1231.2017.9
 	 * @requires    WordPress 2.7+
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.6+
