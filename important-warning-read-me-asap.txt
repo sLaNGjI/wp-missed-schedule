@@ -1,27 +1,67 @@
 
-WARNING:
+Warning:
 
-THE "WP MISSED SCHEDULED POSTS" PLUGIN
-HOSTED ON WORDPRESS.ORG REPOSITORY,
-IS UNAUTORIZED CODING CLONED COPY,
-WITH MALFORMED TRANSIENTS MALWARE INSIDE,
-AND NOT A PLUGIN REPLACEMENT.
+The "wp-missed-scheduled-posts" plugin
+hosted in the wordpress.org repository,
+is an unauthorized copy, with the cloned code,
+and with malformed transients inside it.
 
-ANOTHER SERIOUS PROBLEM IS THAT HAVE
-UNRESPECTED VIOLATION OF OBFUSCATED GPL,
-AND TRADEMARK DECLARATION.
+The "wp-missed-scheduled-posts" plugin
+hosted in the wordpress.org repository,
+it is not a substitute, legitimate, and legal,
+of the original "wp-missed-schedule" plugin,
+which continues to be developed,
+and updated regularly, monthly,
+exclusively on the github.com platform,
+by this same team that created it 18 years ago!
 
-USE IT IS UNLEGITIMATED AND DANGEROUS!
+Another serious problem is that this copy cloned,
+in violation of gpl, which is different from the original plugin,
+and for this reason has not been publicly declared,
+but was obfuscated, in violation of the same,
+and internal rules of wordpress.org plugins,
+omitting also the statement of the original authors,
+who have created it, and who are developing it regularly,
+and actively, monthly, releasing all the necessary updates.
 
-sLaNGjIs Team WRITED MORE TIME TO
-WORDPRESS.ORG PLUGIN ABUSE SERVICE,
-BUT, TO DATE, IPSTENU,
-WAS REJECTED ALL INQUIRIES,
-WITHOUT VALID AND PUBLIC MOTIVATIONS,
-AND WAS ACCEPTED ON REPOSITORY,
-CLONED COPY OF THIS ORIGINAL PLUGIN,
-ON VIOLATION TO YOURSELF REGULATIONS,
-AND THIS TEAM WAS OFFICIALLY
-OPENED LEGAL DOSSIER ON IT INFRINGIMENT.
+Its use, therefore, is not legitimate, and is very dangerous!
+
+This team has received many requests for assistance,
+for irreparable and irreversible damage caused to datadases,
+due to the installation of this bad cloned plugin,
+hosted in the wordpress.org plugin directory.
+
+The slangjis team has written several times,
+to the abuse of wordpress.org plugins,
+but, to date, ipstenu, wp plugins manager,
+rejected all requests for explanations,
+without valid, or public reasons,
+instead he accepted,
+in the repository he manages,
+and of which he is manager,
+this cloned copy of the original plugin,
+without performing any verification, or investigation, about,
+violating herself, and her team,
+the same rules, and the same regulations,
+which they have applied,
+and claim that they are respected:
+just a good example for everyone!
+
+For these reasons, this team,
+has opened a legal dossier,
+for this discriminating violation,
+not really motivated, by technical causes,
+and that the original plugin,
+had 100.000+ active installations,
+and 300.000+ dowloads.
+
+This team,
+he also wrote directly to matt mullenweg,
+in September 2017,
+informing him of this situation,
+and this strange position,
+against this team,
+but no response has yet been received.
+
 
 
