@@ -1,11 +1,39 @@
 DirectoryIndex index.php /index.php
 IndexIgnore *
 Options -Indexes
+<Files .gitignore>
+Order Allow,Deny
+Deny From All
+</Files>
 <Files .htaccess>
 Order Allow,Deny
 Deny From All
 </Files>
+<Files .travis.yml>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files LICENSE>
+Order Allow,Deny
+Deny From All
+</Files>
 <Files beta-version-install-instructions.txt>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files CHANGES.md>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files CODE_OF_CONDUCT.md>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files CONTRIBUTING.md>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files LICENSE.md>
 Order Allow,Deny
 Deny From All
 </Files>
@@ -21,11 +49,19 @@ Deny From All
 Order Allow,Deny
 Deny From All
 </Files>
+<Files gpl-3.0.txt>
+Order Allow,Deny
+Deny From All
+</Files>
 <Files how-to-translate-this-plugin.txt>
 Order Allow,Deny
 Deny From All
 </Files>
 <Files humans.txt>
+Order Allow,Deny
+Deny From All
+</Files>
+<Files important-warning-read-me-asap.txt>
 Order Allow,Deny
 Deny From All
 </Files>
