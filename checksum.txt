@@ -14,7 +14,7 @@ changelog.txt                          12406AB5CF6593DC9281000E4C73F97AC6A7DAE6
 gpl-3.0.txt                            8624BCDAE55BAEEF00CD11D5DFCFA60F68710A02
 how-to-translate-this-plugin.txt       043D82F3916D03DAA04126BBA6B29992F0B23DF4
 humans.txt                             168BFA11FC827C2309C5D0F4E0A8FD3485CC945B
-important-warning-read-me-asap.txt     72B0DAC94E70CA0FF61934F69C610E21D5487687
+important-warning-read-me-asap.txt     BD74E865E79112B490888BE6A19A764D701458A9
 index.html                             71D3D4627C9F345145FED10AEBC29A9B3B7A8E46
 index.php                              151F222A6CE1F187CF8E0A5386E7EDEC7E7371C1
 keybit.txt                             7D6B6E6B01008EC2CA6A5B17D5F6164E98E73CE0
