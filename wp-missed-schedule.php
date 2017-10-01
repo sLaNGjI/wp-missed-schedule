@@ -2,7 +2,7 @@
 /*
  Plugin Name: WP Missed Schedule (The Original)
  Plugin URI:  http://slangjis.org/plugins/wp-missed-schedule/
- Description: The Original Plugin for WordPress WP Missed Schedule Fix only <strong>scheduled failed future posts</strong>, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without wasting resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.8+ and 4.9-alpha single or multisite install - The configuration is automatic and plugin nologo! - <a href="https://slangji.wordpress.com/wp-missed-schedule/">Stable Branche 2014</a> - Build 2017-05-31 Reloaded - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2016</a> - <a href="https://slangji.wordpress.com/wp-missed-schedule-alpha/">Alpha Branche 2018</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later. Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
+ Description: The Original Plugin for WordPress WP Missed Schedule Fix only <strong>scheduled failed future posts</strong>, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without wasting resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.8+ and 4.9-alpha single or multisite install - The configuration is automatic and plugin nologo! - <a href="https://slangji.wordpress.com/wp-missed-schedule/">Stable Branche 2014</a> - Build 2017-05-31 - Reloaded 2017-09-28 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2017</a> - <a href="https://slangji.wordpress.com/wp-missed-schedule-alpha/">Alpha Branche 2018</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later. Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
  Version:     2014.1231.2017.5
  Author:      sLaNGjIs Team
  Author URI:  http://slangjis.org/plugins/
@@ -29,8 +29,9 @@
  *
  *  OLDER Branche Release 2013 Build 1231 - (branche)
  * STABLE Branche Release 2014 Build 1231 - (tags)
- *   BETA Branche Release 2015 Build 1231 - (trunk)
- *  ALPHA Branche Release 2016 Build 1231 - (code in becoming)
+ *    DEV Branche 2015 and 2016 all Build - (deprecated)
+ *   BETA Branche Release 2017 Build 1231 - (trunk)
+ *  ALPHA Branche Release 2018 Build 1231 - (code in becoming)
  *
  * Approved                  @ 2007-08-18 (on wordpress.org repository)
  * Retired                   @ 2016-04-13 (on wordpress.org repository)
@@ -49,12 +50,14 @@
  * To run this plugin on your WordPress host just needs a couple of things:
  *
  *   PHP version 5.2+ or   later (minimun)   PHP 5.4+ or   later (recommended)
- * MySQL version 5.0+ or greater (minumun) MySQL 5.5+ or greater (recommended)
+ * MySQL version 5.0+ or greater (minumun) MySQL 5.5+ or greater (recommended) MySQL 5.6+ or greater (Best)
  *
  * We recommend Apache or Nginx as the most robust and featureful server for running WordPress,
  * but any server that supports PHP and MySQL or MariaDB will do.
  *
  * Use of PHP 5.5+ or 5.6+ or 7.0+ or 7.1+ is considered a custom user choice not recommended for now.
+ *
+ * Use of MariaDB is considered a custom user choice not recommended for now.
  *
  * Work also with PHP 4.0+ or later and MySQL 4.0+ or greater (depending of hosting features and WordPress version)
  *
@@ -144,8 +147,8 @@
  *
  * GUIDELINES
  *
- * This software meet [Detailed Plugin Guidelines](https://wordpress.org/plugins/about/guidelines/)
- * paragraphs 1,4,10,12,13,16,17 quality requirements.
+ * This software meet [Detailed Plugin Guidelines](https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/)
+ * paragraphs 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 quality requirements.
  * The author of plugin is available at any time, to make changes, or corrections, to respect specifications.
  *
  * CODING
@@ -179,8 +182,10 @@
  *
  * TODO
  *
- * Anti bad procedure: activate, deactivate, install, uninstall plugin routines by WordPress "dummies" of "genius" ...
- * Improved WordPress version identification mechanism if $wp_version is not present, hidden, or identificable.
+ * Anti bad procedure: activate, deactivate, install, uninstall plugin routines by WordPress "dummies" or "genius" ...
+ * Improved WordPress version identification mechanism if $wp_version is not present, hidden, or identificable ...
+ * Cosmetic plugin Control Panel: only if it is trendy, but is not really necessary, because WPMS is automatic ...
+ * More Social Posting Plugins Compatibility: NextScripts plugin for example ...
  */
 
 	/**
@@ -205,7 +210,7 @@
 	 * @release     2014.1231
 	 * @version     2014.1231.2017.5
 	 * @build       2017-05-31
-	 * @reloaded    2017-07-31
+	 * @reloaded    2017-09-28
 	 * @approved    2007-08-18
 	 * @license     GPLv3 or later
 	 * @indentation GNU style coding standard
