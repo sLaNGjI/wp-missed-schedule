@@ -11,22 +11,20 @@ https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines
 
  2. Plugin developers are responsible for the files they upload and services they utilize.
     - It is the sole responsibility of the plugin developer to ensure all files within their plugins comply with the guidelines.
-    - They are expected to confirm, before uploading to SVN, the licensing of all included files, from original source code
-      to images and libraries.
-    - In addition, they must comply to the terms of use for all third party services and APIs utilized by their plugins.
+    - They are expected to confirm, before uploading to SVN, the licensing of all included files, from original source code.
 
  9. The plugin and its developers must not do anything illegal, dishonest, or morally offensive.
     - Developers, and companies abusing the freedoms and rights of end users as well as other plugin developers.
     - Taking other developers plugins and presenting them as original work.
-    - composer.json manipulation with not true informations
-    - sockpuppeting because not of declared creators, authors, or contributors, have, or is, really creators, authors, or
-      contributors of original project.
-    - More authors, and contributors, was declared, for confusing the real responsibility.
+        - composer.json manipulation, with false informations and declarations.
+        - sockpuppeting because none of the declared creators, authors, or contributors, have, or is, really creators, authors,
+		  or contributors of the original project.
+        - More authors, and contributors, was declared, for confusing the real responsibility.
 
 16. A complete plugin must be available at the time of submitting the plugin request to the directory.
-    - The authors and contributors used project on gitub, for submitting the plugin request, are not the same authors and
-      contributors declared on readme.txt
     - The project on github, for submitting the plugin request, is already a fork of other fake authors and contributors.
+        - The authors and contributors used on gitub project, for submitting the plugin request, are not the same authors and
+          contributors declared on readme.txt
 
 17. Respect trademarks and projects.
     - Multiple violations use of trademarks to other projects on plugin name and plugin slug.
