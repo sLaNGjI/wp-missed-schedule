@@ -1,16 +1,32 @@
+#### [alpha]
+* 2018.1231           / 2018-12-31
+  ALPHA Version
+
+#### [beta]
+* 2017.1231           / 2017-12-31
+  Beta Version
+* 2016.1231           / 2016-12-31
+  DEPRECATED Version
+* 2015.1231           / 2015-12-31
+  DEPRECATED Version
+
 #### [unreleased]
+* 2014.1231.2017.10   / 2017-10-31
+  ALPHA version
+* 2014.1231.2017.9    / 2017-09-30
+  BETA version
+* 2014.1231.2017.8    / 2017-08-31
+  DEPRECATED version
 * 2014.1231.2017.7    / 2017-07-31
   DEPRECATED Version
 * 2014.1231.2017.6    / 2017-06-30
-  DEPRECATED Version
+  DEPRECATED Version  
 
 #### [stable]
-* 2014.1231.2017.9    / 2017-09-30
-  ALPHA version
-* 2014.1231.2017.8    / 2017-08-31
-  BETA version
+* 2014.1231.2017.5    / 2017-09-28
+  Reloaded Version
 * 2014.1231.2017.5    / 2017-05-31
-  STABLE Version
+  STABLE Version (but deprecable)
 * 2014.1231.2017.4    / 2017-04-30
   DEPRECATED Version
 * 2014.1231.2017.3    / 2017-03-31
@@ -20,16 +36,6 @@
 * 2014.1231.2017.1    / 2017-01-31
   DEPRECATED Version
 
-#### [alpha]
-* 2016.1231           / 2016-12-31
-  DEPRECATED Version
-
-#### [beta]
-* 2015.1231           / 2015-12-31
-  DEPRECATED Version
-
 #### [older]
-* 2014.1231           / 2014-12-31
-  DEPRECATED Version
 * 2013.1231           / 2013-12-31
   DEPRECATED Version
