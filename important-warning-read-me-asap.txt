@@ -18,7 +18,7 @@ https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines
     - Taking other developers plugins and presenting them as original work.
         - composer.json manipulation, with false informations and declarations.
         - sockpuppeting because none of the declared creators, authors, or contributors, have, or is, really creators, authors,
-		  or contributors of the original project.
+          or contributors of the original project.
         - More authors, and contributors, was declared, for confusing the real responsibility.
 
 16. A complete plugin must be available at the time of submitting the plugin request to the directory.
@@ -28,7 +28,7 @@ https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines
 
 17. Respect trademarks and projects.
     - Multiple violations use of trademarks to other projects on plugin name and plugin slug.
-    - GPL violation because original plugin is declared as GPLv3 and not GPLv2: Licensing downgrade is not permitted on GPL.
+        - GPL violation because original plugin is declared as GPLv3 and not GPLv2: Licensing downgrade is not permitted on GPL.
 
 The "wp-missed-scheduled-posts" plugin
 hosted in the wordpress.org repository,

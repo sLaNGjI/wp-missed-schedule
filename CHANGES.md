@@ -1,41 +1,45 @@
 #### [alpha]
-* 2018.1231           / 2018-12-31
+* 2018.1231           / Build 2018-12-31
   ALPHA Version
 
 #### [beta]
-* 2017.1231           / 2017-12-31
+* 2017.1231           / Build 2017-12-31
   Beta Version
-* 2016.1231           / 2016-12-31
+* 2016.1231           / Build 2016-12-31
   DEPRECATED Version
-* 2015.1231           / 2015-12-31
+* 2015.1231           / Build 2015-12-31
   DEPRECATED Version
 
 #### [unreleased]
-* 2014.1231.2017.10   / 2017-10-31
+* 2014.1231.2017.11   / Build 2017-11-30
   ALPHA version
-* 2014.1231.2017.9    / 2017-09-30
+* 2014.1231.2017.10   / Build 2017-10-31
   BETA version
-* 2014.1231.2017.8    / 2017-08-31
+* 2014.1231.2017.9    / Build 2017-09-30
   DEPRECATED version
-* 2014.1231.2017.7    / 2017-07-31
+* 2014.1231.2017.8    / Build 2017-08-31
+  DEPRECATED version
+* 2014.1231.2017.7    / Build 2017-07-31
   DEPRECATED Version
-* 2014.1231.2017.6    / 2017-06-30
+* 2014.1231.2017.6    / Build 2017-06-30
   DEPRECATED Version  
 
 #### [stable]
-* 2014.1231.2017.5    / 2017-09-28
-  Reloaded Version
-* 2014.1231.2017.5    / 2017-05-31
-  STABLE Version (but deprecable)
-* 2014.1231.2017.4    / 2017-04-30
+* 2014.1231.2017.5    / Build 2017-10-05
+  Stable Version
+* 2014.1231.2017.5    / Build 2017-09-28
   DEPRECATED Version
-* 2014.1231.2017.3    / 2017-03-31
+* 2014.1231.2017.5    / Build 2017-05-31
   DEPRECATED Version
-* 2014.1231.2017.2    / 2017-02-28
+* 2014.1231.2017.4    / Build 2017-04-30
   DEPRECATED Version
-* 2014.1231.2017.1    / 2017-01-31
+* 2014.1231.2017.3    / Build 2017-03-31
+  DEPRECATED Version
+* 2014.1231.2017.2    / Build 2017-02-28
+  DEPRECATED Version
+* 2014.1231.2017.1    / Build 2017-01-31
   DEPRECATED Version
 
 #### [older]
-* 2013.1231           / 2013-12-31
+* 2013.1231           / Build 2013-12-31
   DEPRECATED Version
