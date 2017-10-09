@@ -77,9 +77,10 @@ New WP Missed Schedule Features and Future Updates
 Active Version 2014.1231.2017.5 (2017-05-31) FREE
 
 Limited Missed Scheduled Posts Fixing per days!
-Preemptive Support WordPress 4.8-RC1 2017 Release
-Preemptive Support WordPress 4.8-beta 2017 Release
-Preemptive Support WordPress 4.8-alpha 2017 Release
+Preemptive Support WordPress 4.9-beta 2017 Release
+Preemptive Support WordPress 4.9-alpha 2017 Release
+Please note that on WP 4.9+ is recommended use of PHP 5.4+
+Preemptive Support PHP 7.0+ and 7.1+ or later
 Full Support WordPress Versions 2.1+ to 4.8+
 Virtual Cron Checking Interval Method
 Secure Key Tag Auth Support (a New Idea of sLa)
@@ -96,6 +97,7 @@ JetPack and Social Publishing Plugins Transparency
 Beta Version 2015.1231.2017.10 (2017-10-31)
 
 Limited Missed Scheduled Posts Fixing per days!
+Preemptive Support PHP 7.0+ and 7.1+ or later
 Real Cron Checking Interval Method
 Admin Menu Classic Plugin Settings Page
 Admin DashBoard Help and FAQ Panel
@@ -105,6 +107,7 @@ Development Version (code in becoming)
 Alpha Version 2015.1231.2017.11 (2017-11-30)
 
 Limited Missed Scheduled Posts Fixing per days!
+Preemptive Support PHP 7.0+ and 7.1+ or later
 Customization of all Plugin Options (concept only)
 All in One Virtual and Real Cron Method (concept only)
 Unlimited Missed Scheduled Posts Fixing per days! (pro)
@@ -123,6 +126,7 @@ Switching from Local GMT and UTC Time (pro)
 * Work with all WordPress Versions from 2.1+ to 4.8+
 * Preemptive Support for WordPress 4.9-beta
 * Preemptive Support for WordPress 4.9-alpha
+* Please note that on WP 4.9+ is recommended use of PHP 5.4+
 * Compatible with: WordPress, bbPress, Buddypress
 * No interference with others Scheduled Cron Jobs at scale
 * Ready to Single and Network Multisite Environment
@@ -139,9 +143,13 @@ Switching from Local GMT and UTC Time (pro)
 * Full Support Deactivation Hook
 * Full Support Uninstall Hook
 * Full Support uninstall.php
-* Support PHP 4.0+ and 5.0+ and 7.0+ or later
-* Support MySQL 4.0+ and 5.0+ or greater
-* Support MariaDB 5.0+ or greater
+* Preemptive Support PHP 7.0+ and 7.1+ or later
+* Support PHP 5.4+ and 5.6+ or later
+* Support MySQL 5.5+ and 5.6+ or greater
+* Support MariaDB 10.0+ or greater
+* Limited Support old PHP 4.0+ and 5.0+ or later
+* Limited Support old MySQL 4.0+ and 5.0+ or greater
+* Limited Support old MariaDB 5.0+ or greater
 * Work with Shared and VPS Hosting
 * Work under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) or later License
 * Implement [GNU style](https://www.gnu.org/prep/standards/standards.html) coding standard indentation
@@ -398,6 +406,7 @@ last version number (2014.1231.1.*2*) 2 for example.
  * Preemptive Support for WordPress 4.9-beta
  * Preemptive Support for WordPress 4.9-alpha
  * Please note that on WP 4.9+ is recommended use of PHP 5.4+
+ * Preemptive Support PHP 7.0+ and 7.1+ or later
  * NEW Authenticity Checking
  * UPDATED Security Checking
  * ENHANCEMENT Core and Transients Improvements
