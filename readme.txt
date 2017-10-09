@@ -23,7 +23,7 @@ Do not install into mu-plugins directory because need to run functions activatio
 <a href="https://slangji.wordpress.com/wp-missed-schedule-pro/">Upgrade to Pro Version</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-gold/">Gold</a> | <a href="http://slangjis.org/support/">Support</a> | <a href="https://github.com/sLaNGjI/wp-missed-schedule">GitHub Project</a> | <a href="https://slangji.github.io/wp-missed-schedule/">GitHub Pages</a> - <a href="http://web.archive.org/web/20140716010606/http://secunia.com/advisories/product/51113/">Secunia</a>
 
 `
-275.000+ Downloads 90.000+ Active Installs
+275.164+ Downloads 90.000+ Active Installs
 
 A Special Thanks to all who have Installed
 `
@@ -93,7 +93,7 @@ Fast Queries with index table and CPU Load Optimization
 W3 Total Cache and others Caching Plugins Compatibility
 JetPack and Social Publishing Plugins Transparency
 
-Beta Version 2015.1231.2017.6 (2017-06-31) FREE
+Beta Version 2015.1231.2017.10 (2017-10-31)
 
 Limited Missed Scheduled Posts Fixing per days!
 Real Cron Checking Interval Method
@@ -102,7 +102,7 @@ Admin DashBoard Help and FAQ Panel
 
 Development Version (code in becoming)
 
-Alpha Version 2015.1231.2017.7 (2017-07-31) DEV
+Alpha Version 2015.1231.2017.11 (2017-11-30)
 
 Limited Missed Scheduled Posts Fixing per days!
 Customization of all Plugin Options (concept only)
@@ -172,7 +172,7 @@ No need delete anything from wp_option when deleted
 
 * [My others WordPress Plugins](http://slangjis.org/plugins/) on [Softpedia Webscripts](http://webscripts.softpedia.com/publisher/sLa-1869786722.html) [GitHub](https://github.com/sLaNGjI)
  * [WP Overview (lite)](http://slangjis.org/plugins/wp-overview-lite/) (modules updated)
- * [WP Missed Schedule](http://slangjis.org/plugins/wp-missed-schedule/) 275.000+ Downloads 90.000+ Installs
+ * [WP Missed Schedule](http://slangjis.org/plugins/wp-missed-schedule/) 275.164+ Downloads 90.000+ Installs
  * [Hide Admin Bar and Toolbar](http://slangjis.org/plugins/global-admin-bar-hide-or-remove/) (new)
  * [WP Admin Bar Removal](http://slangjis.org/plugins/wp-admin-bar-removal/) Linked at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/Admin-Bar-Removal-completely-disable-73547.html)
  * [WP Toolbar Removal](http://slangjis.org/plugins/wp-toolbar-removal/) Linked at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/Toolbar-Removal-completely-disable-73548.html)
@@ -227,12 +227,21 @@ Simple!
 = What files are officially included on this plgin package? =
 Are included 13 files:
 
-1. index.html
+1. gitignore
 1. htaccess
+1. travis.yml
+1. CHANGES.md
+1. CODE_OF_CONDUCT.md
+1. CONTRIBUTING.md
+1. LICENSE
+1. LICENSE.md
+1. changelog.txt
 1. checksum.txt
 1. gpl-3.0.txt
 1. how-to-translate-this-plugin.txt
 1. humans.txt
+1. important-warning-read-me-asap.txt
+1. index.html
 1. index.php
 1. keybit.txt
 1. license.txt
@@ -348,7 +357,7 @@ Do not install into mu-plugins directory because need to run functions activatio
 <a href="https://slangji.wordpress.com/wp-missed-schedule-pro/">Upgrade to Pro Version</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta</a> | <a href="https://slangji.wordpress.com/wp-missed-schedule-gold/">Gold</a> | <a href="http://slangjis.org/support/">Support</a> | <a href="https://github.com/sLaNGjI/">GitHub</a> | <a href="http://web.archive.org/web/20140716010606/http://secunia.com/advisories/product/51113/">Secunia</a>
 
 `
-275.000+ Downloads 90.000+ Active Installs
+275.164+ Downloads 90.000+ Active Installs
 
 A Special Thanks to all who have Installed
 `
