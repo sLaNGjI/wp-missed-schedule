@@ -14,10 +14,11 @@
  GitHub Branch:     master
  GitHub Languages:  https://github.com/sLaNGjI/wp-missed-schedule/
  Requires WP:       2.1
- Requires PHP:      5.2
+ Requires PHP:      5.4
  *
  * Requires at least 2.1
  * Tested up to      4.9
+ * Requires PHP      5.4
  * Contributors      sLaNGjIs Team
  * Donate link       http://slangjis.org/donate/
  * Indentation       GNU style coding standard
@@ -35,7 +36,7 @@
  *
  * Approved                  @ 2007-08-18 (on wordpress.org repository)
  * Retired                   @ 2016-04-13 (on wordpress.org repository)
- * Active Downloads 275.000+ @ 2016-04-12 (on wordpress.org repository)
+ * Active Downloads 275.164+ @ 2016-04-12 (on wordpress.org repository)
  * Active Installs   90.000+ @ 2016-04-12 (on wordpress.org repository)
  *
  * This plugin was undeveloped from wordpress.org on 2016-04-13 to insanity of this directory
@@ -49,15 +50,15 @@
  *
  * To run this plugin on your WordPress host just needs a couple of things:
  *
- *   PHP version 5.2+ or   later (minimun)   PHP 5.4+ or   later (recommended)
- * MySQL version 5.0+ or greater (minumun) MySQL 5.5+ or greater (recommended) MySQL 5.6+ or greater (Best)
+ *   PHP version 5.2+ or   later (minimun)   PHP 5.4+ or   later (recommended)   PHP 5.6+ or   later (best)
+ * MySQL version 5.0+ or greater (minumun) MySQL 5.5+ or greater (recommended) MySQL 5.6+ or greater (best)
  *
  * We recommend Apache or Nginx as the most robust and featureful server for running WordPress,
  * but any server that supports PHP and MySQL or MariaDB will do.
  *
- * Use of PHP 5.5+ or 5.6+ or 7.0+ or 7.1+ is considered a custom user choice not recommended for now.
+ * Use of PHP 7.0+ or 7.1+ or 7.2+ is considered a custom user choice (and is ok) but is not recommended for now.
  *
- * Use of MariaDB is considered a custom user choice not recommended for now.
+ * Use of MariaDB 10.0+ is considered a custom user choice (and is ok) but is not recommended for now.
  *
  * Work also with PHP 4.0+ or later and MySQL 4.0+ or greater (depending of hosting features and WordPress version)
  *
@@ -203,7 +204,7 @@
 	 * @requires    2.1+
 	 * @since       2.5+
 	 * @tested      4.8+ (old 3.6+)
-	 * @compatible  4.9-beta
+	 * @compatible  4.9-beta (on PHP 5.4+)
 	 * @branche     2014
 	 * @revision    2017
 	 * @update      5
