@@ -20,9 +20,9 @@ index.php                              151F222A6CE1F187CF8E0A5386E7EDEC7E7371C1
 keybit.txt                             7D6B6E6B01008EC2CA6A5B17D5F6164E98E73CE0
 license.txt                            79285179577BE4E7403395E645D180C8B6F29311
 no-support-gived-on-forum.txt          C96CB7D0F84952AE375F358F5624A78CEE2174C4
-readme.txt                             08E711C221E4A40F0A8AF27898450CE313ADF071
+readme.txt                             445B04ECFEC2C31058D71F9F0D82CE0628B60BAF
 uninstall.php                          0D016315F410C611F9EE97F3F921960AB461948D
-wp-missed-schedule.php                 53F28AB8A792C68444AEF952DC5D615B709FA64B
+wp-missed-schedule.php                 6D718288573177E091631E161445CA39446D6A52
 
 -------------------------------------------------------------------------------
 
