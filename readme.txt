@@ -225,7 +225,7 @@ Simple!
 [youtube https://www.youtube.com/watch?v=taYO3ZWMwjI]
 
 = What files are officially included on this plgin package? =
-Are included 13 files:
+Are included 22 files:
 
 1. gitignore
 1. htaccess
