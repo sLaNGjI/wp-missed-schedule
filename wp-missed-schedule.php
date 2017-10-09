@@ -56,7 +56,7 @@
  * We recommend Apache or Nginx as the most robust and featureful server for running WordPress,
  * but any server that supports PHP and MySQL or MariaDB will do.
  *
- * Use of PHP 7.0+ or 7.1+ or 7.2+ is considered a custom user choice (and is ok) but is not recommended for now.
+ * Use of PHP 7.0+ or 7.1+ is considered a custom user choice (and is ok) but is not recommended for now.
  *
  * Use of MariaDB 10.0+ is considered a custom user choice (and is ok) but is not recommended for now.
  *
