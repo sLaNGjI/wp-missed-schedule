@@ -99,6 +99,9 @@
  * without any warranty of function, without any warranty of merchantability,
  * without any fitness for a particular or specific purpose, without any type
  * of future assistance from your own author or the others authors.
+ * 
+ * This program is written with the intent of being helpful,
+ * but you are responsible for its use or actions on your own website.
  *
  * The license under which the WordPress software is released is the GPLv3 (or later) from the
  * Free Software Foundation. A copy of the license is included with every copy of WordPress.
