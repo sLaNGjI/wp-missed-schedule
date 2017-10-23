@@ -2,7 +2,7 @@
 /*
  Plugin Name: WP Missed Schedule (The Original)
  Plugin URI:  http://slangjis.org/plugins/wp-missed-schedule/
- Description: The Original Plugin for WordPress WP Missed Schedule Fix only <strong>scheduled failed future posts</strong>, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without wasting resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.8+ and 4.9-beta single or multisite install - The configuration is automatic and plugin nologo! - <a href="https://slangji.wordpress.com/wp-missed-schedule/">Stable Branche 2014</a> - Build 2017-05-31 - Reloaded 2017-10-05 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2017</a> - <a href="https://slangji.wordpress.com/wp-missed-schedule-alpha/">Alpha Branche 2018</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later. Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
+ Description: The Original Plugin for WordPress WP Missed Schedule Fix only <strong>scheduled failed future posts</strong>, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without wasting resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WordPress from 2.1+ to 4.8+ and 4.9-beta single or multisite install - The configuration is automatic and plugin nologo! - <a href="https://slangji.wordpress.com/wp-missed-schedule/">Stable Branche 2014</a> - Build 2017-05-31 - Reloaded 2017-10-19 - <a href="https://slangji.wordpress.com/wp-missed-schedule-beta/">Beta Branche 2017</a> - <a href="https://slangji.wordpress.com/wp-missed-schedule-alpha/">Alpha Branche 2018</a> - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/">WP Crontrol</a> activated and WP 2.7+ or later. Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly!
  Version:     2014.1231.2017.5
  Author:      sLaNGjIs Team
  Author URI:  http://slangjis.org/plugins/
@@ -214,7 +214,7 @@
 	 * @release     2014.1231
 	 * @version     2014.1231.2017.5
 	 * @build       2017-05-31
-	 * @reloaded    2017-10-05
+	 * @reloaded    2017-10-19
 	 * @approved    2007-08-18
 	 * @license     GPLv3 or later
 	 * @indentation GNU style coding standard
@@ -236,7 +236,6 @@
 			header( 'HTTP/1.3 403 Forbidden' );
 			header( 'Status: 403 Forbidden'  );
 			header( 'Connection: Close'      );
-
 			exit;
 		}
 
@@ -293,44 +292,44 @@
 //		}
 //	else
 //		{
-	if ( get_option( 'wp_scheduled_missed_time' ) )
-		{
-			wp_die( __( '3 - This WordPress installation is infected with a malware variant of WP Missed Schedule: Activation Stopped!<br />
-			<br />Uninstall all not original or forked versions of this plugin and retry: read more on the <a href="http://slangjis.org/unauthorized-code-use-and-copy-of-slangjis-plugins-or-themes/">cause of infection</a><br />
-			<br /><br /><strong>This is because you used, or have used, an unpublished version of this plugin, and have another similar plugin installed and activated, or you have installed an unauthorized forked version, or have installed a copy of this plugin that does not respect the trademark, and assigning the license to the authors who created it.</strong><br />
-			<br /><br />It may also happen that you did not perform the correct uninstallation procedure of the previous version, and the correct installation of the latest current version, or have another similar plugin activated.<br />
-			<br />The correct procedure to use is only this:<br />
-			<br />- Deactivate all similar plugins that have previously installed and activated.<br />
-			<br />- Decide if you need to uninstall all similar plugins to resolve the issue, if this message persists.<br />
-			<br />- Clean manually the options table if the similar plugins not cleaning your options data automatically.<br />
-			<br />- Deactivate the old version, or the version to be need to update, of plugin WP Missed Schedule.<br />
-			<br />- Flushing cache, and wait for the necessary time.<br />
-			<br />- Install, or copy manually via FTP, the new version of plugin WP Missed Schedule.<br />
-			<br />- Activate the new version of plugin WP Missed Schedule.<br />
-			<br />Overwrite an old version of this plugin directly via FTP, or directly overwrite a version to upgrade, it may also be the cause of this type of error.<br />
-			<br /><u>Remember that this plugin does not work properly if installed in the mu-plugin directory!</u>' ) );
-		}
-	else
-		{
-	if ( get_transient( 'wp_scheduled_missed' ) )
-		{
-			wp_die( __( '4 - This WordPress installation is infected with a malware variant of WP Missed Schedule: Activation Stopped!<br />
-			<br />Uninstall all not original or forked versions of this plugin and retry: read more on the <a href="http://slangjis.org/unauthorized-code-use-and-copy-of-slangjis-plugins-or-themes/">cause of infection</a><br />
-			<br /><br /><strong>This is because you used, or have used, an unpublished version of this plugin, and have another similar plugin installed and activated, or you have installed an unauthorized forked version, or have installed a copy of this plugin that does not respect the trademark, and assigning the license to the authors who created it.</strong><br />
-			<br /><br />It may also happen that you did not perform the correct uninstallation procedure of the previous version, and the correct installation of the latest current version, or have another similar plugin activated.<br />
-			<br />The correct procedure to use is only this:<br />
-			<br />- Deactivate all similar plugins that have previously installed and activated.<br />
-			<br />- Decide if you need to uninstall all similar plugins to resolve the issue, if this message persists.<br />
-			<br />- Clean manually the options table if the similar plugins not cleaning your options data automatically.<br />
-			<br />- Deactivate the old version, or the version to be need to update, of plugin WP Missed Schedule.<br />
-			<br />- Flushing cache, and wait for the necessary time.<br />
-			<br />- Install, or copy manually via FTP, the new version of plugin WP Missed Schedule.<br />
-			<br />- Activate the new version of plugin WP Missed Schedule.<br />
-			<br />Overwrite an old version of this plugin directly via FTP, or directly overwrite a version to upgrade, it may also be the cause of this type of error.<br />
-			<br /><u>Remember that this plugin does not work properly if installed in the mu-plugin directory!</u>' ) );
-		}
-	else
-		{
+//	if ( get_option( 'wp_scheduled_missed_time' ) )
+//		{
+//			wp_die( __( '3 - This WordPress installation is infected with a malware variant of WP Missed Schedule: Activation Stopped!<br />
+//			<br />Uninstall all not original or forked versions of this plugin and retry: read more on the <a href="http://slangjis.org/unauthorized-code-use-and-copy-of-slangjis-plugins-or-themes/">cause of infection</a><br />
+//			<br /><br /><strong>This is because you used, or have used, an unpublished version of this plugin, and have another similar plugin installed and activated, or you have installed an unauthorized forked version, or have installed a copy of this plugin that does not respect the trademark, and assigning the license to the authors who created it.</strong><br />
+//			<br /><br />It may also happen that you did not perform the correct uninstallation procedure of the previous version, and the correct installation of the latest current version, or have another similar plugin activated.<br />
+//			<br />The correct procedure to use is only this:<br />
+//			<br />- Deactivate all similar plugins that have previously installed and activated.<br />
+//			<br />- Decide if you need to uninstall all similar plugins to resolve the issue, if this message persists.<br />
+//			<br />- Clean manually the options table if the similar plugins not cleaning your options data automatically.<br />
+//			<br />- Deactivate the old version, or the version to be need to update, of plugin WP Missed Schedule.<br />
+//			<br />- Flushing cache, and wait for the necessary time.<br />
+//			<br />- Install, or copy manually via FTP, the new version of plugin WP Missed Schedule.<br />
+//			<br />- Activate the new version of plugin WP Missed Schedule.<br />
+//			<br />Overwrite an old version of this plugin directly via FTP, or directly overwrite a version to upgrade, it may also be the cause of this type of error.<br />
+//			<br /><u>Remember that this plugin does not work properly if installed in the mu-plugin directory!</u>' ) );
+//		}
+//	else
+//		{
+//	if ( get_transient( 'wp_scheduled_missed' ) )
+//		{
+//			wp_die( __( '4 - This WordPress installation is infected with a malware variant of WP Missed Schedule: Activation Stopped!<br />
+//			<br />Uninstall all not original or forked versions of this plugin and retry: read more on the <a href="http://slangjis.org/unauthorized-code-use-and-copy-of-slangjis-plugins-or-themes/">cause of infection</a><br />
+//			<br /><br /><strong>This is because you used, or have used, an unpublished version of this plugin, and have another similar plugin installed and activated, or you have installed an unauthorized forked version, or have installed a copy of this plugin that does not respect the trademark, and assigning the license to the authors who created it.</strong><br />
+//			<br /><br />It may also happen that you did not perform the correct uninstallation procedure of the previous version, and the correct installation of the latest current version, or have another similar plugin activated.<br />
+//			<br />The correct procedure to use is only this:<br />
+//			<br />- Deactivate all similar plugins that have previously installed and activated.<br />
+//			<br />- Decide if you need to uninstall all similar plugins to resolve the issue, if this message persists.<br />
+//			<br />- Clean manually the options table if the similar plugins not cleaning your options data automatically.<br />
+//			<br />- Deactivate the old version, or the version to be need to update, of plugin WP Missed Schedule.<br />
+//			<br />- Flushing cache, and wait for the necessary time.<br />
+//			<br />- Install, or copy manually via FTP, the new version of plugin WP Missed Schedule.<br />
+//			<br />- Activate the new version of plugin WP Missed Schedule.<br />
+//			<br />Overwrite an old version of this plugin directly via FTP, or directly overwrite a version to upgrade, it may also be the cause of this type of error.<br />
+//			<br /><u>Remember that this plugin does not work properly if installed in the mu-plugin directory!</u>' ) );
+//		}
+//	else
+//		{
 	if ( get_transient( 'wp_scheduled_missed_time' ) )
 		{
 			wp_die( __( '5 - This WordPress installation is infected with a malware variant of WP Missed Schedule: Activation Stopped!<br />
@@ -350,39 +349,50 @@
 		}
 	else
 		{
-	if ( false === ( $wp_scheduled_missed = ! get_transient( 'wp_scheduled_missed' ) ) or false === ( $wp_scheduled_missed_time = ! get_transient( 'wp_scheduled_missed_time' ) ) )
+//	if ( false === ( $wp_scheduled_missed = ! get_transient( 'wp_scheduled_missed' ) ) or false === ( $wp_scheduled_missed_time = ! get_transient( 'wp_scheduled_missed_time' ) ) )
+//		{
+//			wp_die( __( '6 - This WordPress installation is infected with a malware variant of WP Missed Schedule: Activation Stopped!<br />
+//			<br />Uninstall all not original or forked versions of this plugin and retry: read more on the <a href="http://slangjis.org/unauthorized-code-use-and-copy-of-slangjis-plugins-or-themes/">cause of infection</a><br />
+//			<br /><br /><strong>This is because you used, or have used, an unpublished version of this plugin, and have another similar plugin installed and activated, or you have installed an unauthorized forked version, or have installed a copy of this plugin that does not respect the trademark, and assigning the license to the authors who created it.</strong><br />
+//			<br /><br />It may also happen that you did not perform the correct uninstallation procedure of the previous version, and the correct installation of the latest current version, or have another similar plugin activated.<br />
+//			<br />The correct procedure to use is only this:<br />
+//			<br />- Deactivate all similar plugins that have previously installed and activated.<br />
+//			<br />- Decide if you need to uninstall all similar plugins to resolve the issue, if this message persists.<br />
+//			<br />- Clean manually the options table if the similar plugins not cleaning your options data automatically.<br />
+//			<br />- Deactivate the old version, or the version to be need to update, of plugin WP Missed Schedule.<br />
+//			<br />- Flushing cache, and wait for the necessary time.<br />
+//			<br />- Install, or copy manually via FTP, the new version of plugin WP Missed Schedule.<br />
+//			<br />- Activate the new version of plugin WP Missed Schedule.<br />
+//			<br />Overwrite an old version of this plugin directly via FTP, or directly overwrite a version to upgrade, it may also be the cause of this type of error.<br />
+//			<br /><u>Remember that this plugin does not work properly if installed in the mu-plugin directory!</u>' ) );
+//		}
+//	else
+//		{
+	if ( function_exists( 'wpms_init' ) )
 		{
-			wp_die( __( 'This WordPress installation is infected with a malware variant of WP Missed Schedule: Activation Stopped!<br />
-			<br />Uninstall all not original or forked versions of this plugin and retry: read more on the <a href="http://slangjis.org/unauthorized-code-use-and-copy-of-slangjis-plugins-or-themes/">cause of infection</a><br />
-			<br /><br /><strong>This is because you used, or have used, an unpublished version of this plugin, and have another similar plugin installed and activated, or you have installed an unauthorized forked version, or have installed a copy of this plugin that does not respect the trademark, and assigning the license to the authors who created it.</strong><br />
-			<br /><br />It may also happen that you did not perform the correct uninstallation procedure of the previous version, and the correct installation of the latest current version, or have another similar plugin activated.<br />
-			<br />The correct procedure to use is only this:<br />
-			<br />- Deactivate all similar plugins that have previously installed and activated.<br />
-			<br />- Decide if you need to uninstall all similar plugins to resolve the issue, if this message persists.<br />
-			<br />- Clean manually the options table if the similar plugins not cleaning your options data automatically.<br />
-			<br />- Deactivate the old version, or the version to be need to update, of plugin WP Missed Schedule.<br />
-			<br />- Flushing cache, and wait for the necessary time.<br />
-			<br />- Install, or copy manually via FTP, the new version of plugin WP Missed Schedule.<br />
-			<br />- Activate the new version of plugin WP Missed Schedule.<br />
-			<br />Overwrite an old version of this plugin directly via FTP, or directly overwrite a version to upgrade, it may also be the cause of this type of error.<br />
-			<br /><u>Remember that this plugin does not work properly if installed in the mu-plugin directory!</u>' ) );
-		}
-	else
-		{
-	if ( get_option( 'byrev_fixshedule_next_verify' ) )
-		{
-			wp_die( __( 'Before use WP Missed Schedule deactivate the plugin <strong>ByREV Fix Missed Shedule Plugin</strong>: Activation Stopped!<br />
-			<br /><u>Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts.</u><br />
-			<br /><br /><i>If this message persists, the plugin has not been properly deactivated, or the uninstall procedure has not been successfully performed, and conflicting options are still present in this WordPress installation.</i><br />
-			<br /><br />The correct procedure to use is only this:<br />
-			<br />- Deactivate the plugin that have previously installed and activated, and try again.<br />
-			<br />- Decide if you need to uninstall the plugin to resolve the issue, if this message persists, and try again.<br />
-			<br />- Clean manually the options table if the plugin not cleaning your options data automatically.<br />
-			<br />- Delete the plugin directly via FTP, if you have manually cleaned your options data, but this message persists.<br />
-			<br />- Flushing cache, wait for the necessary time, and try again.<br />
-			<br />Deleting it directly via FTP without performing properly deactivation, may also be the cause of this type of error.<br />
-			<br />Another cause is the low programming quality of the plugin, which does not erase its options when deactivated.<br />
-			<br /><center><strong>ByREV Fix Missed Shedule NOT erase your options data when deactivated or uninstalled!</strong></center>' ) );
+			function wpms_psd_init()
+				{
+					deactivate_plugins( plugin_basename( __FILE__ ) );
+				}
+			add_action( 'admin_init', 'wpms_psd_init', 0 );
+
+			delete_option( 'scheduled_missed' );
+			delete_site_option( 'scheduled_missed' );
+			delete_transient( 'scheduled_missed' );
+			delete_site_transient( 'scheduled_missed' );
+
+			function wpms_ant_init()
+				{
+?>
+<div class="notice notice-warning is-dismissible">
+<p>Only one instance or task of the same plugin is allowed and recommended to avoid conflicts: <strong>Second instance or task of the plugin WP missed Schedule NOT activated</strong>.</p>
+</div>
+<div class="updated notice is-dismissible">
+<p>Plugin WP Missed Schedule <strong>deactivated</strong>.</p>
+</div>
+<?php 
+				}
+			add_action( 'admin_notices', 'wpms_ant_init' );
 		}
 	else
 		{
@@ -390,18 +400,26 @@
 		{
 			function wpms_psd_fms()
 				{
-					deactivate_plugins( plugin_basename( 'missed-schedule-wordpress-plugin-fix/byrev_fix_missed_schedule.php' ) );
+					deactivate_plugins( plugin_basename( __FILE__ ) );
 				}
 			add_action( 'admin_init', 'wpms_psd_fms', 0 );
 			
+			delete_option( 'scheduled_missed' );
+			delete_site_option( 'scheduled_missed' );
+			delete_transient( 'scheduled_missed' );
+			delete_site_transient( 'scheduled_missed' );
+
 			function wpms_ant_fms()
 				{
 ?>
+<div class="notice notice-error is-dismissible">
+<p>1 - Before activate plugin WP Missed Schedule deactivate or uninstall conflicting plugin: <strong>ByREV Fix Missed Schedule</strong>.</p>
+</div>
 <div class="notice notice-warning is-dismissible">
-<p>Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts: <strong>Plugin ByREV Fix Missed Shedule NOT activated</strong>.</p>
+<p>1 - Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts: <strong>Plugin WP Missed Schedule NOT activated</strong>.</p>
 </div>
 <div class="updated notice is-dismissible">
-<p>Plugin <strong>deactivated</strong>.</p>
+<p>1 - Plugin WP Missed Schedule <strong>deactivated</strong>.</p>
 </div>
 <?php 
 				}
@@ -409,73 +427,61 @@
 		}
 	else
 		{
-	if ( get_option( 'scheduled_post_guardian_next_run' ) )
+	if ( get_option( 'byrev_fixshedule_next_verify' ) )
 		{
-			wp_die( __( 'Before use WP Missed Schedule deactivate the plugin <strong>Scheduled Post Guardian</strong>: Activation Stopped!<br />
-			<br /><u>Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts.</u><br />
-			<br /><br /><i>If this message persists, the plugin has not been properly deactivated, or the uninstall procedure has not been successfully performed, and conflicting options are still present in this WordPress installation.</i><br />
-			<br /><br />The correct procedure to use is only this:<br />
-			<br />- Deactivate the plugin that have previously installed and activated, and try again.<br />
-			<br />- Decide if you need to uninstall the plugin to resolve the issue, if this message persists, and try again.<br />
-			<br />- Clean manually the options table if the plugin not cleaning your options data automatically.<br />
-			<br />- Delete the plugin directly via FTP, if you have manually cleaned your options data, but this message persists.<br />
-			<br />- Flushing cache, wait for the necessary time, and try again.<br />
-			<br />Deleting it directly via FTP without performing properly deactivation, may also be the cause of this type of error.<br />
-			<br />Another cause is the low programming quality of the plugin, which does not erase its options when deactivated.<br />
-			<br /><center><strong>Scheduled Post Guardian NOT erase your options data when deactivated or uninstalled!</strong></center>' ) );
-		}
-	else
-		{
-	if ( get_option( 'wpt_scheduled_check' ) )
-		{
-			wp_die( __( 'Before use WP Missed Schedule deactivate the plugin <strong>WP TimeZone</strong>: Activation Stopped!<br />
-			<br /><u>Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts.</u><br />
-			<br /><br /><i>If this message persists, the plugin has not been properly deactivated, or the uninstall procedure has not been successfully performed, and conflicting options are still present in this WordPress installation.</i><br />
-			<br /><br />The correct procedure to use is only this:<br />
-			<br />- Deactivate the plugin that have previously installed and activated, and try again.<br />
-			<br />- Decide if you need to uninstall the plugin to resolve the issue, if this message persists, and try again.<br />
-			<br />- Clean manually the options table if the plugin not cleaning your options data automatically.<br />
-			<br />- Delete the plugin directly via FTP, if you have manually cleaned your options data, but this message persists.<br />
-			<br />- Flushing cache, wait for the necessary time, and try again.<br />
-			<br />Deleting it directly via FTP without performing properly deactivation, may also be the cause of this type of error.<br />
-			<br />Another cause is the low programming quality of the plugin, which does not erase its options when deactivated.<br />
-			<br /><center><strong>WP TimeZone NOT erase your options data when deactivated or uninstalled!</strong></center>' ) );
+			function wpms_psd_fms2()
+				{
+					deactivate_plugins( plugin_basename( __FILE__ ) );
+				}
+			add_action( 'admin_init', 'wpms_psd_fms2', 0 );
+
+			delete_option( 'scheduled_missed' );
+			delete_site_option( 'scheduled_missed' );
+			delete_transient( 'scheduled_missed' );
+			delete_site_transient( 'scheduled_missed' );
+
+			function wpms_ant_fms2()
+				{
+?>
+<div class="notice notice-error is-dismissible">
+<p>2 - Before activate plugin WP Missed Schedule please delete conflicting option: <strong>byrev_fixshedule_next_verify</strong>.</p>
+</div>
+<div class="notice notice-warning is-dismissible">
+<p>2 - To avoid conflicts please clean orphaned options not cleaned after deactivation or uninstallation of plugin: <strong>ByREV Fix Missed Schedule</strong>.</p>
+</div>
+<div class="updated notice is-dismissible">
+<p>2 - Plugin WP Missed Schedule <strong>deactivated</strong>.</p>
+</div>
+<?php 
+				}
+			add_action( 'admin_notices', 'wpms_ant_fms2' );
 		}
 	else
 		{
 	if ( function_exists( 'missed_schedule' ) )
 		{
-			wp_die( __( 'Before use WP Missed Schedule deactivate the plugin <strong>MY Missed Schedule</strong>: Activation Stopped!<br />
-			<br /><u>Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts.</u><br />
-			<br /><br /><i>If this message persists, the plugin has not been properly deactivated, or the uninstall procedure has not been successfully performed, and conflicting options are still present in this WordPress installation.</i><br />
-			<br /><br />The correct procedure to use is only this:<br />
-			<br />- Deactivate the plugin that have previously installed and activated, and try again.<br />
-			<br />- Decide if you need to uninstall the plugin to resolve the issue, if this message persists, and try again.<br />
-			<br />- Clean manually the options table if the plugin not cleaning your options data automatically.<br />
-			<br />- Delete the plugin directly via FTP, if you have manually cleaned your options data, but this message persists.<br />
-			<br />- Flushing cache, wait for the necessary time, and try again.<br />
-			<br />Deleting it directly via FTP without performing properly deactivation, may also be the cause of this type of error.<br />
-			<br />Another cause is the low programming quality of the plugin, which does not erase its options when deactivated.<br />
-			<br /><center><strong>WARNING: MY Missed Schedule NOT erase your options data when uninstalled!</strong></center>' ) );
-		}
-	else
-		{
-	if ( wp_get_schedule( 'missed_schedule_cron' ) )
-		{
 			function wpms_psd_mms()
 				{
-					deactivate_plugins( plugin_basename( 'my-missed-schedule/my-missed-schedule.php' ) );
+					deactivate_plugins( plugin_basename( __FILE__ ) );
 				}
 			add_action( 'admin_init', 'wpms_psd_mms', 0 );
+
+			delete_option( 'scheduled_missed' );
+			delete_site_option( 'scheduled_missed' );
+			delete_transient( 'scheduled_missed' );
+			delete_site_transient( 'scheduled_missed' );
 
 			function wpms_ant_mms()
 				{
 ?>
+<div class="notice notice-error is-dismissible">
+<p>1 - Before activate plugin WP Missed Schedule deactivate or uninstall conflicting plugin: <strong>My Missed Schedule</strong>.</p>
+</div>
 <div class="notice notice-warning is-dismissible">
-<p>Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts: <strong>Plugin My Missed Schedule NOT activated</strong>.</p>
+<p>1 - Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts: <strong>Plugin WP Missed Schedule NOT activated</strong>.</p>
 </div>
 <div class="updated notice is-dismissible">
-<p>Plugin <strong>deactivated</strong>.</p>
+<p>1 - Plugin WP Missed Schedule <strong>deactivated</strong>.</p>
 </div>
 <?php 
 				}
@@ -483,37 +489,251 @@
 		}
 	else
 		{
-	if ( class_exists( 'SimpulMissedSchedule' ) )
+	if ( wp_get_schedule( 'missed_schedule_cron' ) )
 		{
-			wp_die( __( 'Before use WP Missed Schedule deactivate the plugin <strong>Simpul Missed Schedule by Esotech</strong>: Activation Stopped!<br />
-			<br /><u>Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts.</u><br />
-			<br /><br /><i>If this message persists, the plugin has not been properly deactivated, or the uninstall procedure has not been successfully performed, and conflicting options are still present in this WordPress installation.</i><br />
-			<br /><br />The correct procedure to use is only this:<br />
-			<br />- Deactivate the plugin that have previously installed and activated, and try again.<br />
-			<br />- Decide if you need to uninstall the plugin to resolve the issue, if this message persists, and try again.<br />
-			<br />- Clean manually the options table if the plugin not cleaning your options data automatically.<br />
-			<br />- Delete the plugin directly via FTP, if you have manually cleaned your options data, but this message persists.<br />
-			<br />- Flushing cache, wait for the necessary time, and try again.<br />
-			<br />Deleting it directly via FTP without performing properly deactivation, may also be the cause of this type of error.<br />
-			<br />Another cause is the low programming quality of the plugin, which does not erase its options when deactivated.<br />
-			<br /><center><strong>Simpul Missed Schedule NOT erase your options data when uninstalled!</strong></center>' ) );
+			function wpms_psd_mms2()
+				{
+					deactivate_plugins( plugin_basename( __FILE__ ) );
+				}
+			add_action( 'admin_init', 'wpms_psd_mms2', 0 );
+
+			delete_option( 'scheduled_missed' );
+			delete_site_option( 'scheduled_missed' );
+			delete_transient( 'scheduled_missed' );
+			delete_site_transient( 'scheduled_missed' );
+
+			function wpms_ant_mms2()
+				{
+?>
+<div class="notice notice-error is-dismissible">
+<p>2 - Before activate plugin WP Missed Schedule please delete conflicting cron event: <strong>missed_schedule_cron</strong>.</p>
+</div>
+<div class="notice notice-warning is-dismissible">
+<p>2 - To avoid conflicts please clean orphaned cron events not cleaned after deactivation or uninstallation of plugin: <strong>My Missed Schedule</strong>.</p>
+</div>
+<div class="updated notice is-dismissible">
+<p>2 - Plugin WP Missed Schedule <strong>deactivated</strong>.</p>
+</div>
+<?php 
+				}
+			add_action( 'admin_notices', 'wpms_ant_mms2' );
+		}
+	else
+		{
+	if ( class_exists( 'Scheduled_Post_Guardian_Plugin' ) )
+		{
+			function wpms_psd_spg()
+				{
+					deactivate_plugins( plugin_basename( __FILE__ ) );
+				}
+			add_action( 'admin_init', 'wpms_psd_spg', 0 );
+			
+			delete_option( 'scheduled_missed' );
+			delete_site_option( 'scheduled_missed' );
+			delete_transient( 'scheduled_missed' );
+			delete_site_transient( 'scheduled_missed' );
+
+			function wpms_ant_spg()
+				{
+?>
+<div class="notice notice-error is-dismissible">
+<p>1 - Before activate plugin WP Missed Schedule deactivate or uninstall conflicting plugin: <strong>Scheduled Post Guardian</strong>.</p>
+</div>
+<div class="notice notice-warning is-dismissible">
+<p>1 - Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts: <strong>Plugin WP Missed Schedule NOT activated</strong>.</p>
+</div>
+<div class="updated notice is-dismissible">
+<p>1 - Plugin WP Missed Schedule <strong>deactivated</strong>.</p>
+</div>
+<?php 
+				}
+			add_action( 'admin_notices', 'wpms_ant_spg' );
+		}
+	else
+		{
+	if ( get_option( 'scheduled_post_guardian_next_run' ) )
+		{
+			function wpms_psd_spg2()
+				{
+					deactivate_plugins( plugin_basename( __FILE__ ) );
+				}
+			add_action( 'admin_init', 'wpms_psd_spg2', 0 );
+
+			delete_option( 'scheduled_missed' );
+			delete_site_option( 'scheduled_missed' );
+			delete_transient( 'scheduled_missed' );
+			delete_site_transient( 'scheduled_missed' );
+
+			function wpms_ant_spg2()
+				{
+?>
+<div class="notice notice-error is-dismissible">
+<p>2 - Before activate plugin WP Missed Schedule please delete conflicting option: <strong>scheduled_post_guardian_next_run</strong>.</p>
+</div>
+<div class="notice notice-warning is-dismissible">
+<p>2 - To avoid conflicts please clean orphaned options not cleaned after deactivation or uninstallation of plugin: <strong>Scheduled Post Guardian</strong>.</p>
+</div>
+<div class="updated notice is-dismissible">
+<p>2 - Plugin WP Missed Schedule <strong>deactivated</strong>.</p>
+</div>
+<?php 
+				}
+			add_action( 'admin_notices', 'wpms_ant_spg2' );
 		}
 	else
 		{
 	if ( function_exists( 'pubScheduledPost' ) )
 		{
-			wp_die( __( 'Before use WP Missed Schedule deactivate the plugin <strong>Scheduled Post Trigger</strong>: Activation Stopped!<br />
-			<br /><u>Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts.</u><br />
-			<br /><br /><i>If this message persists, the plugin has not been properly deactivated, or the uninstall procedure has not been successfully performed, and conflicting options are still present in this WordPress installation.</i><br />
-			<br /><br />The correct procedure to use is only this:<br />
-			<br />- Deactivate the plugin that have previously installed and activated, and try again.<br />
-			<br />- Decide if you need to uninstall the plugin to resolve the issue, if this message persists, and try again.<br />
-			<br />- Clean manually the options table if the plugin not cleaning your options data automatically.<br />
-			<br />- Delete the plugin directly via FTP, if you have manually cleaned your options data, but this message persists.<br />
-			<br />- Flushing cache, wait for the necessary time, and try again.<br />
-			<br />Deleting it directly via FTP without performing properly deactivation, may also be the cause of this type of error.<br />
-			<br />Another cause is the low programming quality of the plugin, which does not erase its options when deactivated.<br />
-			<br /><center><strong>Scheduled Post Trigger NOT erase your options data when deactivated or uninstalled!</strong></center>' ) );
+			function wpms_psd_pbp()
+				{
+					deactivate_plugins( plugin_basename( __FILE__ ) );
+				}
+			add_action( 'admin_init', 'wpms_psd_pbp', 0 );
+
+			delete_option( 'scheduled_missed' );
+			delete_site_option( 'scheduled_missed' );
+			delete_transient( 'scheduled_missed' );
+			delete_site_transient( 'scheduled_missed' );
+
+			function wpms_ant_pbp()
+				{
+?>
+<div class="notice notice-error is-dismissible">
+<p>1 - Before activate plugin WP Missed Schedule deactivate or uninstall conflicting plugin: <strong>Scheduled Post Trigger</strong>.</p>
+</div>
+<div class="notice notice-warning is-dismissible">
+<p>1 - Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts: <strong>Plugin WP Missed Schedule NOT activated</strong>.</p>
+</div>
+<div class="updated notice is-dismissible">
+<p>1 - Plugin WP Missed Schedule <strong>deactivated</strong>.</p>
+</div>
+<?php 
+				}
+			add_action( 'admin_notices', 'wpms_ant_pbp' );
+		}
+	else
+		{
+	if ( class_exists( 'SimpulMissedSchedule' ) )
+		{
+			function wpms_psd_sms()
+				{
+					deactivate_plugins( plugin_basename( __FILE__ ) );
+				}
+			add_action( 'admin_init', 'wpms_psd_sms', 0 );
+
+			delete_option( 'scheduled_missed' );
+			delete_site_option( 'scheduled_missed' );
+			delete_transient( 'scheduled_missed' );
+			delete_site_transient( 'scheduled_missed' );
+
+			function wpms_ant_sms()
+				{
+?>
+<div class="notice notice-error is-dismissible">
+<p>1 - Before activate plugin WP Missed Schedule deactivate or uninstall conflicting plugin: <strong>Simpul Missed Schedule</strong>.</p>
+</div>
+<div class="notice notice-warning is-dismissible">
+<p>1 - Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts: <strong>Plugin WP Missed Schedule NOT activated</strong>.</p>
+</div>
+<div class="updated notice is-dismissible">
+<p>1 - Plugin WP Missed Schedule <strong>deactivated</strong>.</p>
+</div>
+<?php 
+				}
+			add_action( 'admin_notices', 'wpms_ant_sms' );
+		}
+	else
+		{
+	if ( get_option( 'simpul_missed_schedule' ) )
+		{
+			function wpms_psd_sms2()
+				{
+					deactivate_plugins( plugin_basename( __FILE__ ) );
+				}
+			add_action( 'admin_init', 'wpms_psd_sms2', 0 );
+
+			delete_option( 'scheduled_missed' );
+			delete_site_option( 'scheduled_missed' );
+			delete_transient( 'scheduled_missed' );
+			delete_site_transient( 'scheduled_missed' );
+
+			function wpms_ant_sms2()
+				{
+?>
+<div class="notice notice-error is-dismissible">
+<p>2 - Before activate plugin WP Missed Schedule please delete conflicting option: <strong>simpul_missed_schedule</strong>.</p>
+</div>
+<div class="notice notice-warning is-dismissible">
+<p>2 - To avoid conflicts please clean orphaned options not cleaned after deactivation or uninstallation of plugin: <strong>Simpul Missed Schedule</strong>.</p>
+</div>
+<div class="updated notice is-dismissible">
+<p>2 - Plugin WP Missed Schedule <strong>deactivated</strong>.</p>
+</div>
+<?php 
+				}
+			add_action( 'admin_notices', 'wpms_ant_sms2' );
+		}
+	else
+		{
+	if ( class_exists( 'WP_TimeZone' ) )
+		{
+			function wpms_psd_wpt()
+				{
+					deactivate_plugins( plugin_basename( __FILE__ ) );
+				}
+			add_action( 'admin_init', 'wpms_psd_wpt', 0 );
+			
+			delete_option( 'scheduled_missed' );
+			delete_site_option( 'scheduled_missed' );
+			delete_transient( 'scheduled_missed' );
+			delete_site_transient( 'scheduled_missed' );
+
+			function wpms_ant_wpt()
+				{
+?>
+<div class="notice notice-error is-dismissible">
+<p>1 - Before activate plugin WP Missed Schedule deactivate or uninstall conflicting plugin: <strong>WP TimeZone</strong>.</p>
+</div>
+<div class="notice notice-warning is-dismissible">
+<p>1 - Only one instance of the plugin with the same functionality or task is allowed and recommended to avoid conflicts: <strong>Plugin WP Missed Schedule NOT activated</strong>.</p>
+</div>
+<div class="updated notice is-dismissible">
+<p>1 - Plugin WP Missed Schedule <strong>deactivated</strong>.</p>
+</div>
+<?php 
+				}
+			add_action( 'admin_notices', 'wpms_ant_wpt' );
+		}
+	else
+		{
+	if ( get_option( 'wpt_scheduled_check' ) )
+		{
+			function wpms_psd_wpt2()
+				{
+					deactivate_plugins( plugin_basename( __FILE__ ) );
+				}
+			add_action( 'admin_init', 'wpms_psd_wpt2', 0 );
+
+			delete_option( 'scheduled_missed' );
+			delete_site_option( 'scheduled_missed' );
+			delete_transient( 'scheduled_missed' );
+			delete_site_transient( 'scheduled_missed' );
+
+			function wpms_ant_wpt2()
+				{
+?>
+<div class="notice notice-error is-dismissible">
+<p>2 - Before activate plugin WP Missed Schedule please delete conflicting option: <strong>wpt_scheduled_check</strong>.</p>
+</div>
+<div class="notice notice-warning is-dismissible">
+<p>2 - To avoid conflicts please clean orphaned options not cleaned after deactivation or uninstallation of plugin: <strong>WP TimeZone</strong>.</p>
+</div>
+<div class="updated notice is-dismissible">
+<p>2 - Plugin WP Missed Schedule <strong>deactivated</strong>.</p>
+</div>
+<?php 
+				}
+			add_action( 'admin_notices', 'wpms_ant_wpt2' );
 		}
 	else
 		{
@@ -527,10 +747,10 @@
 			if ( $wp_version >= 2.1 )
 				{
 					flush_rewrite_rules();
-					delete_option( 'byrev_fixshedule_next_verify' );
-					delete_option( 'scheduled_post_guardian_next_run' );
+					//delete_option( 'byrev_fixshedule_next_verify' );
+					//delete_option( 'scheduled_post_guardian_next_run' );
 					//delete_option( 'simpul_missed_schedule' );
-					delete_option( 'wpt_scheduled_check' );
+					//delete_option( 'wpt_scheduled_check' );
 					delete_option( 'wp_missed_schedule' );
 					delete_option( 'wp_missed_scheduled' );
 					delete_option( 'wp_schedule_missed' );
@@ -544,10 +764,10 @@
 			if ( $wp_version >= 3.0 )
 				{
 					flush_rewrite_rules();
-					delete_site_option( 'byrev_fixshedule_next_verify' );
-					delete_site_option( 'scheduled_post_guardian_next_run' );
+					//delete_site_option( 'byrev_fixshedule_next_verify' );
+					//delete_site_option( 'scheduled_post_guardian_next_run' );
 					//delete_site_option( 'simpul_missed_schedule' );
-					delete_site_option( 'wpt_scheduled_check' );
+					//delete_site_option( 'wpt_scheduled_check' );
 					delete_site_option( 'wp_missed_schedule' );
 					delete_site_option( 'wp_missed_scheduled' );
 					delete_site_option( 'wp_schedule_missed' );
@@ -603,7 +823,7 @@
 			flush_rewrite_rules();
 			wp_clear_scheduled_hook( 'missed_schedule' );
 			wp_clear_scheduled_hook( 'missed_scheduled' );
-			wp_clear_scheduled_hook( 'missed_schedule_cron' );
+			//wp_clear_scheduled_hook( 'missed_schedule_cron' );
 			wp_clear_scheduled_hook( 'missed_scheduled_cron' );
 			wp_clear_scheduled_hook( 'wp_missed_schedule' );
 			wp_clear_scheduled_hook( 'wp_missed_scheduled' );
@@ -727,10 +947,6 @@ SQL;
 
 					wp_publish_post( $scheduledID );
 				}
-
-
-
-
 		}
 	add_action( 'init', 'wpms_init', 0 );
 
@@ -850,10 +1066,10 @@ SQL;
 			if ( $wp_version >= 2.1 )
 				{
 					flush_rewrite_rules();
-					delete_option( 'byrev_fixshedule_next_verify' );
-					delete_option( 'scheduled_post_guardian_next_run' );
+					//delete_option( 'byrev_fixshedule_next_verify' );
+					//delete_option( 'scheduled_post_guardian_next_run' );
 					//delete_option( 'simpul_missed_schedule' );
-					delete_option( 'wpt_scheduled_check' );
+					//delete_option( 'wpt_scheduled_check' );
 					delete_option( 'wp_missed_schedule' );
 					delete_option( 'wp_missed_scheduled' );
 					delete_option( 'wp_schedule_missed' );
@@ -867,10 +1083,10 @@ SQL;
 			if ( $wp_version >= 3.0 )
 				{
 					flush_rewrite_rules();
-					delete_site_option( 'byrev_fixshedule_next_verify' );
-					delete_site_option( 'scheduled_post_guardian_next_run' );
+					//delete_site_option( 'byrev_fixshedule_next_verify' );
+					//delete_site_option( 'scheduled_post_guardian_next_run' );
 					//delete_site_option( 'simpul_missed_schedule' );
-					delete_site_option( 'wpt_scheduled_check' );
+					//delete_site_option( 'wpt_scheduled_check' );
 					delete_site_option( 'wp_missed_schedule' );
 					delete_site_option( 'wp_missed_scheduled' );
 					delete_site_option( 'wp_schedule_missed' );
@@ -926,7 +1142,7 @@ SQL;
 			flush_rewrite_rules();
 			wp_clear_scheduled_hook( 'missed_schedule' );
 			wp_clear_scheduled_hook( 'missed_scheduled' );
-			wp_clear_scheduled_hook( 'missed_schedule_cron' );
+			//wp_clear_scheduled_hook( 'missed_schedule_cron' );
 			wp_clear_scheduled_hook( 'missed_scheduled_cron' );
 			wp_clear_scheduled_hook( 'wp_missed_schedule' );
 			wp_clear_scheduled_hook( 'wp_missed_scheduled' );
@@ -955,10 +1171,10 @@ SQL;
 					if ( $wp_version < 3.0 )
 						{
 							flush_rewrite_rules();
-							delete_option( 'byrev_fixshedule_next_verify' );
-							delete_option( 'scheduled_post_guardian_next_run' );
+							//delete_option( 'byrev_fixshedule_next_verify' );
+							//delete_option( 'scheduled_post_guardian_next_run' );
 							//delete_option( 'simpul_missed_schedule' );
-							delete_option( 'wpt_scheduled_check' );
+							//delete_option( 'wpt_scheduled_check' );
 							delete_option( 'wp_missed_schedule' );
 							delete_option( 'wp_missed_scheduled' );
 							delete_option( 'wp_schedule_missed' );
@@ -1013,10 +1229,10 @@ SQL;
 							if ( ! is_multisite() )
 								{
 									flush_rewrite_rules();
-									delete_option( 'byrev_fixshedule_next_verify' );
-									delete_option( 'scheduled_post_guardian_next_run' );
+									//delete_option( 'byrev_fixshedule_next_verify' );
+									//delete_option( 'scheduled_post_guardian_next_run' );
 									//delete_option( 'simpul_missed_schedule' );
-									delete_option( 'wpt_scheduled_check' );
+									//delete_option( 'wpt_scheduled_check' );
 									delete_option( 'wp_missed_schedule' );
 									delete_option( 'wp_missed_scheduled' );
 									delete_option( 'wp_schedule_missed' );
@@ -1030,10 +1246,10 @@ SQL;
 							if ( is_multisite() )
 								{
 									flush_rewrite_rules();
-									delete_option( 'byrev_fixshedule_next_verify' );
-									delete_option( 'scheduled_post_guardian_next_run' );
+									//delete_option( 'byrev_fixshedule_next_verify' );
+									//delete_option( 'scheduled_post_guardian_next_run' );
 									//delete_option( 'simpul_missed_schedule' );
-									delete_option( 'wpt_scheduled_check' );
+									//delete_option( 'wpt_scheduled_check' );
 									delete_option( 'wp_missed_schedule' );
 									delete_option( 'wp_missed_scheduled' );
 									delete_option( 'wp_schedule_missed' );
@@ -1053,10 +1269,10 @@ SQL;
 											switch_to_blog( $blog_id );
 
 											flush_rewrite_rules();
-											delete_site_option( 'byrev_fixshedule_next_verify' );
-											delete_site_option( 'scheduled_post_guardian_next_run' );
+											//delete_site_option( 'byrev_fixshedule_next_verify' );
+											//delete_site_option( 'scheduled_post_guardian_next_run' );
 											//delete_site_option( 'simpul_missed_schedule' );
-											delete_site_option( 'wpt_scheduled_check' );
+											//delete_site_option( 'wpt_scheduled_check' );
 											delete_site_option( 'wp_missed_schedule' );
 											delete_site_option( 'wp_missed_scheduled' );
 											delete_site_option( 'wp_schedule_missed' );
@@ -1168,7 +1384,7 @@ SQL;
 					flush_rewrite_rules();
 					wp_clear_scheduled_hook( 'missed_schedule' );
 					wp_clear_scheduled_hook( 'missed_scheduled' );
-					wp_clear_scheduled_hook( 'missed_schedule_cron' );
+					//wp_clear_scheduled_hook( 'missed_schedule_cron' );
 					wp_clear_scheduled_hook( 'missed_scheduled_cron' );
 					wp_clear_scheduled_hook( 'wp_missed_schedule' );
 					wp_clear_scheduled_hook( 'wp_missed_scheduled' );
@@ -1200,5 +1416,9 @@ SQL;
 	}
 	}
 	}
-//    }
+	}
+//	}
+//	}
+//	}
+//	}
 ?>
