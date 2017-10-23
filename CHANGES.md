@@ -25,8 +25,10 @@
   DEPRECATED Version  
 
 #### [stable]
-* 2014.1231.2017.5    / Build 2017-10-05
+* 2014.1231.2017.5    / Build 2017-10-19
   Stable Version
+* 2014.1231.2017.5    / Build 2017-10-05
+  DEPRECATED Version
 * 2014.1231.2017.5    / Build 2017-09-28
   DEPRECATED Version
 * 2014.1231.2017.5    / Build 2017-05-31

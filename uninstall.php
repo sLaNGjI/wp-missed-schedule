@@ -22,13 +22,13 @@
 	 * @translation slangjis.org/translations
 	 * @blog        slangji.wordpress.com
 	 *
-	 * @build       2017-10-05
+	 * @build       2017-10-19
 	 * @version     2014.1231.2017.10
 	 * @requires    WordPress 2.7+
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.6+
 	 * @updated     WordPress 4.8+
-	 * @compatible  WordPress 4.9-beta
+	 * @compatible  WordPress 4.9-beta3
 	 */
 
 	defined( 'ABSPATH' ) or exit;
@@ -40,14 +40,13 @@
 	$hooks_names = array( 
 			'missed_schedule',
 			'missed_scheduled',
-			'missed_schedule_cron',
 			'missed_scheduled_cron',
 			'wp_missed_schedule',
 			'wp_missed_scheduled',
 			'wp_missed_schedule_cron',
 			'wp_missed_scheduled_cron',
 			'wp_schedule_missed',
-			'wp_scheduled_missed',
+			'wp_scheduled_missed',                                                                                        # Future ALPHA conding reserved
 			'wp_schedule_missed_cron',
 			'wp_scheduled_missed_cron',
 			'schedule_missed',
