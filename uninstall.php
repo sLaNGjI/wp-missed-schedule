@@ -1,6 +1,8 @@
 <?php 
 
 	/**
+	 * WP Missed Schedule (The Original)
+	 *
 	 * @package     WordPress Plugin
 	 * @subpackage  WP Missed Schedule
 	 * @description Uninstall Module
