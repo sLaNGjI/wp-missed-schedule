@@ -24,20 +24,20 @@
 	 * @translation slangjis.org/translations
 	 * @blog        slangji.wordpress.com
 	 *
-	 * @build       2017-10-24
+	 * @build       2017-10-30
 	 * @version     2014.1231.2017.10
 	 * @requires    WordPress 2.7+
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.6+
 	 * @updated     WordPress 4.8+
-	 * @compatible  WordPress 4.9-beta4
+	 * @compatible  WordPress 4.9-RC1
 	 */
 
-	defined( 'ABSPATH' ) or exit;
+	if ( ! defined(       'ABSPATH'       ) ) exit;
 
-	defined( 'WPINC' ) or exit;
+	if ( ! defined(        'WPINC'        ) ) exit;
 
-	defined ( 'WP_UNINSTALL_PLUGIN' ) or exit;
+	if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) exit;
 
 	$hooks_names = array( 
 			'missed_schedule',
