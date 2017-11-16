@@ -404,7 +404,8 @@ last version number (2014.1231.1.*2*) 2 for example.
  * Branche 2014 Build 2017-05-31 Reloaded 2017-10-30
  * Release 2014 Version 1231 Revision 2017 Update 5
  * Work with all WordPress Versions from 2.1+ to 4.8+
- * Full Support and Compatibility for WordPress 2.1+ - 4.8+
+ * Full Support and Compatibility for WordPress 2.1+ - 4.9+
+ * Preemptive Support for WordPress 5.0-alpha
  * Preemptive Support for WordPress 4.9-RC
  * Preemptive Support for WordPress 4.9-beta
  * Preemptive Support for WordPress 4.9-alpha
@@ -414,9 +415,7 @@ last version number (2014.1231.1.*2*) 2 for example.
  * UPDATED Security Checking
  * ENHANCEMENT Core and Transients Improvements
  * FIXED False Positive Malware Warning when Updating
- * MAINTENANCE Release According WordPress 4.8.2
- * MAINTENANCE Release According WordPress 4.8.1
- * MAINTENANCE Release According WordPress 4.8
+ * MAINTENANCE Release According WordPress 4.8.3
  * MAINTENANCE Release According WordPress 4.7.6
  * MAINTENANCE Release According WordPress 4.6.7
  * MAINTENANCE Release According WordPress 4.5.10
@@ -1044,7 +1043,7 @@ Stable Version 2013.1231.2015 Release 2013 Reloaded FREE:
  *
 == Upgrade Notice ==
 = 2014.1231.2017.5 =
-Security and Compatibility [UPDATE] WP 2.1+ to 4.8+ - Preemptive Support 4.9-RC (recommended PHP 5.4+) - Build 2017-05-31 - Reloaded 2017-10-30 - Security and Maintenance Update - Somes Important Core and Transients Improvements - Undeveloped on wordpress.org since 2016-04-13 - Available on GitHub only for Author Request - Upgradable directly from WordPress Dashboard on GitHub only - Maintenance Release According WordPress 4.8.2 / 4.8.1 / 4.8 / 4.7.6 / 4.6.7 / 4.5.10 / 4.4.11 / 4.3.12 / 4.2.16 / 4.1.19 / 4.0.19 / 3.9.20 / 3.8.22 / 3.7.22 - Secunia Certified Zero Vulnerabilities Advisories!
+Security and Compatibility [UPDATE] WP 2.1+ to 4.9+ - Preemptive Support 5.0-alpha (recommended PHP 5.4+) - Build 2017-05-31 - Reloaded 2017-10-30 - Security and Maintenance Update - Somes Important Core and Transients Improvements - Undeveloped on wordpress.org since 2016-04-13 - Available on GitHub only for Author Request - Upgradable directly from WordPress Dashboard on GitHub only - Maintenance Release According WordPress 4.8.3 / 4.7.6 / 4.6.7 / 4.5.10 / 4.4.11 / 4.3.12 / 4.2.16 / 4.1.19 / 4.0.19 / 3.9.20 / 3.8.22 / 3.7.22 - Secunia Certified Zero Vulnerabilities Advisories!
 == Disclaimer ==
 [sLaNGjIs Team not provide support on wordpress.org forum](https://slangji.wordpress.com/support/) because we are not interested in reviews o stars on our plugins and themes!
 
