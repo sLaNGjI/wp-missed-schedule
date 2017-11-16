@@ -24,13 +24,13 @@
 	 * @translation slangjis.org/translations
 	 * @blog        slangji.wordpress.com
 	 *
-	 * @build       2017-10-31
-	 * @version     2014.1231.2017.10
+	 * @build       2017-11-16
+	 * @version     2014.1231.2017.11
 	 * @requires    WordPress 2.7+
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.6+
-	 * @updated     WordPress 4.8+
-	 * @compatible  WordPress 4.9-RC2
+	 * @updated     WordPress 4.9+
+	 * @compatible  WordPress 5.0-alpha
 	 */
 
 	if ( ! defined(       'ABSPATH'       ) ) exit;
