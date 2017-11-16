@@ -15,6 +15,8 @@
   ALPHA version
 * 2014.1231.2017.11   / Build 2017-11-30
   BETA version
+* 2014.1231.2017.10   / Build 2017-10-31
+  DEPRECATED version
 * 2014.1231.2017.9    / Build 2017-09-30
   DEPRECATED version
 * 2014.1231.2017.8    / Build 2017-08-31
@@ -25,8 +27,10 @@
   DEPRECATED Version  
 
 #### [stable]
-* 2014.1231.2017.10   / Build 2017-10-31
+* 2014.1231.2017.5    / Build 2017-11-16
   Stable Version
+* 2014.1231.2017.5    / Build 2017-10-31
+  DEPRECATED Version
 * 2014.1231.2017.5    / Build 2017-10-30
   DEPRECATED Version
 * 2014.1231.2017.5    / Build 2017-10-24
@@ -55,5 +59,7 @@
 #### [first]
 * 2007.0818.0         / Build 2007-08-18
   DEPRECATED Version
+
+History: 1st 2007-08-18 - latest 2017-11-16
 
 10 Years of WP Missed Schedule development!
