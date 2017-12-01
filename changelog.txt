@@ -11,10 +11,12 @@
   DEPRECATED Version
 
 [unreleased]
-* 2014.1231.2017.12   / Build 2017-12-31
+* 2018.0131.01        / Build 2018-01-31
   ALPHA version
-* 2014.1231.2017.11   / Build 2017-11-30
+* 2014.1231.2017.12   / Build 2017-12-31
   BETA version
+* 2014.1231.2017.11   / Build 2017-11-30
+  DEPRECATED version
 * 2014.1231.2017.10   / Build 2017-10-31
   DEPRECATED version
 * 2014.1231.2017.9    / Build 2017-09-30
