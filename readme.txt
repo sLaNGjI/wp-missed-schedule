@@ -12,7 +12,7 @@ wordpress plugin wp missed schedule fix scheduled posts failed on virtual cron j
 
 == Description ==
 
-The Original plugin for WordPress <a href="http://slangjis.org/plugins/wp-missed-schedule/">WP Missed Schedule</a> Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist: 10 items every 15 minutes, 40 items every hour, 1 session every 15 minutes, 4 sessions every hour. Work with virtual or real cron job on WordPress from 2.1+ to 4.8+ and 4.9-RC single or multisite install - The configuration is automatic and plugin nologo! - Build 2017-05-31 - Reloaded 2017-10-30 - Stable Branche 2014.1231.2017.5 - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a> - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/) Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly! Please note that on WordPress 4.9+ is recommended use of PHP 5.4+
+The Original plugin for WordPress <a href="http://slangjis.org/plugins/wp-missed-schedule/">WP Missed Schedule</a> Fix only scheduled failed future posts, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without waste resources. The others will be solved on next sessions, until no longer exist: 10 items every 15 minutes, 40 items every hour, 1 session every 15 minutes, 4 sessions every hour. Work with virtual or real cron job on WordPress from 2.1+ to 4.9+ and 5.0-alpha single or multisite install - The configuration is automatic and plugin nologo! - Build 2017-05-31 - Reloaded 2017-10-30 - Revision 2017-11-16 - Stable Branche 2014.1231.2017.5 - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/">GitHub</a> - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/) Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly! Please note that on WordPress 4.9+ is recommended use of PHP 5.4+
 
 **This plugin was approved on this repository online since 2007-08-18**
 
@@ -74,15 +74,16 @@ Read <a href="https://wordpress.org/plugins/wp-missed-schedule/changelog/">Todo 
 `
 New WP Missed Schedule Features and Future Updates
 
-Active Version 2014.1231.2017.5 (2017-05-31) FREE
+Active Version 2014.1231.2017.5 (2017-05-31) FREE - STABLE
 
 Limited Missed Scheduled Posts Fixing per days!
+Preemptive Support WordPress 5.0-alpha 2017/18 Release
 Preemptive Support WordPress 4.9-RC 2017 Release
 Preemptive Support WordPress 4.9-beta 2017 Release
 Preemptive Support WordPress 4.9-alpha 2017 Release
+Preemptive Support PHP 7.0+ and 7.1+ and 7.2+ or later
 Please note that on WP 4.9+ is recommended use of PHP 5.4+
-Preemptive Support PHP 7.0+ and 7.1+ or later
-Full Support WordPress Versions 2.1+ to 4.8+
+Full Support WordPress Versions 2.1+ to 4.9+
 Virtual Cron Checking Interval Method
 Secure Key Tag Auth Support (a New Idea of sLa)
 Prioritization of Plugin Loading
@@ -95,20 +96,17 @@ Fast Queries with index table and CPU Load Optimization
 W3 Total Cache and others Caching Plugins Compatibility
 JetPack and Social Publishing Plugins Transparency
 
-Beta Version 2015.1231.2017.10 (2017-10-31)
+Beta Version 2015.1231.2017.10 (2017-10-31) BETA/RC
 
 Limited Missed Scheduled Posts Fixing per days!
-Preemptive Support PHP 7.0+ and 7.1+ or later
 Real Cron Checking Interval Method
 Admin Menu Classic Plugin Settings Page
 Admin DashBoard Help and FAQ Panel
 
-Development Version (code in becoming)
-
-Alpha Version 2015.1231.2017.11 (2017-11-30)
+Alpha Version 2015.1231.2017.11 (2017-11-30) DEV - ALPHA
 
 Limited Missed Scheduled Posts Fixing per days!
-Preemptive Support PHP 7.0+ and 7.1+ or later
+Development Version (code in becoming)
 Customization of all Plugin Options (concept only)
 All in One Virtual and Real Cron Method (concept only)
 Unlimited Missed Scheduled Posts Fixing per days! (pro)
@@ -124,7 +122,8 @@ Switching from Local GMT and UTC Time (pro)
 * Fix Missed Schedule Failed Future Posts Scheduled Items
 * Secunia Certified Zero Advisories and Vulnerabilities
 * The state of art for fix big core bug since WordPress 2.5+
-* Work with all WordPress Versions from 2.1+ to 4.8+
+* Work with all WordPress Versions from 2.1+ to 4.9+
+* Preemptive Support for WordPress 5.0-alpha 2017/18 Release
 * Preemptive Support for WordPress 4.9-RC
 * Preemptive Support for WordPress 4.9-beta
 * Preemptive Support for WordPress 4.9-alpha
@@ -145,7 +144,7 @@ Switching from Local GMT and UTC Time (pro)
 * Full Support Deactivation Hook
 * Full Support Uninstall Hook
 * Full Support uninstall.php
-* Preemptive Support PHP 7.0+ and 7.1+ or later
+* Preemptive Support PHP 7.0+ and 7.1+ and 7.2+ or later
 * Support PHP 5.4+ and 5.6+ or later
 * Support MySQL 5.5+ and 5.6+ or greater
 * Support MariaDB 10.0+ or greater
@@ -358,7 +357,7 @@ I hope the fix working fine for you. WordPress should really look into this issu
 11. Language Screenshot
 12. Language Screenshot
 == Changelog ==
-available [new beta version](https://slangji.wordpress.com/wp-missed-schedule-beta/) with code totally rewrited that applies innovative method for interval of checking with lowest load server. This plugin patched an important unfixed issue since WordPress 2.5+ to date because Missed Schedule is Bug! All previous versions, before latest stable, are deprecated, no longer supported, and your distribution files silenty updated: please re-download or re-install it, based on build date, rather on version! This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on [GitHub](https://github.com/sLaNGjI/wp-missed-schedule/) - Build 2017-05-31 - Reloaded 2017-10-30 - Stable Branche 2014.1231.2017.5 - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/) Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly! Please note that on WordPress 4.9+ is recommended use of PHP 5.4+
+available [new beta version](https://slangji.wordpress.com/wp-missed-schedule-beta/) with code totally rewrited that applies innovative method for interval of checking with lowest load server. This plugin patched an important unfixed issue since WordPress 2.5+ to date because Missed Schedule is Bug! All previous versions, before latest stable, are deprecated, no longer supported, and your distribution files silenty updated: please re-download or re-install it, based on build date, rather on version! This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on [GitHub](https://github.com/sLaNGjI/wp-missed-schedule/) - Build 2017-05-31 - Reloaded 2017-10-30 - Revision 2017-11-16 - Stable Branche 2014.1231.2017.5 - [no support provided on WordPress.org forum or reviews](https://slangji.wordpress.com/support/) Do not install into mu-plugins directory because need to run functions activation, deactivation, install, uninstall, to work properly! Please note that on WordPress 4.9+ is recommended use of PHP 5.4+
 
 **This plugin was approved on this repository online since 2007-08-18**
 
@@ -390,7 +389,8 @@ Update is identified with progressive number after
 last version number (2014.1231.1.*2*) 2 for example.
 `
 
-* 275.164+ Downloads 90.000+ Active Installs Day 2016-04-13
+* 275.298+ Downloads 60.000+ Active Installs Day 2017-11-30 (After one year that plugin is closed to new downloads and updates Thanks to All continue use it)
+* 275.164+ Downloads 90.000+ Active Installs Day 2016-04-13 (This is the day of plugin was retired and closed to new downloads from wordpress.org repository)
 * 270.000+ Downloads 90.000+ Active Installs Day 2016-03-28
 * 260.000+ Downloads 80.000+ Active Installs Day 2016-01-25
 * 250.000+ Downloads 70.000+ Active Installs Day 2015-12-31
@@ -401,31 +401,60 @@ last version number (2014.1231.1.*2*) 2 for example.
  * Please update as soon as possible!
  * Undeveloped on wordpress.org since 2016-04-13
  * Available on GitHub only for Author Request!
+ * Branche 2014 Build 2017-05-31 Revision 2017-11-16
  * Branche 2014 Build 2017-05-31 Reloaded 2017-10-30
  * Release 2014 Version 1231 Revision 2017 Update 5
- * Work with all WordPress Versions from 2.1+ to 4.8+
+ * Work with all WordPress Versions from 2.1+ to 4.9+
  * Full Support and Compatibility for WordPress 2.1+ - 4.9+
  * Preemptive Support for WordPress 5.0-alpha
  * Preemptive Support for WordPress 4.9-RC
  * Preemptive Support for WordPress 4.9-beta
  * Preemptive Support for WordPress 4.9-alpha
  * Please note that on WP 4.9+ is recommended use of PHP 5.4+
- * Preemptive Support PHP 7.0+ and 7.1+ or later
+ * Preemptive Support PHP 7.0+ and 7.1+ and 7.2+ or later
  * NEW Authenticity Checking
  * UPDATED Security Checking
  * ENHANCEMENT Core and Transients Improvements
  * FIXED False Positive Malware Warning when Updating
+ * MAINTENANCE Release According WordPress 4.9.1
+ * MAINTENANCE Release According WordPress 4.9
+ * MAINTENANCE Release According WordPress 4.8.4
  * MAINTENANCE Release According WordPress 4.8.3
+ * MAINTENANCE Release According WordPress 4.8.2
+ * MAINTENANCE Release According WordPress 4.8.1
+ * MAINTENANCE Release According WordPress 4.8
+ * MAINTENANCE Release According WordPress 4.7.8
+ * MAINTENANCE Release According WordPress 4.7.7
  * MAINTENANCE Release According WordPress 4.7.6
+ * MAINTENANCE Release According WordPress 4.6.9
+ * MAINTENANCE Release According WordPress 4.6.8
  * MAINTENANCE Release According WordPress 4.6.7
+ * MAINTENANCE Release According WordPress 4.5.12
+ * MAINTENANCE Release According WordPress 4.5.11
  * MAINTENANCE Release According WordPress 4.5.10
+ * MAINTENANCE Release According WordPress 4.4.13
+ * MAINTENANCE Release According WordPress 4.4.12
  * MAINTENANCE Release According WordPress 4.4.11
+ * MAINTENANCE Release According WordPress 4.3.14
+ * MAINTENANCE Release According WordPress 4.3.13
  * MAINTENANCE Release According WordPress 4.3.12
+ * MAINTENANCE Release According WordPress 4.2.18
+ * MAINTENANCE Release According WordPress 4.2.17
  * MAINTENANCE Release According WordPress 4.2.16
+ * MAINTENANCE Release According WordPress 4.1.21
+ * MAINTENANCE Release According WordPress 4.1.20
  * MAINTENANCE Release According WordPress 4.1.19
+ * MAINTENANCE Release According WordPress 4.0.21
+ * MAINTENANCE Release According WordPress 4.0.20
  * MAINTENANCE Release According WordPress 4.0.19
+ * MAINTENANCE Release According WordPress 3.9.22
+ * MAINTENANCE Release According WordPress 3.9.21
  * MAINTENANCE Release According WordPress 3.9.20
+ * MAINTENANCE Release According WordPress 3.8.24
+ * MAINTENANCE Release According WordPress 3.8.23
  * MAINTENANCE Release According WordPress 3.8.22
+ * MAINTENANCE Release According WordPress 3.7.24
+ * MAINTENANCE Release According WordPress 3.7.23
  * MAINTENANCE Release According WordPress 3.7.22
 
 = 2014.1231.2017.4 =
@@ -1043,7 +1072,7 @@ Stable Version 2013.1231.2015 Release 2013 Reloaded FREE:
  *
 == Upgrade Notice ==
 = 2014.1231.2017.5 =
-Security and Compatibility [UPDATE] WP 2.1+ to 4.9+ - Preemptive Support 5.0-alpha (recommended PHP 5.4+) - Build 2017-05-31 - Reloaded 2017-10-30 - Security and Maintenance Update - Somes Important Core and Transients Improvements - Undeveloped on wordpress.org since 2016-04-13 - Available on GitHub only for Author Request - Upgradable directly from WordPress Dashboard on GitHub only - Maintenance Release According WordPress 4.8.3 / 4.7.6 / 4.6.7 / 4.5.10 / 4.4.11 / 4.3.12 / 4.2.16 / 4.1.19 / 4.0.19 / 3.9.20 / 3.8.22 / 3.7.22 - Secunia Certified Zero Vulnerabilities Advisories!
+Security and Compatibility [UPDATE] WP 2.1+ to 4.9+ Preemptive Support 5.0-alpha (recommended PHP 5.4+) Build 2017-05-31 - Reloaded 2017-10-30 - Revision 2017-11-16 - Security and Maintenance Update - Somes Important Core and Transients Improvements - Undeveloped on wordpress.org since 2016-04-13 - Available on GitHub only for Author Request - Upgradable directly from WordPress Dashboard on GitHub only - Maintenance Release According WordPress 4.9.1 / 4.8.4 / 4.7.8 / 4.6.9 / 4.5.12 / 4.4.13 / 4.3.14 / 4.2.18 / 4.1.21 / 4.0.21 / 3.9.22 / 3.8.24 / 3.7.24 - Secunia Certified Zero Vulnerabilities Advisories!
 == Disclaimer ==
 [sLaNGjIs Team not provide support on wordpress.org forum](https://slangji.wordpress.com/support/) because we are not interested in reviews o stars on our plugins and themes!
 
