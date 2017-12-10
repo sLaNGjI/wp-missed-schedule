@@ -389,8 +389,8 @@ Update is identified with progressive number after
 last version number (2014.1231.1.*2*) 2 for example.
 `
 
-* 275.298+ Downloads 60.000+ Active Installs Day 2017-11-30 (After one year that plugin is closed to new downloads and updates Thanks to All continue use it)
-* 275.164+ Downloads 90.000+ Active Installs Day 2016-04-13 (This is the day of plugin was retired and closed to new downloads from wordpress.org repository)
+* 275.298+ Downloads 60.000+ Active Installs Day 2017-11-30
+* 275.164+ Downloads 90.000+ Active Installs Day 2016-04-13
 * 270.000+ Downloads 90.000+ Active Installs Day 2016-03-28
 * 260.000+ Downloads 80.000+ Active Installs Day 2016-01-25
 * 250.000+ Downloads 70.000+ Active Installs Day 2015-12-31
