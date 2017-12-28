@@ -1,12 +1,16 @@
-language: php
+language:
+  php
 
 php:
-  - 7.1.11
+  - 7.2.0
+  - 7.2
+  - 7.1.12
   - 7.1.0
   - 7.1
-  - 7.0.25
+  - 7.0.26
   - 7.0.0
   - 7.0
+  - 5.6.32
   - 5.6.31
   - 5.6.0
   - 5.6
@@ -21,7 +25,7 @@ env:
 
 matrix:
   allow_failures:
-    - php: 7.2
+    - php: 5.6.32
 
 script:
   - find . \( -name '*.php' \) -exec php -lf {} \;
