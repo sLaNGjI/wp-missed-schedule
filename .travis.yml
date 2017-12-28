@@ -11,21 +11,24 @@ php:
   - 7.0.0
   - 7.0
   - 5.6.32
-  - 5.6.31
   - 5.6.0
   - 5.6
   - 5.5.38
   - 5.5
   - 5.4.45
   - 5.4
+  - 5.3
+  - 5.2
 
 env:
   - WP_VERSION=latest WP_MULTISITE=0
   - WP_VERSION=latest WP_MULTISITE=1
+  - WP_VERSION=development WP_MULTISITE=0
+  - WP_VERSION=development WP_MULTISITE=1
 
 matrix:
   allow_failures:
-    - php: 5.6.32
+    - php: 7.3
 
 script:
   - find . \( -name '*.php' \) -exec php -lf {} \;
