@@ -28,7 +28,8 @@ env:
 
 matrix:
   allow_failures:
-    - php: 7.3
+    - php: 5.3
+    - php: 5.2
 
 script:
   - find . \( -name '*.php' \) -exec php -lf {} \;
