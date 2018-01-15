@@ -2,16 +2,15 @@ language:
   php
 
 php:
-  - 7.2.0
+  - nightly
+  - 7.3
+  - 7.2.1
   - 7.2
-  - 7.1.12
-  - 7.1.0
+  - 7.1.13
   - 7.1
-  - 7.0.26
-  - 7.0.0
+  - 7.0.27
   - 7.0
-  - 5.6.32
-  - 5.6.0
+  - 5.6.33
   - 5.6
   - 5.5.38
   - 5.5
@@ -19,14 +18,13 @@ php:
   - 5.4
 
 env:
-  - WP_VERSION=latest WP_MULTISITE=0
-  - WP_VERSION=latest WP_MULTISITE=1
-  - WP_VERSION=development WP_MULTISITE=0
-  - WP_VERSION=development WP_MULTISITE=1
+  - WP_VERSION=master WP_MULTISITE=0
+  - WP_VERSION=master WP_MULTISITE=1
 
 matrix:
   allow_failures:
     - php: 7.3
+    - php: nightly
 
 script:
   - find . \( -name '*.php' \) -exec php -lf {} \;
