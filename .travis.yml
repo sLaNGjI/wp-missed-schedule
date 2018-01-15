@@ -34,9 +34,6 @@ matrix:
     - php: nightly
   fast_finish: true
 
-before_install:
-  - phpenv config-rm xdebug.ini 
-
 script:
   - find . \( -name '*.php' \) -exec php -lf {} \;
 
