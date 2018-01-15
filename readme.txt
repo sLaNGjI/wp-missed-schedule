@@ -6,7 +6,7 @@ Stable tag: 2014.1231.2017.5
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Donate link: http://slangjis.org/donate/
-Tags: sLaNGjIs, cron job, cron jobs, failed, future, future posts, missed, missed schedule, posts, schedule, scheduled, scheduled posts,
+Tags: sLaNGjIs, cron job, cron jobs, failed future posts, missed, missed schedule, schedule, scheduled, scheduled missed, scheduled posts,
 
 wordpress plugin wp missed schedule fix scheduled posts failed on virtual cron job bug and republish them fixed 10 items each session every 15 minutes
 
