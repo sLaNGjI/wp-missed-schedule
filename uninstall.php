@@ -117,7 +117,26 @@
 			'timeout_scheduled_missed'
 	);
 
-	global $wp_version;
+	if ( ( $wp_version >= 2.7 ) and ( $wp_version < 3.0 ) )
+		{
+			foreach ( $hooks_names as $hook_name )
+				{
+					wp_clear_scheduled_hook( $hook_name );
+				}
+
+			foreach ( $options_names as $option_name )
+				{
+					delete_option( $option_name );
+				}
+		}
+
+	if ( ( $wp_version >= 2.8 ) and ( $wp_version < 3.0 ) )
+		{
+			foreach ( $transients_names as $transient_name )
+				{
+					delete_transient( $transient_name );
+				}
+		}
 
 	if ( $wp_version >= 3.0 )
 		{
@@ -125,72 +144,40 @@
 				{
 					foreach ( $hooks_names as $hook_name )
 						{
-							global $wp_version;
-
-							if ( $wp_version >= 3.0 )
-								{
-									flush_rewrite_rules();
-								}
 							wp_clear_scheduled_hook( $hook_name );
 						}
 
 					foreach ( $options_names as $option_name )
 						{
-							global $wp_version;
-
-							if ( $wp_version >= 3.0 )
-								{
-									flush_rewrite_rules();
-								}
 							delete_option( $option_name );
 						}
 
 					foreach ( $transients_names as $transient_name )
 						{
-							global $wp_version;
-
-							if ( $wp_version >= 3.0 )
-								{
-									flush_rewrite_rules();
-								}
 							delete_transient( $transient_name );
 						}
+
+					flush_rewrite_rules();
 				}
 
 			if ( is_multisite() )
 				{
 					foreach ( $hooks_names as $hook_name )
 						{
-							global $wp_version;
-
-							if ( $wp_version >= 3.0 )
-								{
-									flush_rewrite_rules();
-								}
 							wp_clear_scheduled_hook( $hook_name );
 						}
 
 					foreach ( $options_names as $option_name )
 						{
-							global $wp_version;
-
-							if ( $wp_version >= 3.0 )
-								{
-									flush_rewrite_rules();
-								}
 							delete_site_option( $option_name );
 						}
 
 					foreach ( $transients_names as $transient_name )
 						{
-							global $wp_version;
-
-							if ( $wp_version >= 3.0 )
-								{
-									flush_rewrite_rules();
-								}
 							delete_site_transient( $transient_name );
 						}
+
+					flush_rewrite_rules();
 
 					global $wpdb;
 
@@ -203,38 +190,22 @@
 
 							foreach ( $hooks_names as $hook_name )
 								{
-									global $wp_version;
-
-									if ( $wp_version >= 3.0 )
-										{
-											flush_rewrite_rules();
-										}
 									wp_clear_scheduled_hook( $hook_name );
 								}
 
 							foreach ( $options_names as $option_name )
 								{
-									global $wp_version;
-
-									if ( $wp_version >= 3.0 )
-										{
-											flush_rewrite_rules();
-										}
 									delete_option( $option_name );
 									delete_site_option( $option_name );
 								}
 
 							foreach ( $transients_names as $transient_name )
 								{
-									global $wp_version;
-
-									if ( $wp_version >= 3.0 )
-										{
-											flush_rewrite_rules();
-										}
 									delete_transient( $transient_name );
 									delete_site_transient( $transient_name );
 								}
+
+							flush_rewrite_rules();
 						}
 					switch_to_blog( $original_blog_id );
 				}
