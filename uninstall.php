@@ -117,12 +117,16 @@
 			'timeout_scheduled_missed'
 	);
 
+	global $wp_version;
+
 	if ( $wp_version >= 3.0 )
 		{
 			if ( ! is_multisite() )
 				{
 					foreach ( $hooks_names as $hook_name )
 						{
+							global $wp_version;
+
 							if ( $wp_version >= 3.0 )
 								{
 									flush_rewrite_rules();
@@ -132,6 +136,8 @@
 
 					foreach ( $options_names as $option_name )
 						{
+							global $wp_version;
+
 							if ( $wp_version >= 3.0 )
 								{
 									flush_rewrite_rules();
@@ -141,6 +147,8 @@
 
 					foreach ( $transients_names as $transient_name )
 						{
+							global $wp_version;
+
 							if ( $wp_version >= 3.0 )
 								{
 									flush_rewrite_rules();
@@ -153,6 +161,8 @@
 				{
 					foreach ( $hooks_names as $hook_name )
 						{
+							global $wp_version;
+
 							if ( $wp_version >= 3.0 )
 								{
 									flush_rewrite_rules();
@@ -162,6 +172,8 @@
 
 					foreach ( $options_names as $option_name )
 						{
+							global $wp_version;
+
 							if ( $wp_version >= 3.0 )
 								{
 									flush_rewrite_rules();
@@ -171,6 +183,8 @@
 
 					foreach ( $transients_names as $transient_name )
 						{
+							global $wp_version;
+
 							if ( $wp_version >= 3.0 )
 								{
 									flush_rewrite_rules();
@@ -189,6 +203,8 @@
 
 							foreach ( $hooks_names as $hook_name )
 								{
+									global $wp_version;
+
 									if ( $wp_version >= 3.0 )
 										{
 											flush_rewrite_rules();
@@ -198,6 +214,8 @@
 
 							foreach ( $options_names as $option_name )
 								{
+									global $wp_version;
+
 									if ( $wp_version >= 3.0 )
 										{
 											flush_rewrite_rules();
@@ -208,6 +226,8 @@
 
 							foreach ( $transients_names as $transient_name )
 								{
+									global $wp_version;
+
 									if ( $wp_version >= 3.0 )
 										{
 											flush_rewrite_rules();
