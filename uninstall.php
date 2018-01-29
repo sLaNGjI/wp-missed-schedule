@@ -28,7 +28,7 @@
 	 *
 	 * @build       2017-12-31
 	 * @version     2018.01.29
-	 * @requires    WordPress 2.7+ and PHP 5.2.4+
+	 * @requires    WordPress 2.7+ and PHP 5.2+
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.7+
 	 * @updated     WordPress 4.9+
