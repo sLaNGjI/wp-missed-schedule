@@ -21,14 +21,16 @@
 	 * @contact     slangjis.org/contact
 	 * @donate      slangjis.org/donate
 	 * @support     slangjis.org/support
+	 * @premium     slangjis.org/premium
+	 * @authtag     slangjis.org/authtag
 	 * @translation slangjis.org/translations
 	 * @blog        slangji.wordpress.com
 	 *
-	 * @build       2017-11-16
-	 * @version     2014.1231.2017.11
-	 * @requires    WordPress 2.7+
+	 * @build       2017-12-31
+	 * @version     2018.01.29
+	 * @requires    WordPress 2.7+ and PHP 5.2.4+
 	 * @since       WordPress 2.7+
-	 * @tested      WordPress 3.6+
+	 * @tested      WordPress 3.7+
 	 * @updated     WordPress 4.9+
 	 * @compatible  WordPress 5.0-alpha
 	 */
@@ -38,6 +40,10 @@
 	if ( ! defined(        'WPINC'        ) ) exit;
 
 	if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) exit;
+
+	global $wp_version;
+
+	if ( $wp_version < 2.7 ) exit;
 
 	$hooks_names = array( 
 			'missed_schedule',
@@ -111,27 +117,34 @@
 			'timeout_scheduled_missed'
 	);
 
-	global $wp_version;
-
 	if ( $wp_version >= 3.0 )
 		{
 			if ( ! is_multisite() )
 				{
 					foreach ( $hooks_names as $hook_name )
 						{
-							flush_rewrite_rules();
+							if ( $wp_version >= 3.0 )
+								{
+									flush_rewrite_rules();
+								}
 							wp_clear_scheduled_hook( $hook_name );
 						}
 
 					foreach ( $options_names as $option_name )
 						{
-							flush_rewrite_rules();
+							if ( $wp_version >= 3.0 )
+								{
+									flush_rewrite_rules();
+								}
 							delete_option( $option_name );
 						}
 
 					foreach ( $transients_names as $transient_name )
 						{
-							flush_rewrite_rules();
+							if ( $wp_version >= 3.0 )
+								{
+									flush_rewrite_rules();
+								}
 							delete_transient( $transient_name );
 						}
 				}
@@ -140,19 +153,28 @@
 				{
 					foreach ( $hooks_names as $hook_name )
 						{
-							flush_rewrite_rules();
+							if ( $wp_version >= 3.0 )
+								{
+									flush_rewrite_rules();
+								}
 							wp_clear_scheduled_hook( $hook_name );
 						}
 
 					foreach ( $options_names as $option_name )
 						{
-							flush_rewrite_rules();
+							if ( $wp_version >= 3.0 )
+								{
+									flush_rewrite_rules();
+								}
 							delete_site_option( $option_name );
 						}
 
 					foreach ( $transients_names as $transient_name )
 						{
-							flush_rewrite_rules();
+							if ( $wp_version >= 3.0 )
+								{
+									flush_rewrite_rules();
+								}
 							delete_site_transient( $transient_name );
 						}
 
@@ -167,20 +189,29 @@
 
 							foreach ( $hooks_names as $hook_name )
 								{
-									flush_rewrite_rules();
+									if ( $wp_version >= 3.0 )
+										{
+											flush_rewrite_rules();
+										}
 									wp_clear_scheduled_hook( $hook_name );
 								}
 
 							foreach ( $options_names as $option_name )
 								{
-									flush_rewrite_rules();
+									if ( $wp_version >= 3.0 )
+										{
+											flush_rewrite_rules();
+										}
 									delete_option( $option_name );
 									delete_site_option( $option_name );
 								}
 
 							foreach ( $transients_names as $transient_name )
 								{
-									flush_rewrite_rules();
+									if ( $wp_version >= 3.0 )
+										{
+											flush_rewrite_rules();
+										}
 									delete_transient( $transient_name );
 									delete_site_transient( $transient_name );
 								}
@@ -188,4 +219,3 @@
 					switch_to_blog( $original_blog_id );
 				}
 		}
-?>
