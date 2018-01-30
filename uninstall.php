@@ -27,7 +27,7 @@
 	 * @blog        slangji.wordpress.com
 	 *
 	 * @build       2017-12-31
-	 * @version     2018.01.29
+	 * @version     2018.01.31
 	 * @requires    WordPress 2.7+ and PHP 5.2+
 	 * @since       WordPress 2.7+
 	 * @tested      WordPress 3.7+
@@ -54,7 +54,7 @@
 			'wp_missed_schedule_cron',
 			'wp_missed_scheduled_cron',
 			'wp_schedule_missed',
-			'wp_scheduled_missed',                                                                                        # Future ALPHA conding reserved
+			'wp_scheduled_missed',
 			'wp_schedule_missed_cron',
 			'wp_scheduled_missed_cron',
 			'schedule_missed',
@@ -83,7 +83,7 @@
 			'wp_missed_schedule',
 			'wp_missed_scheduled',
 			'wp_schedule_missed',
-			'wp_scheduled_missed',                                                                                        # Future ALPHA conding reserved
+			'wp_scheduled_missed',
 			'wp_missed_schedule_cron',
 			'wp_missed_scheduled_cron',
 			'wp_schedule_missed_cron',
@@ -104,9 +104,9 @@
 			'timeout_wp_missed_schedule',
 			'timeout_wp_missed_scheduled',
 			'wp_schedule_missed',
-			'wp_scheduled_missed',                                                                                        # Future ALPHA conding reserved
+			'wp_scheduled_missed',
 			'timeout_wp_schedule_missed',
-			'timeout_wp_scheduled_missed',                                                                                # Future ALPHA conding reserved
+			'timeout_wp_scheduled_missed',
 			'missed_schedule',
 			'missed_scheduled',
 			'timeout_missed_schedule',
@@ -117,7 +117,7 @@
 			'timeout_scheduled_missed'
 	);
 
-	if ( ( $wp_version >= 2.7 ) and ( $wp_version < 3.0 ) )
+	if ( $wp_version >= 2.7 )
 		{
 			foreach ( $hooks_names as $hook_name )
 				{
@@ -130,7 +130,7 @@
 				}
 		}
 
-	if ( ( $wp_version >= 2.8 ) and ( $wp_version < 3.0 ) )
+	if ( $wp_version >= 2.8 )
 		{
 			foreach ( $transients_names as $transient_name )
 				{
@@ -140,25 +140,7 @@
 
 	if ( $wp_version >= 3.0 )
 		{
-			if ( ! is_multisite() )
-				{
-					foreach ( $hooks_names as $hook_name )
-						{
-							wp_clear_scheduled_hook( $hook_name );
-						}
-
-					foreach ( $options_names as $option_name )
-						{
-							delete_option( $option_name );
-						}
-
-					foreach ( $transients_names as $transient_name )
-						{
-							delete_transient( $transient_name );
-						}
-
-					flush_rewrite_rules();
-				}
+			flush_rewrite_rules();
 
 			if ( is_multisite() )
 				{
@@ -176,8 +158,6 @@
 						{
 							delete_site_transient( $transient_name );
 						}
-
-					flush_rewrite_rules();
 
 					global $wpdb;
 
@@ -204,8 +184,6 @@
 									delete_transient( $transient_name );
 									delete_site_transient( $transient_name );
 								}
-
-							flush_rewrite_rules();
 						}
 					switch_to_blog( $original_blog_id );
 				}
