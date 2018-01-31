@@ -1,5 +1,5 @@
 #### [alpha]
-* 2018.1231           / Build 2018-12-31
+* 2019.1231           / Build 2019-12-31
   ALPHA Version
 
 #### [beta]
@@ -11,9 +11,9 @@
   DEPRECATED Version
 
 #### [unreleased]
-* 2018.0131.01        / Build 2018-01-31
+* 2018.1231.12        / Build 2018-12-31
   ALPHA version
-* 2014.1231.2017.12   / Build 2017-12-31
+* 2018.0131.01        / Build 2018-01-31
   BETA version
 * 2014.1231.2017.11   / Build 2017-11-30
   DEPRECATED version
@@ -29,8 +29,10 @@
   DEPRECATED Version  
 
 #### [stable]
-* 2014.1231.2017.5    / Build 2017-11-16
+* 2014.1231.2017.12   / Build 2017-12-31
   Stable Version
+* 2014.1231.2017.5    / Build 2017-11-16
+  DEPRECATED Version
 * 2014.1231.2017.5    / Build 2017-10-31
   DEPRECATED Version
 * 2014.1231.2017.5    / Build 2017-10-30
@@ -56,7 +58,7 @@
 
 #### [older]
 * 2013.1231           / Build 2013-12-31
-  DEPRECATED Version
+  LEGACY Version
 
 #### [first]
 * 2007.0818.0         / Build 2007-08-18
