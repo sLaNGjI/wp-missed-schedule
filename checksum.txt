@@ -1,10 +1,10 @@
 WP Missed Schedule - Version 2014.1231.2017.12 Build 2017-12-31 - SHA1 Checksum
 
------ Stable Tag 2014.1231.2017.12 ~ Branche 2017.1231 - Build 2017-12-31 -----
+--- Stable Branche 2014.1231 - Build 2017-12-31 - Revision 2017 - Update 12 ---
 
 .gitignore                             662C2F54102E0A311BA6FC9FC30B8FFA86C37900
 .htaccess                              A0E13C5C4AB9290B92035EE18405215917DA5134
-.travis.yml                            10226F899A2B10E346896ED26D3E7D7212173CEA
+.travis.yml                            374747E9D5627E07BB0AF4E136BDD49235C1AEC5
 CHANGES.md                             E3603C91AF160857732E1B52A3E196BBD5EB24BA
 CODE_OF_CONDUCT.md                     7A30CB5A0B7BE75322038FBA3047ACECA3CB37A4
 CONTRIBUTING.md                        8A79708D30771AF7FAD72A1A5DE2893255D80CAB
@@ -22,7 +22,7 @@ license.txt                            79285179577BE4E7403395E645D180C8B6F29311
 no-support-gived-on-forum.txt          C96CB7D0F84952AE375F358F5624A78CEE2174C4
 readme.txt                             DEDF173093C81B0A028EBAE0FB45F58D562C8C2E
 uninstall.php                          FA49B2280DCD1393F87AF210267BC2009E04E0D2
-wp-missed-schedule.php                 B1AB01BC222C5BDF86CB05D9A93CA35F36E38BC1
+wp-missed-schedule.php                 F56022F22B3EB85D5975C419CECB63E5004200C2
 
 - The first public build of this plugin was officially released on 2007-08-18 -
 
@@ -30,11 +30,11 @@ wp-missed-schedule.php                 B1AB01BC222C5BDF86CB05D9A93CA35F36E38BC1
 
 This project, was developed to more of 10 years from this same team of authors!
 
-Next Step:
+Next Steps:
 
-Alpha 2019.1231 Release
+Alpha - Release 2018.1231 - Branche 2018 - Revision 2018 - Update 12
 
-Beta  2018.1231 Release
+Beta  - Release 2018.0131 - Branche 2018 - Revision 2018 - Update 01
 
 Security Note:
 
