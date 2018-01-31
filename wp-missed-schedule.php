@@ -15,7 +15,7 @@
  *
  Plugin Name: WP Missed Schedule (The Original)
  Plugin URI:  http://slangjis.org/plugins/wp-missed-schedule/
- Description: The Original Plugin for WordPress WP Missed Schedule <strong>fix scheduled failed future posts only</strong>, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without wasting resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WP from 2.1+ to 4.8+ and 4.9-RC1 single or multisite install - The configuration is automatic (does not require any settings to work) and plugin nologo! - Build 2017-05-31 - Reloaded 2017-12-31 - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/" target="_blank">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/" target="_blank">WP Crontrol</a> activated and WP 2.7+ or later. Please note that: <strong>the core of the plugin always works even if it is installed in the mu-plugins directory</strong>, but is recommended to not install it in this way, if is not absolutely necessary, because needs to perform the functions of activation, deactivation, installation, uninstallation, to work at 100% of its functionality. <a href="http://slangjis.org/donate/">Donate</a> to Support it. Thanks!
+ Description: The Original Plugin for WordPress WP Missed Schedule <strong>fix scheduled failed future posts only</strong>, that have this bug, and republish correctly fixed 10 items each session, every 15 minutes, without wasting resources. The others will be solved on next sessions, until no longer exist. Work with virtual or real cron job on WP from 2.1+ to 4.9+ and 5.0-alpha single or multisite install - The configuration is automatic (does not require any settings to work) and plugin nologo! - Build 2017-12-31 - This plugin is no longer available on WordPress.org plugins repository for explicit author request, but only on <a href="https://github.com/sLaNGjI/wp-missed-schedule/" target="_blank">GitHub</a>. Miss link is for verify if exist this issue. Cron link requires <a href="https://wordpress.org/plugins/wp-crontrol/" target="_blank">WP Crontrol</a> activated and WP 2.7+ or later. Please note that: <strong>the core of the plugin always works even if it is installed in the mu-plugins directory</strong>, but is recommended to not install it in this way, if is not absolutely necessary, because needs to perform the functions of activation, deactivation, installation, uninstallation, to work at 100% of its functionality. <a href="http://slangjis.org/donate/">Donate</a> to Support it. Thanks!
  Version:     2014.1231.2017.12
  Author:      sLaNGjIs Team
  Author URI:  http://slangjis.org/plugins/
@@ -230,12 +230,11 @@
 	 * @tested      4.8+ (old 3.5+)
 	 * @compatible  4.9-RC1
 	 * @branche     2014
+	 * @release     1231
 	 * @revision    2017
 	 * @update      12
-	 * @release     2014.1231
 	 * @version     2014.1231.2017.12
-	 * @build       2017-05-31
-	 * @reloaded    2017-12-31
+	 * @build       2017-12-31
 	 * @approved    2007-08-18
 	 * @license     GPLv3 or later
 	 * @indentation GNU style coding standard
