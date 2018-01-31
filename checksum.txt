@@ -20,9 +20,9 @@ index.php                              151F222A6CE1F187CF8E0A5386E7EDEC7E7371C1
 keybit.txt                             7D6B6E6B01008EC2CA6A5B17D5F6164E98E73CE0
 license.txt                            79285179577BE4E7403395E645D180C8B6F29311
 no-support-gived-on-forum.txt          C96CB7D0F84952AE375F358F5624A78CEE2174C4
-readme.txt                             36EB6EC5EF690023AFEEA9D8649AC7FEDE139AB1
-uninstall.php                          7049CA8E6C6D102F06D5EEE3C59F3858ADF2C17B
-wp-missed-schedule.php                 3AD510FFDDC99DD95AB42844ACA09D01E1DAA64C
+readme.txt                             DEDF173093C81B0A028EBAE0FB45F58D562C8C2E
+uninstall.php                          FA49B2280DCD1393F87AF210267BC2009E04E0D2
+wp-missed-schedule.php                 B1AB01BC222C5BDF86CB05D9A93CA35F36E38BC1
 
 - The first public build of this plugin was officially released on 2007-08-18 -
 
