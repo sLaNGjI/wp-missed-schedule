@@ -1,28 +1,24 @@
 #### [alpha]
-* 2019.1231           / Build 2019-12-31
-  ALPHA Version
+* 2018.1231.12        / Build 2018-12-31
+  ALPHA version
 
 #### [beta]
-* 2017.1231           / Build 2017-12-31
-  Beta Version
+* 2018.0131.01        / Build 2018-01-31
+  BETA Version
 * 2016.1231           / Build 2016-12-31
   DEPRECATED Version
 * 2015.1231           / Build 2015-12-31
   DEPRECATED Version
 
 #### [unreleased]
-* 2018.1231.12        / Build 2018-12-31
-  ALPHA version
-* 2018.0131.01        / Build 2018-01-31
-  BETA version
 * 2014.1231.2017.11   / Build 2017-11-30
-  DEPRECATED version
+  DEPRECATED Version
 * 2014.1231.2017.10   / Build 2017-10-31
-  DEPRECATED version
+  DEPRECATED Version
 * 2014.1231.2017.9    / Build 2017-09-30
-  DEPRECATED version
+  DEPRECATED Version
 * 2014.1231.2017.8    / Build 2017-08-31
-  DEPRECATED version
+  DEPRECATED Version
 * 2014.1231.2017.7    / Build 2017-07-31
   DEPRECATED Version
 * 2014.1231.2017.6    / Build 2017-06-30
@@ -64,6 +60,6 @@
 * 2007.0818.0         / Build 2007-08-18
   DEPRECATED Version
 
-History: 1st 2007-08-18 - latest 2017-11-16
+History: 1st 2007-08-18 - latest 2017-12-31
 
 10 Years of WP Missed Schedule development!
