@@ -27,7 +27,7 @@
  GitHub Branch:     master
  GitHub Languages:  https://github.com/sLaNGjI/wp-missed-schedule/
  Requires WP:       2.1
- Requires PHP:      5.2
+ Requires PHP:      5.4
  *
  * Requires at least 2.1
  * Tested up to      4.8
