@@ -5,16 +5,16 @@
 #### [beta]
 * 2018.0131.03        / Build 2018-03-31
   BETA Version
+* 2018.0128.28        / Build 2018-02-28
+  DEPRECATED Version
+* 2018.0131.01        / Build 2018-01-31
+  DEPRECATED Version
 * 2016.1231           / Build 2016-12-31
   DEPRECATED Version
 * 2015.1231           / Build 2015-12-31
   DEPRECATED Version
 
 #### [unreleased]
-* 2018.0128.28        / Build 2018-02-28
-  DEPRECATED Version
-* 2018.0131.01        / Build 2018-01-31
-  DEPRECATED Version
 * 2014.1231.2017.11   / Build 2017-11-30
   DEPRECATED Version
 * 2014.1231.2017.10   / Build 2017-10-31
