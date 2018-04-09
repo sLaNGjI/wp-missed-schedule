@@ -3,11 +3,14 @@
   ALPHA version
 
 #### [beta]
-* 2018.0131.03        / Build 2018-03-31
+
+* 2018.04.10          / Build 2018-04-10
   BETA Version
-* 2018.0128.28        / Build 2018-02-28
+* 2018.03.31          / Build 2018-03-31
   DEPRECATED Version
-* 2018.0131.01        / Build 2018-01-31
+* 2018.02.28          / Build 2018-02-28
+  DEPRECATED Version
+* 2018.01.31          / Build 2018-01-31
   DEPRECATED Version
 * 2016.1231           / Build 2016-12-31
   DEPRECATED Version
