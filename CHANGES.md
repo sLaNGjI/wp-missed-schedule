@@ -4,8 +4,10 @@
 
 #### [beta]
 
-* 2018.04.10          / Build 2018-04-10
+* 2018.05.01          / Build 2018-05-01
   BETA Version
+* 2018.04.30          / Build 2018-04-30
+  DEPRECATED Version
 * 2018.03.31          / Build 2018-03-31
   DEPRECATED Version
 * 2018.02.28          / Build 2018-02-28
