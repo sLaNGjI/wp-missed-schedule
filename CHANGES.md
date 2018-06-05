@@ -6,7 +6,7 @@
 
 * 2018.06.01          / Build 2018-06-01
   BETA Version
-* 2018.04.31          / Build 2018-05-31
+* 2018.05.31          / Build 2018-05-31
   DEPRECATED Version
 * 2018.04.30          / Build 2018-04-30
   DEPRECATED Version
