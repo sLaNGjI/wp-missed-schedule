@@ -2,6 +2,14 @@
 * 2019.1231.12        / Build 2019-12-31
   ALPHA version
 
+#### [RELEASE]
+* 2018.12.31          / Build 2018-12-31
+  Release Version
+
+#### [RC]
+* 2018.11.30          / Build 2018-11-30
+RC Version
+
 #### [beta]
 
 * 2018.10.31          / Build 2018-10-31
