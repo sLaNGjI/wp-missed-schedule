@@ -1,10 +1,26 @@
 [alpha]
-* 2018.1231.12        / Build 2018-12-31
+* 2019.1231.12        / Build 2019-12-31
   ALPHA Version
 
+[RELEASE]
+* 2018.12.31          / Build 2018-12-31
+  Release Version
+
+[RC]
+* 2018.11.30          / Build 2018-11-30
+  RC Version
+
 [beta]
-* 2018.06.01          / Build 2018-06-01
+* 2018.10.31          / Build 2018-10-31
   BETA Version
+* 2018.09.30          / Build 2018-09-30
+  DEPRECATED Version
+* 2018.08.31          / Build 2018-08-31
+  DEPRECATED Version
+* 2018.07.31          / Build 2018-07-31
+  DEPRECATED Version
+* 2018.06.30          / Build 2018-06-30
+  DEPRECATED Version
 * 2018.05.31          / Build 2018-05-31
   DEPRECATED Version
 * 2018.04.30          / Build 2018-04-30
