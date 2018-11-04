@@ -32,9 +32,9 @@ This project, was developed to more of 10 years from this same team of authors!
 
 Next Steps:
 
-Alpha - Release 2018.1231 - Branche 2018 - Revision 2018 - Update 12
+Alpha - Release 2019.12.31 - Branche 2019 - Revision 12 - Update 31
 
-Beta  - Release 2018.0131 - Branche 2018 - Revision 2018 - Update 01
+Beta  - Release 2018.10.31 - Branche 2018 - Revision 10 - Update 31
 
 Security Note:
 
